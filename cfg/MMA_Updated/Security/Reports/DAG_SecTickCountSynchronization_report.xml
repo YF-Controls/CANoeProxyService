@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-27 13:23:32" timestamp="   0.000000" verdicts="2_basic" measurementid="75267dff-fdc4-49a6-9eaa-0a1e086b452d">
-  <testcase starttime="2025-08-27 13:23:32" timestamp="   0.000000">
+<testmodule starttime="2025-08-27 13:47:58" timestamp="   0.000000" verdicts="2_basic" measurementid="1cd4ae3c-38c2-4fea-a999-078b2bedea52">
+  <testcase starttime="2025-08-27 13:47:58" timestamp="   0.000000">
     <teststep timestamp="   0.000000" level="0" type="user" ident=" " result="pass">Available targets: DMRR_MMA,DMRL_MMA,DMFR_MMA,DMFL_MMA</teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident="" result="na"></teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident="loop" result="na">ECU: DMRR_MMA</teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   0.376000" level="1" type="auto" ident="Resume reason" result="na">Resumed on Communication error with &apos;DMRR_MMA&apos; Elapsed time=376ms (max=1000ms)</teststep>
-    <teststep timestamp="   2.476000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   2.476000" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   2.476000" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   2.476000" level="0" type="user" ident="loop" result="na">ECU: DMRL_MMA</teststep>
-    <teststep timestamp="   2.476000" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   3.476000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=1000ms (max=1000ms)</teststep>
-    <teststep timestamp="   5.576000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   5.576000" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   5.576000" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   5.576000" level="0" type="user" ident="loop" result="na">ECU: DMFR_MMA</teststep>
-    <teststep timestamp="   5.576000" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   5.952000" level="1" type="auto" ident="Resume reason" result="na">Resumed on Communication error with &apos;DMFR_MMA&apos; Elapsed time=376ms (max=1000ms)</teststep>
-    <teststep timestamp="   8.052000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   8.052000" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   8.052000" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   8.052000" level="0" type="user" ident="loop" result="na">ECU: DMFL_MMA</teststep>
-    <teststep timestamp="   8.052000" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   8.428000" level="1" type="auto" ident="Resume reason" result="na">Resumed on Communication error with &apos;DMFL_MMA&apos; Elapsed time=376ms (max=1000ms)</teststep>
-    <teststep timestamp="  10.528000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="  10.528000" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="  10.528000" level="0" type="user" ident="Send RTOffsetBroadcast" result="fail">No ECU DateTime Info available.</teststep>
-    <verdict time="2025-08-27 13:23:43" timestamp="  10.528000" endtime="2025-08-27 13:23:43" endtimestamp="  10.528000" result="fail" />
+    <teststep timestamp="   0.015968" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRR_MMA&apos; Elapsed time=15.9676ms (max=1000ms)</teststep>
+    <teststep timestamp="   2.115968" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   2.115968" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   2.115968" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   2.115968" level="0" type="user" ident="loop" result="na">ECU: DMRL_MMA</teststep>
+    <teststep timestamp="   2.115968" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   2.117670" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRL_MMA&apos; Elapsed time=1.70278ms (max=1000ms)</teststep>
+    <teststep timestamp="   4.217670" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   4.217670" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   4.217670" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   4.217670" level="0" type="user" ident="loop" result="na">ECU: DMFR_MMA</teststep>
+    <teststep timestamp="   4.217670" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   4.219699" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFR_MMA&apos; Elapsed time=2.02884ms (max=1000ms)</teststep>
+    <teststep timestamp="   4.220701" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMFR_MMA&apos; Elapsed time=1.00222ms (max=2100ms)</teststep>
+    <teststep timestamp="   4.220701" level="0" type="user" ident=" " result="na">Target:DMFR_MMA LocalSecTickCount:0x1df1c</teststep>
+    <teststep timestamp="   4.220701" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   4.220701" level="0" type="user" ident="loop" result="na">ECU: DMFL_MMA</teststep>
+    <teststep timestamp="   4.220701" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   4.222683" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFL_MMA&apos; Elapsed time=1.98198ms (max=1000ms)</teststep>
+    <teststep timestamp="   6.322683" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   6.322683" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   6.322683" level="0" type="user" ident="Send RTOffsetBroadcast" result="fail">No ECU DateTime Info available.</teststep>
+    <verdict time="2025-08-27 13:48:04" timestamp="   6.322683" endtime="2025-08-27 13:48:04" endtimestamp="   6.322683" result="fail" />
     <title>ReadSecTickCountForAllTargets</title>
   </testcase>
-  <verdict time="2025-08-27 13:23:43" timestamp="  10.528000" endtime="2025-08-27 13:23:43" endtimestamp="  10.528000" result="fail" />
+  <verdict time="2025-08-27 13:48:04" timestamp="   6.322683" endtime="2025-08-27 13:48:04" endtimestamp="   6.322683" result="fail" />
   <title>DAG_SecTickCountSynchronization</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-27_13-23-35_524_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-27_13-47-58_526_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
@@ -48,27 +48,27 @@
     </xinfo>
     <xinfo>
       <name>Configuration</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
+      <description>C:\CANoeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
     </xinfo>
     <xinfo>
       <name>Database BODY1 on BODY1</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
+      <description>C:\CANoeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFL_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
+      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFR_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
+      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRL_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
+      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRR_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
+      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Test Module Name</name>
@@ -76,7 +76,7 @@
     </xinfo>
     <xinfo>
       <name>Test Module File</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\FreshnessSynchronization\DAG_SecTickCountSynchronization.can</description>
+      <description>C:\CANoeProxy\cfg\MMA_Updated\Security\FreshnessSynchronization\DAG_SecTickCountSynchronization.can</description>
     </xinfo>
     <xinfo>
       <name>Last modification of Test Module File</name>
@@ -134,4 +134,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="89a4c93dda88be751166206af338faab" version="1"-->
+<!--footprint="5d0066bebae281e66fa00de75395e2ff" version="1"-->

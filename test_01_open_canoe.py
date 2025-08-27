@@ -26,9 +26,9 @@ if __name__ == '__main__':
         print('No está corriendo nada')
     
     
-    exit(0)
     
-    done = start_app(cfg_file_1, CANOE_EXE, True)
+    
+    done = start_app(cfg_file_2, CANOE_EXE, True)
     if done == 0:
         print('Executando')
     else:
