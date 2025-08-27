@@ -1,0 +1,94 @@
+function base64ToHex(str) {
+  const raw = atob(str);
+  let result = '';
+  for (let i = 0; i < raw.length; i++) {
+    const hex = raw.charCodeAt(i).toString(16);
+    result += (hex.length === 2 ? hex : '0' + hex);
+  }
+  return result.toUpperCase();
+}
+
+function base64ToArrayBuffer(base64) {
+  var binaryString = atob(base64);
+  var bytes = new Uint8Array(binaryString.length);
+  for (var i = 0; i < binaryString.length; i++) {
+      bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes.buffer;
+}
+
+function buf2hex(buffer) { // buffer is an ArrayBuffer
+  return [...new Uint8Array(buffer)]
+      .map(x => x.toString(16).padStart(2, '0'))
+      .join('');
+}
+
+function validateEc(event) {
+  const ec = new elliptic.ec('p256');
+
+  const msg = document.getElementById("msg")
+
+  let csr = document.getElementById("ec-csr").value;
+  let publicKey = document.getElementById("ec-public-key").value;
+  let signature = document.getElementById("ec-signature").value;
+
+  try {
+    publicKey = base64ToHex(publicKey)
+    startIndex = publicKey.indexOf("04")
+    publicKey = publicKey.slice(startIndex)
+
+    let key = ec.keyFromPublic(publicKey, 'hex');
+    signature = base64ToHex(signature)
+
+    buffer = base64ToArrayBuffer(csr)
+    crypto.subtle.digest("SHA-256", buffer).then(function(hash) {
+      hash = buf2hex(hash)
+      if(key.verify(hash, signature)) {
+        msg.textContent = "Signature was verified."
+        msg.style.color = "green"
+      } else {
+        msg.textContent = "Signature is not correct."
+        msg.style.color = "red"
+      }
+    })
+  } catch(error) {
+    msg.textContent = "Signature is not correct. There might be a format issue, base64 is expected."
+    msg.style.color = "red"
+    console.log(error)
+  } finally {
+    event.preventDefault();
+  }
+}
+
+function fillOutExample(event) {
+  let csr = document.getElementById("ec-csr");
+  let publicKey = document.getElementById("ec-public-key");
+  let signature = document.getElementById("ec-signature");
+  let msg = document.getElementById("msg");
+
+  csr.value = "MIHQMIGDAgEAMBwxGjAYBgNVBAMMEWR1bW15X2NvbW1vbl9uYW1lMCowBQYDK2VwAyEAjG81Jcyo9p/crDomHYoJGOECcdDi7LSqt+kpwElZ+p6gNDAyBgkqhkiG9w0BCQ4xJTAjMCEGDSsGAQQBlmQDBoN9BWwEEDEODAxkdW1teV9lY3VfaWQwBQYDK2VwA0EAevmAMwhfVVMvaMTNWBn39X7BoiurQ1xmQOdGOVmFT2m1U3jBa+H328b8uEc8+uhICTwXWoL2Zbpc/hrztMkyDg==";
+  publicKey.value = "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEyv2P7MuLJiUiT0Df4m8eV8nurF1kk/6XiZlAtzA8pZyOk2SoRepp6EF8r+8jKH8mxrElqMVqsj5qQm6ySYTV9w=="
+  signature.value = "MEUCIGwwlFpkJxFNoObanOeQx4Jm6p9mrYx3BBXIGdapd9bjAiEA2B9Ly6reh1JfWpSOwTbiv3MlaaS5tFKN3lQ4ctm+Rzc="
+  msg.textContent = "";
+}
+
+function clearData(event) {
+  let csr = document.getElementById("ec-csr");
+  let publicKey = document.getElementById("ec-public-key");
+  let signature = document.getElementById("ec-signature");
+  let msg = document.getElementById("msg");
+
+  csr.value = "";
+  publicKey.value = "";
+  signature.value = "";
+  msg.textContent = "";
+}
+
+const form = document.getElementById("ec-validation");
+form.addEventListener("submit", validateEc);
+
+const exampleButton = document.getElementById("ec-example")
+exampleButton.addEventListener("click", fillOutExample);
+
+const clearButton = document.getElementById("ec-clear")
+clearButton.addEventListener("click", clearData);

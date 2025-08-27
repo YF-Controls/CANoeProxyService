@@ -1,0 +1,53 @@
+{
+  "version" : "1.0.0",
+  "description" : "Configuration file for CanOeService",
+  "author" : "cyanezf YF-Controls",
+  
+  "service" :
+  {
+    "name" : "CanOeService",
+    "displayName" : "CanOe Service",
+    "description" : "Service for managing CANoe configurations and commands",
+    "host" : "0.0.0.0",
+    "port" : 3000
+  },
+  
+  "canOe" :
+  {
+    "path" : "C:\\Program Files\\Vector CANoe\\CANoe64.exe",
+    "exe" : "CANoe64.exe",
+    "cfgs" :
+    [
+      {
+        "id" : "*MMA",
+        "description" : "DCU type: DMxx_MMA",
+        "path" : "C:\\CanOeService\\cfg\\MMA_Updated\\BODY1_15.cfg",
+        "host" : "localhost",
+        "port" : 4242
+      },
+      {
+        "id" : "*223",
+        "description" : "DCU type: DMxx223",
+        "path" : "C:\\CanOeService\\cfg\\DCM223_Updated\\BODY1_15.cfg",
+        "host" : "localhost",
+        "port" : 4242
+      }
+    ]
+  },
+  
+  "log" :
+  {
+    "help" : "Log levels: NOTSET, DEBUG, INFO, WARNING, ERROR, CRITICAL",
+    "level" : "DEBUG",
+    
+    "printToConsole" : false,
+    "printToEventViewer" : false,
+    
+    "filePath" : "C:\\CanOeService\\logs\\CanOeService.log",
+    "maxSize" : 10485760,
+    "maxFiles" : 20,
+    "format" : "%(asctime)s [%(levelname)-8s] %(message)-80s [%(name)s , %(funcName)s , %(lineno)d]"
+  }
+
+}
+

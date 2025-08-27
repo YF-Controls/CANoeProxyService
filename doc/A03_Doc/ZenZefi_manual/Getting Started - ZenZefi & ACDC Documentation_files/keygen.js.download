@@ -1,0 +1,82 @@
+document.getElementById('generate').addEventListener('click', function () {
+    window.crypto.subtle.generateKey(
+        {
+            name: "ECDSA",
+            namedCurve: "P-256"
+        },
+        true,
+        ["sign", "verify"]
+    )
+        .then(function (keyPair) {
+            // Export the public key in PEM format
+            window.crypto.subtle.exportKey('spki', keyPair.publicKey)
+                .then(function (spki) {
+                    const publicKeyPem = spkiToPem(spki);
+                    displayKey('publicKeyContainer', publicKeyPem);
+                })
+                .catch(function (err) {
+                    console.error(err);
+                });
+
+            // Export the private key in PEM format
+            window.crypto.subtle.exportKey('pkcs8', keyPair.privateKey)
+                .then(function (pkcs8) {
+                    const privateKeyPem = pkcs8ToPem(pkcs8);
+                    displayKey('privateKeyContainer', privateKeyPem);
+                })
+                .catch(function (err) {
+                    console.error(err);
+                });
+            var keysContainer = document.getElementById('keysContainer');
+            keysContainer.classList.remove('hidden');
+        })
+        .catch(function (err) {
+            console.error(err);
+        });
+});
+
+function displayKey(containerId, key) {
+    var container = document.getElementById(containerId);
+    var codeElement = container.querySelector('code');
+    codeElement.textContent = key;
+}
+
+function spkiToPem(spkiBuffer) {
+    return toPem(spkiBuffer, 'PUBLIC KEY');
+    //return toDer(spkiBuffer);
+}
+
+function pkcs8ToPem(pkcs8Buffer) {
+    //return toPem(pkcs8Buffer, 'PRIVATE');
+    return toDer(pkcs8Buffer);
+}
+
+function toPem(buffer, type) {
+    const base64 = arrayBufferToBase64(buffer);
+    const pemText = `-----BEGIN ${type}-----\n${formatPem(base64)}\n-----END ${type}-----`;
+    return pemText;
+}
+
+function toDer(buffer) {
+    const base64 = arrayBufferToBase64(buffer);
+    return base64;
+}
+
+function arrayBufferToBase64(buffer) {
+    let binary = '';
+    const bytes = new Uint8Array(buffer);
+    for (let i = 0; i < bytes.byteLength; i++) {
+        binary += String.fromCharCode(bytes[i]);
+    }
+    return window.btoa(binary);
+}
+
+function formatPem(str) {
+    let finalString = '';
+    while (str.length > 0) {
+        finalString += str.substring(0, 64) + '\n';
+        str = str.substring(64);
+    }
+    finalString = finalString.trim(); // Remove the last newline character
+    return finalString;
+}
