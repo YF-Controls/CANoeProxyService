@@ -89,7 +89,7 @@ def print_running_processes(find: str = '') -> None:
 
 ##############################################################
 ##############################################################
-def kill_process(name: str, timeout: float = 5.0) -> int:
+def kill_process(name: str, timeout: float = 5.0) -> bool:
   '''Kill a process by its name.
   Args:
     name (str): Name of the process to kill (e.g., 'notepad.exe', 'chrome.exe').

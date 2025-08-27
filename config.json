@@ -41,7 +41,6 @@
     "level" : "DEBUG",
     
     "printToConsole" : false,
-    "printToEventViewer" : false,
     
     "filePath" : "C:\\CanOeProxy\\logs\\CanOeProxy.log",
     "maxSize" : 10485760,
