@@ -16,20 +16,23 @@ def count_running_processes(name: str) -> int:
   Args:
     name (str): Name of the application to check (e.g., 'notepad.exe', 'chrome.exe').
   Returns:
-    int: Number of instances of the application running.
+    int: Number of instances of the application running, -1 if error.
   '''
   
   i = 0
   # Iterate processes
-  for process in psutil.process_iter(['pid', 'name']):
-    if process.info['name'].lower() == name.lower():
-      i += 1
+  try:
+    for process in psutil.process_iter(['pid', 'name']):
+      if process.info['name'].lower() == name.lower():
+        i += 1
+  except psutil.Error as e:
+    return -1
   # Return count
   return i
 
 ##############################################################
 ##############################################################
-def processes_running(name: str) -> list[int] | None:
+def get_running_processes(name: str) -> list[int] | None:
   '''Check if an application is running by its name.
   Args:
     name (str): Name of the application to check (e.g., 'notepad.exe', 'chrome.exe').
@@ -86,7 +89,7 @@ def print_running_processes(find: str = '') -> None:
 
 ##############################################################
 ##############################################################
-def kill_process(name: str, timeout: float = 5.0) -> bool:
+def kill_process(name: str, timeout: float = 5.0) -> int:
   '''Kill a process by its name.
   Args:
     name (str): Name of the process to kill (e.g., 'notepad.exe', 'chrome.exe').
@@ -110,7 +113,8 @@ def kill_process(name: str, timeout: float = 5.0) -> bool:
       continue
   
   # Check if the process is still running
-  return any(process.info['name'].lower() == name.lower() for process in psutil.process_iter(['name']))
+  i = count_running_processes(name)
+  return i == 0
 
 ##############################################################
 ##############################################################
