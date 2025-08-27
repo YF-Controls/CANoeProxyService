@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-25 09:07:10" timestamp="   0.000000" verdicts="2_basic" measurementid="ebf096f7-f896-45c3-a076-39e996d2e82a">
-  <testcase starttime="2025-08-25 09:07:10" timestamp="   0.000000">
-    <verdict time="2025-08-25 09:07:10" timestamp="   0.000000" endtime="2025-08-25 09:07:10" endtimestamp="   0.000000" result="pass" />
+<testmodule starttime="2025-08-27 13:23:32" timestamp="   0.000000" verdicts="2_basic" measurementid="75267dff-fdc4-49a6-9eaa-0a1e086b452d">
+  <testcase starttime="2025-08-27 13:23:32" timestamp="   0.000000">
+    <verdict time="2025-08-27 13:23:32" timestamp="   0.000000" endtime="2025-08-27 13:23:32" endtimestamp="   0.000000" result="pass" />
     <title>tc_ReadDiagQualifier</title>
   </testcase>
-  <verdict time="2025-08-25 09:07:10" timestamp="   0.000000" endtime="2025-08-25 09:07:10" endtimestamp="   0.000000" result="pass" />
+  <verdict time="2025-08-27 13:23:32" timestamp="   0.000000" endtime="2025-08-27 13:23:32" endtimestamp="   0.000000" result="pass" />
   <title>DiagTargetAnalyser</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-25_09-07-11_523_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-27_13-23-35_524_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
       <name>Windows Login Name</name>
-      <description>emaria.hurtado</description>
+      <description>IRONTECH</description>
     </xinfo>
   </engineer>
   <testsetup>
     <xinfo>
       <name>Version</name>
-      <description>CANoe.CAN.LIN /pro 15.3.89 (SP3)</description>
+      <description>CANoe.CAN /pex 15.6.6 (SP6)</description>
     </xinfo>
     <xinfo>
       <name>Configuration</name>
-      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\BODY1_15.cfg</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
     </xinfo>
     <xinfo>
       <name>Database BODY1 on BODY1</name>
-      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFL_MMA</name>
-      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFR_MMA</name>
-      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRL_MMA</name>
-      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRR_MMA</name>
-      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Test Module Name</name>
@@ -50,7 +50,7 @@
     </xinfo>
     <xinfo>
       <name>Test Module File</name>
-      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\Security\Authentication\DiagTargetAnalyser.can</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\Authentication\DiagTargetAnalyser.can</description>
     </xinfo>
     <xinfo>
       <name>Last modification of Test Module File</name>
@@ -58,27 +58,27 @@
     </xinfo>
     <xinfo>
       <name>Windows Computer Name</name>
-      <description>ING0585L</description>
+      <description>OP60HMI1</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module AsrPDUIL</name>
-      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.104 (Aug  7 2023 09:15:21) , c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrPDUIL.dll</description>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.67 (Sep 17 2021 15:12:55) , c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrPDUIL.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module AsrNM33</name>
-      <description>AsrNM (Version 8.1 Windows 32-Bit), c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrNM33.dll</description>
+      <description>AsrNM (Version 3.3.72 Windows 32-Bit), c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrNM33.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module SecMgrCANoeClient</name>
-      <description>Security Manager CANoe Node Layer Client (Version 2.13.15.0), c:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_11.0.81\Windows-x86\SecMgrCANoeClient.dll</description>
+      <description>Security Manager CANoe Node Layer Client (Version 2.12.13.0), C:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_11.0.81\Windows-x86\SecMgrCANoeClient.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module DAG_ZenzefiNodeLayer</name>
-      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.12.13.0), c:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
+      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.12.13.0), C:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module J1939TestServiceLibraryNL</name>
-      <description>J1939 Test Service Library for CANoe, Version 15.3.89.0, C:\Program Files\Vector CANoe 15\Exec32\J1939TestServiceLibraryNL.dll</description>
+      <description>J1939 Test Service Library for CANoe, Version 15.6.6.0, C:\Program Files\Vector CANoe 15\Exec32\J1939TestServiceLibraryNL.dll</description>
     </xinfo>
   </testsetup>
   <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
@@ -94,11 +94,11 @@
       </xinfo>
       <xinfo key="serialnumber">
         <name>Serial number</name>
-        <description>52665</description>
+        <description>66479</description>
       </xinfo>
       <xinfo key="driverdllversion">
         <name>Driver DLL version</name>
-        <description>24.40.12</description>
+        <description>25.20.14</description>
       </xinfo>
       <xinfo key="driverversion">
         <name>Driver version</name>
@@ -108,4 +108,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="a990d9774fc376b0aa8d800d83a2e26b" version="1"-->
+<!--footprint="6349829c5cf749fde1f69fd6f2c43b7a" version="1"-->

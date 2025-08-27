@@ -5,11 +5,9 @@ import win32com.client, time
 
 from modules.vector_canoe import some_measurement_running, start_app, some_cfg_loaded
 
-cfg_file_1 = r'C:\CanOeProxyService\cfg\MMA_Updated\BODY1_15.cfg'
-cfg_file_2 = r'C:\CanOeProxyService\cfg\DCM223_Updated\BODY1_15.cfg'
+cfg_file_1 = r'C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg'
+cfg_file_2 = r'C:\CanOeProxy\cfg\DCM223_Updated\BODY1_15.cfg'
 CANOE_EXE = 'CANoe64.exe'
-
-
 
 if __name__ == '__main__':
     print('#################################################')
@@ -20,7 +18,6 @@ if __name__ == '__main__':
         print('Cargado ', cfg_name)
     else:
         print('Nada cargado')
-        exit(1)
     
     cfg_name = some_measurement_running(CANOE_EXE)
     if cfg_name:
@@ -28,12 +25,13 @@ if __name__ == '__main__':
     else:
         print('No está corriendo nada')
     
-    exit(2)
     
-    done = start_app(cfg_file_1)
-    if done:
+    exit(0)
+    
+    done = start_app(cfg_file_1, CANOE_EXE, True)
+    if done == 0:
         print('Executando')
     else:
-        print('Algo fue mal')
+        print('Algo fue mal ', done)
     
     print('#################################################')

@@ -41,7 +41,7 @@ def some_measurement_running(canoe_exe: str) -> str | None:
   return cfg_full_name if app.Measurement.Running else None
     
     
-def start_app(cfg_path: str, canoe_exe: str) -> bool:
+def start_app(cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> int:
   '''Start the CANoe application with the specified configuration file.
   Args:
     cfg_file: The path to the CANoe configuration file.
@@ -49,17 +49,20 @@ def start_app(cfg_path: str, canoe_exe: str) -> bool:
   Returns:
     bool: True if the application started successfully, False otherwise.'''
   
-  # Close process
-  if not kill_process(canoe_exe):
-    return False
+  # Process running
+  cnt = processes_running(canoe_exe)
+  if cnt:
+    if len(cnt) > 1:
+      kill_process(canoe_exe)
   
   # Open CANoe application with the specified configuration file
   try:
     canoe_inst = CANoe()
-    canoe_inst.open(canoe_cfg=cfg_path, visible=False, prompt_user=False, auto_stop=True)
+    canoe_inst.open(canoe_cfg=cfg_path, visible=wit_ui, prompt_user=False, auto_stop=True)
     canoe_inst.start_measurement()
-    return True
+    return 0
 
   except Exception as e:
-    return False
+    print(e)
+    return 8001
 
