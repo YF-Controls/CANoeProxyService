@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<tclibrary>
+  <function name="RC_10_Ignition_Status" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="ed53a2fd-4e1b-4fb7-beaa-9869a308d142">
+    <parameter name="Specify_Ign_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[1]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_11_Vehicle_state" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="3e43138f-ab6a-4959-b80b-2c36b3bb5a95">
+    <parameter name="Specify_Vehicle_Living_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[2]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_12_Key_State" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="df932d2d-0ec0-41bb-9c8d-56a8fd111b8f">
+    <parameter name="Specify_Key_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[3]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_6_Key_Less_Go" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="08890ccf-4fff-428e-8b90-9caa90171a13">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[4]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_0_Power_Windows_Close" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0baf3fe2-ad68-4b04-aa3b-adcc5c58fd54">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[5]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_1_Power_Windows_Open" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="8107aae2-4b9d-4b1f-8dc2-f44bd9fe3be2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[6]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_2_Short_Stroke_High" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="7c4a87f5-bb86-4c1a-b271-659c01b0424f">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[7]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_3_Short_Stroke_Low" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="7514182a-1d3f-4e45-b022-b91ff5e490df">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[8]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_FL_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="5eaf7aa0-faf5-4898-baac-4ae4987b7d03">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[9]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_FR_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b545d090-ff7c-480b-9d66-c82a3a6fde00">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[10]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_RL_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="1b6e1ac3-a2f0-4e08-b169-e148e6ffc876">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[11]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_RR_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="4d50ac40-67aa-43f8-85b6-c82827febb4f">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[12]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_7_UI_Handler_Key_Inside" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a1e73961-6c29-4980-9ab5-f7ecc64d1105">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[13]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_8_UI_Handler_No_Key" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b4a66824-ce86-49fb-8787-1b67f68fc69e">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[14]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_13_1_Child_Security_Lock_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9dc4d60c-f737-4f9c-bd61-d2b416d76160">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[15]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_13_0_Child_Security_Lock_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="804492b6-9f3d-4fb1-8bfa-7cbc3cf1c35d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[16]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_1_Code_Automatic_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="62493126-2814-4621-8694-1d145b5c3f0b">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[17]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_0_Code_Manual_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2679cc2d-60ab-4943-88d0-8c66e1695bf3">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[18]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_1_SecOC_With_Role" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9cf4ae6e-8846-4ca3-a90c-72b92aa3a6da">
+    <parameter name="Role" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[19]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_2_Start_Values" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="eea3807c-394d-4e49-aeb0-77cb2e43cb45">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[20]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_3_1_Enable_VSL_Living" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="3b880703-c0fa-4b27-bf3d-b0f22e9e21b4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[21]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_3_2_Disable_VSL_Living" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0e733b83-0031-415b-a65b-a0f97dea50ce">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[22]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_4_1_Denormalization_Of_Windows" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="587cc6a5-d2eb-42ea-b5ca-ef7a043f66b2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[23]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_4_2_Normalization_Of_Windows" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="fa43c794-a25b-464f-a0fd-054c6c96e551">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[24]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_1_Manual_Close_FL" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="6033ca22-15dd-4f4c-ba50-0ca38c85a9e2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[25]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_2_Manual_Close_FR" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="14a6e4f4-3b2e-406a-b3a2-74aabdcd3ce6">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[26]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_3_Manual_Close_RL" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="4b91ac28-fb09-4d7b-bae2-677b177607e4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[27]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_4_Manual_Close_RR" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="02820149-ac0d-4188-a578-712ac6e94b78">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[28]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_6_1_Start_Variant_Coding" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="53bd8c9d-2bd3-41d5-94b7-ec0316b8648c">
+    <parameter name="Specify_ECU_Name" type="string" raw_type="string" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[29]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_6_2_Finish_Variant_Coding" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="cd40164d-e635-491b-872d-7720bd8b815b">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[30]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_7_ALL_DEACT_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="534b9226-ac25-4dfc-bcc0-b922dd44d940">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[31]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_8_Remote_Start" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="eefb4b34-632a-40da-b6a2-43ae4500dae2">
+    <parameter name="Specify_Remote_Start_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[32]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_9_1_Coding_of_Temperatures" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="6fd3530e-f726-469d-b169-7be587e7f87e">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[33]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_9_2_Coding_Default_Temperatures" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="fb0d6a5c-68f0-43be-b75c-367a155f6e27">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[34]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_0_Windows_Close_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="f097ca14-f0fb-4693-adc2-22ca8cfff846">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[35]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_1_Windows_MAN_CLS_Recirculation_Request" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="e84ced27-cfff-4166-a812-e47aa14307c7">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[36]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_2_Windows_MAN_OPN_Recirculation_Request" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2ed7df22-667a-43d9-a27f-e4150c138bdb">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[37]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_3_Windows_AUT_CLS_Recirculation_Request" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d88da106-ff9f-4e96-b59c-12df3a284030">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[38]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_4_Windows_AUT_OPN_Recirculation_Request" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="647ff624-8ae5-459e-a8c4-745dad2d485d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[39]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_3_Windows_Disable_Recirculation_Request" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9c43fce0-fdba-4ad0-9680-1db2e0be3bf3">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[40]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_11_Enter_Extended_Session_All_ECUs" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="7095be39-9e8b-4b46-9ed4-65e56cbe801a">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[41]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_12_1_Select_Rear_Button" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="1ff14b53-bc07-4b94-bf08-9392799f1b90">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[42]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_12_2_Deselect_Rear_Button" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="330f839f-c2ed-4150-8fa2-4f59b8c964b4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[43]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_13_Set_AfterRun_Inactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="4564fc41-6670-428f-87ca-fab768bf19ad">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[44]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_1_Set_Under_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="f4589989-93b4-4e85-98a7-5db802bde37a">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[45]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_2_Set_Over_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b30d40b0-14c6-4a28-8219-c77680f72ca4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[46]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_3_Set_Normal_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="daace6b6-4cd7-4d83-ac11-992b1a2e03c7">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[47]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_1_WL_Front_Disabled_or_SS_Front_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="ae9024c2-1fe7-444d-9504-935f3f2f281e">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[48]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_2_WL_Front_Enabled_or_SS_Front_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="36ebd0ff-570b-46d0-8c57-033245289cc9">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[49]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_3_WL_Rear_Disabled_or_SS_Rear_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="53af52eb-3369-488e-bbd8-a44e64cfa7a1">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[50]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_4_WL_Rear_Enabled_or_SS_Rear_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a1b9162c-2edb-4499-a69b-dff2415b4db3">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[51]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_16_1_Emergency_Mode_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="73766515-23bb-4b96-bebe-2edd700de46b">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[52]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_16_2_Emergency_Mode_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="1fd08a7d-7c0a-42c6-a48d-da3c582c4d54">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[53]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_17_1_Activate_Key_Search" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2002c960-7004-4b82-8877-a8571c219dd9">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[54]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_17_2_Deactivate_Key_Search" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b749aff5-5ae5-426d-9e15-c07250ef677b">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[55]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_18_1_Precondition_for_Windows_Close" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="3059bec7-7af3-4e7c-be62-254a53a4a553">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[56]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_18_2_Precondition_for_Windows_Open" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="70c13fc2-8a44-4e62-8dc6-8d26fa16f73a">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[57]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_1_Drivers_Manual_Open_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d4f07223-a54c-4e3b-9343-87d0516cde7c">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[58]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_2_Drivers_Manual_Open_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="1f4eeee6-b8f1-4661-b5d3-0321c8cb8e93">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[59]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_1_Drivers_Manual_Close_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="dd609b2f-8146-4570-8516-83157985a798">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[60]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_2_Drivers_Manual_Close_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="94b9e284-e86b-4f9a-bce3-3ef7404346ec">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[61]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_21_Precondition_for_Ign_Start_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="34cfd5e9-d0c6-4bb6-857f-2f3faf8a0a5c">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[62]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_22_Set_Window_Position_for_Recirculation_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="8ece929c-3970-40fa-b1f7-0cf2f91ba71b">
+    <parameter name="Pos1" type="int64" raw_type="int" />
+    <parameter name="Pos2" type="int64" raw_type="int" />
+    <parameter name="Pos3" type="int64" raw_type="int" />
+    <parameter name="pos4" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[63]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_23_1_Change_Body_Style_Fault_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0b946691-cc97-4700-ac8f-1c154401eb6d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[64]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_23_2_Default_Body_Style_Fault_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\MMA_Window_Lifter.vtt" SourceFilePersistencyGuid="et72q1c7f5qa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="19dc18e8-670d-487a-bfb8-e9e48fe96ec5">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[65]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+</tclibrary>

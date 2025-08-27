@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="IL Control Node BODY1 VectorSimulationNode" Children="Controls">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7755" ControlName="StaticTextControl7755" Children="Controls">
+      <Property Name="Name">StaticTextControl7755</Property>
+      <Property Name="Size">231,17</Property>
+      <Property Name="Location">5,5</Property>
+      <Property Name="BackColor">255,255,255</Property>
+      <Property Name="TextAlign">TopLeft</Property>
+      <Property Name="BorderStyle">None</Property>
+      <Property Name="Text">IL Controls for node VectorSimulationNode:</Property>
+      <Property Name="ForeColor">0,0,0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl71" ControlName="PanelButtonControl71" Children="Controls">
+      <Property Name="Name">PanelButtonControl71</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,22</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl CyclicTiming BODY1 VectorSimulationNode.xvp</Property>
+      <Property Name="Text">Cyclic Timing</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl72" ControlName="PanelButtonControl72" Children="Controls">
+      <Property Name="Name">PanelButtonControl72</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,43</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl EventTiming BODY1 VectorSimulationNode.xvp</Property>
+      <Property Name="Text">Event Timing</Property>
+    </Object>
+    <Property Name="Panel">Panel</Property>
+    <Property Name="Size">241,69</Property>
+    <Property Name="BackColor">255,255,255</Property>
+  </Object>
+</Panel>

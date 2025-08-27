@@ -1,0 +1,1008 @@
+includes
+{
+  // Import required CAPL include files
+  //--- begin generated part --- Block start #GlobalBody_Includes#; do not delete this line and do not add application code in this code block!
+  /* #ChannelGlobalStart# |CAN1| #BusGlobalStart# |BODY1| */
+  /* #ChannelGlobalEnd# |CAN1| #BusGlobalEnd# |BODY1| */
+  //--- end generated part --- Block end #GlobalBody_Includes#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_Includes#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_Includes#; do not delete this line! Add application code below this line.
+}
+
+variables
+{
+  // Define global variables for this CAPL file
+
+  /*--- #GenHeader Begin# --- begin generated comment ---
+  | Generated on Tuesday, June 21, 2022, 17:40:32
+  | By ModelGenerator for Daimler 1.5.4.10, ModelGeneratorDaimlerDLL 1.5.4.84
+  | Package Daimler 4.1.0
+  | Target Bus: BODY1; Channel: CAN1; DB Cluster: BODY1;
+  | From Database: STAR_3_BODY1_CAN_2022_17b_AR43.arxml
+  | CANoe Version 15.5.23.0
+    --- #GenHeader End  # --- end generated comment --- */
+
+  char gECU[256] = "SecOCObserver_BODY1";
+  //--- begin generated part --- Block start #Hdr_GlobalVariables#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  // For SecOC Observer:
+  long gSecOCObsCAN1_TraceWindow; 
+  int gSecOCObsCAN1_IsActive = 1;
+  dword gSecOCObsCAN1_LogFile;
+  char gSecOCObsCAN1_TimeBuffer[64];
+  float gSecOCObsCAN1_ErrorFramrate;
+  int gSecOCObsCAN1_ErrorFrametotal;
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Hdr_GlobalVariables#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #GlobalBody_GlobalVariables#; do not delete this line and do not add application code in this code block!
+  /* #ChannelGlobalStart# |CAN1| #BusGlobalStart# |BODY1| */
+  /* #ChannelGlobalEnd# |CAN1| #BusGlobalEnd# |BODY1| */
+  //--- end generated part --- Block end #GlobalBody_GlobalVariables#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_GlobalVariables#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  char gCAN1BusName[256] = "BODY1";
+  int gCAN1Channel = 1; //// The channel the bus is attached to
+  int gCAN1TXEnable = 1; //// enable/disable TX of application messages
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_GlobalVariables#; do not delete this line! Add application code below this line.
+}
+
+on preStart
+{
+  // Initialize CAPL includes and node's modules/DLLs
+  //--- begin generated part --- Block start #Hdr_OnInit#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Hdr_OnInit#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #GlobalBody_OnInit#; do not delete this line and do not add application code in this code block!
+  /* #ChannelGlobalStart# |CAN1| #BusGlobalStart# |BODY1| */
+  /* #ChannelGlobalEnd# |CAN1| #BusGlobalEnd# |BODY1| */
+  //--- end generated part --- Block end #GlobalBody_OnInit#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_OnInit#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_OnInit#; do not delete this line! Add application code below this line.
+}
+
+on start
+{
+  // Start CAPL includes and node's modules/DLLs
+  //--- begin generated part --- Block start #Hdr_OnStart#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Hdr_OnStart#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #GlobalBody_OnStart#; do not delete this line and do not add application code in this code block!
+  /* #ChannelGlobalStart# |CAN1| #BusGlobalStart# |BODY1| */
+  /* #ChannelGlobalEnd# |CAN1| #BusGlobalEnd# |BODY1| */
+  //--- end generated part --- Block end #GlobalBody_OnStart#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_OnStart#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  gSecOCObsCAN1_LogFile = openFileWrite("ObserverLogs\\SecOC_Validation_Trace_BODY1.ASC", 0); // clears file contents
+  fileClose(gSecOCObsCAN1_LogFile);
+  gSecOCObsCAN1_TraceWindow = writeCreate("SecOC Validation BODY1");
+  writeConfigure(gSecOCObsCAN1_TraceWindow, 100, 1, "ObserverLogs\\SecOC_Validation_Trace_BODY1.ASC");
+  if (@sysvar::IL_CAN1::SecOCObserver::enable > 0)
+  {
+    gSecOCObsCAN1_IsActive = 1;
+    SecOCObsCAN1_WriteMsgToLog(timeNowNS(), "ON");
+  }
+  else
+  {
+    gSecOCObsCAN1_IsActive = 0;
+    SecOCObsCAN1_WriteMsgToLog(timeNowNS(), "OFF");
+  }
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_OnStart#; do not delete this line! Add application code below this line.
+}
+
+on preStop
+{
+  // Prepare stopping
+  //--- begin generated part --- Block start #Hdr_OnStopping#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Hdr_OnStopping#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_OnStopping#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_OnStopping#; do not delete this line! Add application code below this line.
+}
+
+on stopMeasurement
+{
+  // Stop actions
+  //--- begin generated part --- Block start #Hdr_OnStop#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Hdr_OnStop#; do not delete this line! Add application code below this line.
+  //--- begin generated part --- Block start #Body_OnStop#; do not delete this line and do not add application code in this code block!
+  /* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+  writeConfigure(gSecOCObsCAN1_TraceWindow, 100, 0, ""); // closes log file for possible clearing file at next measurement start
+  /* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+  //--- end generated part --- Block end #Body_OnStop#; do not delete this line! Add application code below this line.
+}
+
+//--- begin generated part --- Block start <#Helper_Functions#> do not delete this line and do not add application code in this code block!
+/* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+void SecOCObsCAN1_WriteMsgToLog(double timeStampNS, char msg[])
+{
+  getLocalTimeString(gSecOCObsCAN1_TimeBuffer);
+  //write("%s   %fs   SecOC Observer: %s for network BODY1 ", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, msg);
+  writeLineEx(gSecOCObsCAN1_TraceWindow, -3, "%s   %fs   SecOC Observer: %s for network BODY1 ", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, msg);
+}
+
+void SecOCObsCAN1_WriteToLog(double timeStampNS, char fullItemName[], char sigGroupName[], PDU * aPDU)
+{
+  getLocalTimeString(gSecOCObsCAN1_TimeBuffer);
+  #if MEASUREMENT_SETUP
+    gSecOCObsCAN1_ErrorFramrate = sysGetVariableFloat(sysvar::_Statistics::CAN1::ErrorFrameRate);
+    gSecOCObsCAN1_ErrorFrametotal = sysGetVariableInt(sysvar::_Statistics::CAN1::ErrorFrames);
+    //write("%s   %fs   Secured PDU: %s = %lu -  Error Frames/s: %g  - Error Frames Total: %d", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, fullItemName, val, gSecOCObsCAN1_ErrorFramrate, gSecOCObsCAN1_ErrorFrametotal);
+    writeLineEx(gSecOCObsCAN1_TraceWindow, -3, "%s   %fs   Secured PDU: %s - Validation Flag: 0x%X -  Error Frames/s: %g  - Error Frames Total: %d", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, fullItemName, aPDU.ValidationFlags, gSecOCObsCAN1_ErrorFramrate, gSecOCObsCAN1_ErrorFrametotal);
+  #else
+    //write("%s   %fs   Secured PDU: %s = %lu ", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, fullItemName, val);
+    writeLineEx(gSecOCObsCAN1_TraceWindow, -3, "%s   %fs   Secured PDU: %s - Validation Flag: 0x%X ", gSecOCObsCAN1_TimeBuffer, timeStampNS / 1e9, fullItemName, aPDU.ValidationFlags);
+  #endif
+}
+
+/* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+//--- end generated part --- Block end <#Helper_Functions#> do not delete this line! Add application code below this line.
+
+//--- begin generated part --- Block start <#SysVar_Handler#> do not delete this line and do not add application code in this code block!
+/* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+on sysvar_update sysvar::IL_CAN1::SecOCObserver::enable
+{
+  if (@this > 0)
+  {
+    gSecOCObsCAN1_IsActive = 1;
+    SecOCObsCAN1_WriteMsgToLog(timeNowNS(), "ON");
+  }
+  else
+  {
+    gSecOCObsCAN1_IsActive = 0;
+    SecOCObsCAN1_WriteMsgToLog(timeNowNS(), "OFF");
+  }
+}
+
+/* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+//--- end generated part --- Block end <#SysVar_Handler#> do not delete this line! Add application code below this line.
+
+//--- begin generated part --- Block start <#MsgUpdateFcns#> do not delete this line and do not add application code in this code block!
+/* #ChannelStart# |CAN1| #BusStart# |BODY1| */
+on PDU BODY1::AD_FL::AD_FL_BODY1_Container_ST3_AD_FL_State_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::AD_FL::AD_FL_BODY1_Container_ST3_AD_FL_State_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::AD_FR::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::AD_FR::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::AD_RL::AD_RL_BODY1_Container_ST3_AD_RL_State_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::AD_RL::AD_RL_BODY1_Container_ST3_AD_RL_State_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::AD_RR::AD_RR_BODY1_Container_ST3_AD_RR_State_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::AD_RR::AD_RR_BODY1_Container_ST3_AD_RR_State_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_CC_Rq_HVAC_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_CC_Rq_HVAC_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_CC_Rq_Mstr_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_CC_Rq_Mstr_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_ELC_Lmp_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_ELC_Lmp_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_ELC_TurnInd_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_ELC_TurnInd_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_GDO_UI_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_GDO_UI_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_FL_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_FL_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_FR_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_FR_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_RL_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_RL_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_RR_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_PW_UI_RR_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_SensorAcquisition_F_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_SensorAcquisition_F_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_Pnl_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_Pnl_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_RB_R_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_RB_R_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_RB_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_Container_ST3_TSSR_UI_RB_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Bckl_Sw_Fx_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Bckl_Sw_Fx_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_BCS_Brk_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_BCS_Brk_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_BSM_Master_Warn_Rq_Pr5_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_BSM_Master_Warn_Rq_Pr5_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_RemFunc_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_RemFunc_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_State_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_State_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_State2_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_CLkS_State2_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DateTm_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DateTm_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DI_OdoSpeedometer_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DI_OdoSpeedometer_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DI_Temperature_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_DI_Temperature_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_EPKB_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_EPKB_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Ign_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Ign_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Impact3_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Impact3_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_KG_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_KG_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_KG_Stat2_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_KG_Stat2_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_ORC_Disp_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_ORC_Disp_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PLG_DL_Rq_CI_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PLG_DL_Rq_CI_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PN14_Master_Stat1_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PN14_Master_Stat1_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Prk_MstrRem_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Prk_MstrRem_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Prk_Rem_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_Prk_Rem_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PT4_PTCoor_DrvPosn_Gear_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PT4_PTCoor_DrvPosn_Gear_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PT4_PTCoor4_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_PT4_PTCoor4_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_RAS_Park_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_RAS_Park_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_DAS_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_DAS_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_ESP_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_ESP_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_ORC_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_ORC_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_PARK_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SADR_Trgr_PARK_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SVS_ExtLamp_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_SVS_ExtLamp_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VehSpd_12_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VehSpd_12_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VTA_Master_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VTA_Master_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VTA_PDD_Remote_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_F::BC_F_BODY1_GW_Container_ST3_VTA_PDD_Remote_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_R::BC_R_BODY1_Container1_ST3_Bckl_Sw_Rx_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_R::BC_R_BODY1_Container1_ST3_Bckl_Sw_Rx_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_R::BC_R_BODY1_Container1_ST3_Prk_CPF_R_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_R::BC_R_BODY1_Container1_ST3_Prk_CPF_R_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_R::BC_R_BODY1_Container1_ST3_SADR_BC_R_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_R::BC_R_BODY1_Container1_ST3_SADR_BC_R_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::BC_R::BC_R_BODY1_Container2_ST3_TrnkLk_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::BC_R::BC_R_BODY1_Container2_ST3_TrnkLk_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::CRCM::CRCM_BODY1_Container_ST3_CC_Rq_CT_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::CRCM::CRCM_BODY1_Container_ST3_CC_Rq_CT_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FL::DM_FL_BODY1_Container1_ST3_ExtMirr_FL_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FL::DM_FL_BODY1_Container1_ST3_ExtMirr_FL_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FL::DM_FL_BODY1_Container1_ST3_PW_Adj_Rq_Dr_FL_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FL::DM_FL_BODY1_Container1_ST3_PW_Adj_Rq_Dr_FL_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FL::DM_FL_BODY1_Container2_ST3_ExtMirr_FL_Stat2_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FL::DM_FL_BODY1_Container2_ST3_ExtMirr_FL_Stat2_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FR::DM_FR_BODY1_Container1_ST3_ExtMirr_FR_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FR::DM_FR_BODY1_Container1_ST3_ExtMirr_FR_Stat_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FR::DM_FR_BODY1_Container1_ST3_PW_Adj_Rq_Dr_FR_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FR::DM_FR_BODY1_Container1_ST3_PW_Adj_Rq_Dr_FR_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_FR::DM_FR_BODY1_Container2_ST3_ExtMirr_FR_Stat2_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_FR::DM_FR_BODY1_Container2_ST3_ExtMirr_FR_Stat2_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_RL::DM_RL_BODY1_Container1_ST3_PW_Adj_Rq_Dr_RL_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_RL::DM_RL_BODY1_Container1_ST3_PW_Adj_Rq_Dr_RL_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::DM_RR::DM_RR_BODY1_Container1_ST3_PW_Adj_Rq_Dr_RR_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::DM_RR::DM_RR_BODY1_Container1_ST3_PW_Adj_Rq_Dr_RR_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::EIS_BASE::EIS_BODY1_Container_ST3_CLkS_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::EIS_BASE::EIS_BODY1_Container_ST3_CLkS_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::EIS_BASE::EIS_BODY1_Container_ST3_Impact2_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::EIS_BASE::EIS_BODY1_Container_ST3_Impact2_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::MPM::MPM_BODY1_Container_ST3_SPV_Rq_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::MPM::MPM_BODY1_Container_ST3_SPV_Rq_ST3", "", this);
+    }
+  }
+}
+
+on PDU BODY1::TM::TM_BODY1_Container_ST3_Trailer_Stat_ST3
+{
+  // SecOC message received
+  if (gSecOCObsCAN1_IsActive > 0)
+  {
+    if (this.ValidationFlags != 0x3)
+    {
+      //write ("Validation Flag 0x%X not valid: ShortHeaderID 0x%06X, LongHeaderID 0x%08X, PDUName '%s'", this.ValidationFlags, this.ShortHeaderID, this.LongHeaderID, this.Name);
+      SecOCObsCAN1_WriteToLog(timeNowNS(), "BODY1::TM::TM_BODY1_Container_ST3_Trailer_Stat_ST3", "", this);
+    }
+  }
+}
+
+/* #ChannelEnd# |CAN1| #BusEnd# |BODY1| */
+//--- end generated part --- Block end <#MsgUpdateFcns#> do not delete this line! Add application code below this line.
+

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2023-10-18 15:05:07" timestamp=" 873.667740" verdicts="2_basic" measurementid="42e6f56c-7f70-4ff5-a047-3b99b7e2cfc9">
+  <testcase starttime="2023-10-18 15:05:07" timestamp=" 873.667740">
+    <teststep timestamp=" 873.667740" level="0" type="user" ident="" result="na">Authentication for all targets</teststep>
+    <teststep timestamp=" 873.667740" level="0" type="user" ident="" result="pass">Available targets: DMRR_MMA,DMRL_MMA,DMFR_MMA,DMFL_MMA</teststep>
+    <teststep timestamp=" 873.667740" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMRR_MMA</teststep>
+    <teststep timestamp=" 875.420740" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <teststep timestamp=" 875.420740" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMRL_MMA</teststep>
+    <teststep timestamp=" 877.113017" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <teststep timestamp=" 877.113017" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
+    <teststep timestamp=" 878.890065" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <teststep timestamp=" 878.890065" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFL_MMA</teststep>
+    <teststep timestamp=" 880.741740" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <verdict time="2023-10-18 15:05:07" timestamp=" 873.667740" endtime="2023-10-18 15:05:14" endtimestamp=" 880.741740" result="pass" />
+    <title>LocalAuthentication</title>
+  </testcase>
+  <verdict time="2023-10-18 15:05:07" timestamp=" 873.667740" endtime="2023-10-18 15:05:14" endtimestamp=" 880.741740" result="pass" />
+  <title>DAG_Diagnostics_Authentication</title>
+  <testlogfiles>
+    <testlogfile file="..\..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2023-10-18_14-50-34_155_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>JGARAPA</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.CAN.LIN /pro 16.6.2 (SP6)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\CANoe Configuration\MMA\BODY1.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database BODY1 on BODY1</name>
+      <description>C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\ARXML\BODY1_STAR_3_2023_29a\STAR_35_BODY1_CAN_2023_29a_AR44.arxml (2023-07-21 06:41:02)</description>
+    </xinfo>
+    <xinfo>
+      <name>Database DOOR_STAR_35_2022_29b0_2022_29b on LIN</name>
+      <description>C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\ARXML\LIN\DOOR_STAR_35_2022_29b0_2022_29b.ldf (2022-08-05 16:24:14)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMFL_MMA</name>
+      <description>R08, en-US, C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\CDD\06.08.06\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMFR_MMA</name>
+      <description>R08, en-US, C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\CDD\06.08.06\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMRL_MMA</name>
+      <description>R08, en-US, C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\CDD\06.08.06\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMRR_MMA</name>
+      <description>R08, en-US, C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\Databases\CDD\06.08.06\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>DAG_Authentication_TestModule</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\CANoe Configuration\MMA\Security\Authentication\DAG_Authentication_TestModule.xml</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2019-01-23, 09:54:56</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Library (CAPL)</name>
+      <description>C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\CANoe Configuration\MMA\Security\Authentication\LocalAuthentication_TestModule.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>CGSCLXR82873630</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrPDUIL</name>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.78 (Jun 24 2022 15:38:22) , c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrPDUIL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrNM33</name>
+      <description>AsrNM (Version 3.3.77 Windows 32-Bit), c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrNM33.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module SecMgrCANoeClient</name>
+      <description>Security Manager CANoe Node Layer Client (Version 2.12.15.0), C:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_11.0.81\Windows-x86\SecMgrCANoeClient.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module DAG_ZenzefiNodeLayer</name>
+      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.12.15.0), C:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
+    </xinfo>
+  </testsetup>
+  <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1640</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>67558</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>23.10.10</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>23.10.18</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+  <hardware name="LIN Channel Interfaces" category="CategoryLINIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1640</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>67558</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>23.10.10</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>23.10.18</description>
+      </xinfo>
+      <xinfo key="firmwareversion">
+        <name>LIN Firmware version</name>
+        <description>1.81</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+</testmodule>
+<!--footprint="e622fc8111802697e04d91d32e253f24" version="1"-->

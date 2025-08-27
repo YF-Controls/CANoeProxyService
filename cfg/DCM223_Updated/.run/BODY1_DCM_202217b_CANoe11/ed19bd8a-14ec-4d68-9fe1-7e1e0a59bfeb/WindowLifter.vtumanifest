@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <FileFormatVersion>1</FileFormatVersion>
+  <TestUnitName>WindowLifter</TestUnitName>
+  <TestUnitUri>vtso://vjdmo084eimg/i0rssb2g3sk2</TestUnitUri>
+  <TsoProject>D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\vTESTstudio_Project.vtsoproj</TsoProject>
+  <TsoProjectRelative>.\..\..\vTESTstudio_Project.vtsoproj</TsoProjectRelative>
+  <ProjectGuid>vjdmo084eimg</ProjectGuid>
+  <EditableSources>false</EditableSources>
+  <ContainsVsDll>false</ContainsVsDll>
+  <GlobalSysVarTypeLibBinary></GlobalSysVarTypeLibBinary>
+  <TestSysVarTypeLibBinary></TestSysVarTypeLibBinary>
+  <COTypeLibBinary></COTypeLibBinary>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <CaplArraySize>2048</CaplArraySize>
+  <CaplDiagArraySize>8192</CaplDiagArraySize>
+  <BuildInfo>
+    <CaplCompiler>14.0.83.0</CaplCompiler>
+    <MinRequiredCANoeVersion>8.2.64</MinRequiredCANoeVersion>
+    <TsoVersion>5.0.192.0</TsoVersion>
+    <NetApiVersion>14.0.83.0</NetApiVersion>
+  </BuildInfo>
+  <NetTypeLibGenerator>
+    <NamespaceGeneration>NoNamespace</NamespaceGeneration>
+    <NetTypeLibs />
+  </NetTypeLibGenerator>
+  <VariantProperties />
+  <Sources>
+    <CaplFiles />
+    <CaplIncludeFiles />
+    <NetFiles />
+    <NetBinaries />
+    <VttFiles>
+      <VttFile>
+        <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="PostCrash.vtt" /&gt;</Source>
+        <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="PostCrash.vxtx" /&gt;</Binary>
+        <CaplFile>
+          <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="PostCrash.vxtx.can" /&gt;</Source>
+          <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="PostCrash.vxtx.cbf" /&gt;</Binary>
+        </CaplFile>
+        <ExportTable>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\PostCrash.vtt.export.xml" /&gt;</ExportTable>
+      </VttFile>
+      <VttFile>
+        <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Norm_and_Denorm.vtt" /&gt;</Source>
+        <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Norm_and_Denorm.vxtx" /&gt;</Binary>
+        <CaplFile>
+          <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Norm_and_Denorm.vxtx.can" /&gt;</Source>
+          <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Norm_and_Denorm.vxtx.cbf" /&gt;</Binary>
+        </CaplFile>
+        <ExportTable>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\Norm_and_Denorm.vtt.export.xml" /&gt;</ExportTable>
+      </VttFile>
+    </VttFiles>
+    <ParameterFiles />
+    <WaveformFiles />
+    <WaveformBinaries />
+    <CaplDlls />
+  </Sources>
+  <TestSysVar>
+    <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</Source>
+  </TestSysVar>
+  <ExternalReferences />
+  <SutEnvironment>
+    <Networks>
+      <Network>
+        <Name>Network</Name>
+        <ChannelType>CAN</ChannelType>
+        <Databases>
+          <Database>
+            <DatabaseFile>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\..\ARXML\BODY1_STAR_3_2023_17a\STAR_3_BODY1_CAN_2023_17a_AR43.arxml" /&gt;</DatabaseFile>
+            <DatabaseName>BODY1</DatabaseName>
+            <OpenInfoString>*17*AFDXPDUMode*0*ASRNamesSuffixMode*0*ASRNormalizeTimings*0*ASRPDULayerMode*0*ASRShortNameUsage*0*ASRTextTableNamingMode*0*CalculateUpdateBit*0*DatabaseFile*D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\ARXML\BODY1_STAR_3_2023_17a\STAR_3_BODY1_CAN_2023_17a_AR43.arxml*DoNormalization*1*EncodingForNETStringConversions*0*FilterUnrecognizedNodes*0*FlexRayABMode*0*FlexRayPostfixOption*0*IgnoredNodes**IsConvertedLinDbc*0*IsLDFEditorMode*0*LanguageCode**LinChannelPostfix*1*NetworkName*BODY1*NetworkType*0</OpenInfoString>
+          </Database>
+        </Databases>
+      </Network>
+      <Network>
+        <Name>LIN</Name>
+        <ChannelType>LIN</ChannelType>
+        <Databases>
+          <Database>
+            <DatabaseFile>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\..\ARXML\DOOR_STAR_3_2022_42a0\DOOR_STAR_3_2022_42a0_2022_42a.ldf" /&gt;</DatabaseFile>
+            <DatabaseName>DOOR_STAR_3_2022_42a0_2022_42a</DatabaseName>
+            <OpenInfoString>*17*AFDXPDUMode*0*ASRNamesSuffixMode*0*ASRNormalizeTimings*0*ASRPDULayerMode*0*ASRShortNameUsage*0*ASRTextTableNamingMode*0*CalculateUpdateBit*0*DatabaseFile*D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\ARXML\DOOR_STAR_3_2022_42a0\DOOR_STAR_3_2022_42a0_2022_42a.ldf*DoNormalization*1*EncodingForNETStringConversions*0*FilterUnrecognizedNodes*0*FlexRayABMode*0*FlexRayPostfixOption*0*IgnoredNodes**IsConvertedLinDbc*0*IsLDFEditorMode*0*LanguageCode**LinChannelPostfix*1*NetworkName**NetworkType*0</OpenInfoString>
+          </Database>
+        </Databases>
+      </Network>
+    </Networks>
+    <UseAllNetworks>false</UseAllNetworks>
+  </SutEnvironment>
+  <TUProperties>
+    <Caption></Caption>
+    <Description></Description>
+    <Version></Version>
+    <PreBuildEvent></PreBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
+    <TestDesigners>
+      <Columns />
+      <TestDesignerEntries />
+    </TestDesigners>
+    <TUInfos />
+  </TUProperties>
+  <NodeLayerDlls>
+    <NodeLayerDll>
+      <Path>CANstress_NL.dll</Path>
+      <TsoPath base="app">CANstress_NL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>FRStressNL.dll</Path>
+      <TsoPath base="app">FRStressNL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>J1939TestServiceLibraryNL.dll</Path>
+      <TsoPath base="app">J1939TestServiceLibraryNL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>C2X_IL.dll</Path>
+      <TsoPath base="app">C2X_IL.dll</TsoPath>
+    </NodeLayerDll>
+  </NodeLayerDlls>
+  <UserFiles />
+  <TetEntries>
+    <TetEntry>
+      <Type>vtt</Type>
+      <Identifier>PostCrash.vtt</Identifier>
+    </TetEntry>
+    <TetEntry>
+      <Type>vtt</Type>
+      <Identifier>Norm_and_Denorm.vtt</Identifier>
+    </TetEntry>
+  </TetEntries>
+</Manifest>

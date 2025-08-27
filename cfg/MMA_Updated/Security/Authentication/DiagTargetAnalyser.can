@@ -1,0 +1,23 @@
+/*@!Encoding:1252*/
+
+// Security Feature V2.10.6.0
+
+includes
+{
+  
+  #include "LocalAuth_Utilities.cin"
+}
+
+
+
+void MainTest ()
+{
+  tc_ReadDiagQualifier();
+}
+
+testcase tc_ReadDiagQualifier()
+{
+  sysSetVariableString( "LocalAuthentication","AuthenticatedTargets", "-");
+  ReadDiagQualifier();
+}
+

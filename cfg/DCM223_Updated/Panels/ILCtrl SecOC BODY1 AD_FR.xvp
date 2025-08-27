@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="ILCtrl SecOC BODY1 AD_FR" Children="Controls">
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl250" ControlName="GroupBoxControl250" Children="Controls">
+      <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl115" ControlName="RadioButtonControl115" Children="Controls">
+        <Property Name="Name">RadioButtonControl115</Property>
+        <Property Name="Size">286,17</Property>
+        <Property Name="Location">5,17</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">AD_FR_BODY1_Container_ST3_AD_FR_State_ST3</Property>
+        <Property Name="SwitchValue">1</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+        <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR;;;PageSwitch_SecOC;1;;;-1</Property>
+        <Property Name="ReadOnlyControl">False</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl250</Property>
+      <Property Name="Size">296,39</Property>
+      <Property Name="Location">5,5</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+      <Property Name="BackColor">255,255,255</Property>
+      <Property Name="Text">TX PDUs of AD_FR</Property>
+      <Property Name="ForeColor">0,0,0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl259" ControlName="GroupBoxControl259" Children="Controls">
+      <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl334" ControlName="StaticTextControl334" Children="Controls">
+        <Property Name="Name">StaticTextControl334</Property>
+        <Property Name="Size">116,17</Property>
+        <Property Name="Location">5,36</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="TextAlign">TopLeft</Property>
+        <Property Name="BorderStyle">None</Property>
+        <Property Name="Text">TX PDUs of AD_FR:</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabControl8" ControlName="VectorTabControl8" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage138" ControlName="VectorTabPage138" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl261" ControlName="GroupBoxControl261" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl335" ControlName="StaticTextControl335" Children="Controls">
+              <Property Name="Name">StaticTextControl335</Property>
+              <Property Name="Size">377,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Signal: AD_FR_BODY1_Container_ST3_AD_FR_State_ST3_Freshness</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl51" ControlName="ButtonControl51" Children="Controls">
+              <Property Name="Name">ButtonControl51</Property>
+              <Property Name="Size">100,21</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="Text">Disturb</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Disturb;1;;;-1</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl52" ControlName="ButtonControl52" Children="Controls">
+              <Property Name="Name">ButtonControl52</Property>
+              <Property Name="Size">100,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="Text">Normal Operation</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;NormalOperation;1;;;-1</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl262" ControlName="GroupBoxControl262" Children="Controls">
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl116" ControlName="RadioButtonControl116" Children="Controls">
+                <Property Name="Name">RadioButtonControl116</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,17</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">Value</Property>
+                <Property Name="SwitchValue">0</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl117" ControlName="RadioButtonControl117" Children="Controls">
+                <Property Name="Name">RadioButtonControl117</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,34</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">Freeze</Property>
+                <Property Name="SwitchValue">1</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl118" ControlName="RadioButtonControl118" Children="Controls">
+                <Property Name="Name">RadioButtonControl118</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,51</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">XOR</Property>
+                <Property Name="SwitchValue">2</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl159" ControlName="TextBoxControl159" Children="Controls">
+                <Property Name="Name">TextBoxControl159</Property>
+                <Property Name="Size">80,21</Property>
+                <Property Name="Location">75,17</Property>
+                <Property Name="TextForeColor">0,0,0</Property>
+                <Property Name="BoxForeColor">0,0,0</Property>
+                <Property Name="DescriptionText">Count:</Property>
+                <Property Name="ValueDecimalPlaces">0</Property>
+                <Property Name="BoxTextAlign">Left</Property>
+                <Property Name="BoxBorderStyle">FixedSingle</Property>
+                <Property Name="ValueDisplay">Decimal</Property>
+                <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+                <Property Name="DisplayLabel">Left</Property>
+                <Property Name="TextBackColor">255,255,255</Property>
+                <Property Name="BoxBackColor">255,255,255</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Count;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl162" ControlName="CheckBoxControl162" Children="Controls">
+                <Property Name="Name">CheckBoxControl162</Property>
+                <Property Name="Size">20,17</Property>
+                <Property Name="Location">165,19</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text"></Property>
+                <Property Name="CheckValue">1</Property>
+                <Property Name="UncheckValue">0</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;UseDisturbanceCount;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl160" ControlName="TextBoxControl160" Children="Controls">
+                <Property Name="Name">TextBoxControl160</Property>
+                <Property Name="Size">80,21</Property>
+                <Property Name="Location">75,50</Property>
+                <Property Name="TextForeColor">0,0,0</Property>
+                <Property Name="BoxForeColor">0,0,0</Property>
+                <Property Name="DescriptionText">Value:</Property>
+                <Property Name="ValueDecimalPlaces">0</Property>
+                <Property Name="BoxTextAlign">Left</Property>
+                <Property Name="BoxBorderStyle">FixedSingle</Property>
+                <Property Name="ValueDisplay">Decimal</Property>
+                <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+                <Property Name="DisplayLabel">Left</Property>
+                <Property Name="TextBackColor">255,255,255</Property>
+                <Property Name="BoxBackColor">255,255,255</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCFreshness;;;Value;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Property Name="Name">GroupBoxControl262</Property>
+              <Property Name="Size">190,76</Property>
+              <Property Name="Location">5,55</Property>
+              <Property Name="UseWindowsStyle">False</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Disturbance Settings</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl261</Property>
+            <Property Name="Size">387,136</Property>
+            <Property Name="Location">5,5</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Security Freshness</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl263" ControlName="GroupBoxControl263" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl336" ControlName="StaticTextControl336" Children="Controls">
+              <Property Name="Name">StaticTextControl336</Property>
+              <Property Name="Size">367,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Signal: AD_FR_BODY1_Container_ST3_AD_FR_State_ST3_AuthInfo</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl53" ControlName="ButtonControl53" Children="Controls">
+              <Property Name="Name">ButtonControl53</Property>
+              <Property Name="Size">100,21</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="Text">Disturb</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Disturb;1;;;-1</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl54" ControlName="ButtonControl54" Children="Controls">
+              <Property Name="Name">ButtonControl54</Property>
+              <Property Name="Size">100,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="Text">Normal Operation</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;NormalOperation;1;;;-1</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl264" ControlName="GroupBoxControl264" Children="Controls">
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl119" ControlName="RadioButtonControl119" Children="Controls">
+                <Property Name="Name">RadioButtonControl119</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,17</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">Value</Property>
+                <Property Name="SwitchValue">0</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl120" ControlName="RadioButtonControl120" Children="Controls">
+                <Property Name="Name">RadioButtonControl120</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,34</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">Freeze</Property>
+                <Property Name="SwitchValue">1</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl121" ControlName="RadioButtonControl121" Children="Controls">
+                <Property Name="Name">RadioButtonControl121</Property>
+                <Property Name="Size">70,17</Property>
+                <Property Name="Location">5,51</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text">XOR</Property>
+                <Property Name="SwitchValue">2</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Mode;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl161" ControlName="TextBoxControl161" Children="Controls">
+                <Property Name="Name">TextBoxControl161</Property>
+                <Property Name="Size">80,21</Property>
+                <Property Name="Location">75,17</Property>
+                <Property Name="TextForeColor">0,0,0</Property>
+                <Property Name="BoxForeColor">0,0,0</Property>
+                <Property Name="DescriptionText">Count:</Property>
+                <Property Name="ValueDecimalPlaces">0</Property>
+                <Property Name="BoxTextAlign">Left</Property>
+                <Property Name="BoxBorderStyle">FixedSingle</Property>
+                <Property Name="ValueDisplay">Decimal</Property>
+                <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+                <Property Name="DisplayLabel">Left</Property>
+                <Property Name="TextBackColor">255,255,255</Property>
+                <Property Name="BoxBackColor">255,255,255</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Count;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl163" ControlName="CheckBoxControl163" Children="Controls">
+                <Property Name="Name">CheckBoxControl163</Property>
+                <Property Name="Size">20,17</Property>
+                <Property Name="Location">165,19</Property>
+                <Property Name="BackColor">255,255,255</Property>
+                <Property Name="Text"></Property>
+                <Property Name="CheckValue">1</Property>
+                <Property Name="UncheckValue">0</Property>
+                <Property Name="ForeColor">0,0,0</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;UseDisturbanceCount;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl162" ControlName="TextBoxControl162" Children="Controls">
+                <Property Name="Name">TextBoxControl162</Property>
+                <Property Name="Size">80,21</Property>
+                <Property Name="Location">75,50</Property>
+                <Property Name="TextForeColor">0,0,0</Property>
+                <Property Name="BoxForeColor">0,0,0</Property>
+                <Property Name="DescriptionText">Value:</Property>
+                <Property Name="ValueDecimalPlaces">0</Property>
+                <Property Name="BoxTextAlign">Left</Property>
+                <Property Name="BoxBorderStyle">FixedSingle</Property>
+                <Property Name="ValueDisplay">Decimal</Property>
+                <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+                <Property Name="DisplayLabel">Left</Property>
+                <Property Name="TextBackColor">255,255,255</Property>
+                <Property Name="BoxBackColor">255,255,255</Property>
+                <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR::PDUS::AD_FR_BODY1_Container_ST3_AD_FR_State_ST3::SecOCAuthInfo;;;Value;1;;;-1</Property>
+                <Property Name="ReadOnlyControl">False</Property>
+              </Object>
+              <Property Name="Name">GroupBoxControl264</Property>
+              <Property Name="Size">190,76</Property>
+              <Property Name="Location">5,55</Property>
+              <Property Name="UseWindowsStyle">False</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Disturbance Settings</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl263</Property>
+            <Property Name="Size">377,136</Property>
+            <Property Name="Location">5,146</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Security AuthInfo</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">VectorTabPage138</Property>
+          <Property Name="Size">397,287</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="Text">AD_FR_BODY1_Container_ST3_AD_FR_State_ST3</Property>
+        </Object>
+        <Property Name="Name">VectorTabControl8</Property>
+        <Property Name="Size">407,309</Property>
+        <Property Name="Location">5,53</Property>
+        <Property Name="Alignment">Top</Property>
+        <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_AD_FR;;;PageSwitch_SecOC;1;;;-1</Property>
+        <Property Name="IsVisibleByLoad">True</Property>
+        <Property Name="SendByTabChanging">True</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl259</Property>
+      <Property Name="Size">417,367</Property>
+      <Property Name="Location">306,5</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+      <Property Name="BackColor">255,255,255</Property>
+      <Property Name="Text">IL Controls for Secured On-Board Communication</Property>
+      <Property Name="ForeColor">0,0,0</Property>
+    </Object>
+    <Property Name="Panel">Panel</Property>
+    <Property Name="Size">728,377</Property>
+    <Property Name="BackColor">255,255,255</Property>
+  </Object>
+</Panel>

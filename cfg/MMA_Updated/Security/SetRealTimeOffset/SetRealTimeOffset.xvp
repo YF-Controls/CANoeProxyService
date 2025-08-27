@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Set Local Real Time Offset">
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="ButtonStartSetRealTimeOffset" Children="Controls" ControlName="Button">
+      <Property Name="Name">ButtonStartSetRealTimeOffset</Property>
+      <Property Name="Size">136, 23</Property>
+      <Property Name="Location">374, 102</Property>
+      <Property Name="Font">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+      <Property Name="Text">Set Real Time Offset</Property>
+      <Property Name="SymbolConfiguration">5;16;RealTimeOffsetPanel;;;Button_StartSetRealTimeOffset;1;;;-1;;;</Property>
+      <Property Name="TabIndex">13</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControlLEDSequenceResult" ControlName="Switch/Indicator">
+      <Property Name="Name">SwitchControlLEDSequenceResult</Property>
+      <Property Name="Size">20, 20</Property>
+      <Property Name="Location">516, 104</Property>
+      <Property Name="StateCnt">4</Property>
+      <Property Name="SwitchValues">1;4;-1;0;2;1</Property>
+      <Property Name="SwitchValuesRx">1;4;-1;0;2;1</Property>
+      <Property Name="SwitchValuesVT">1;4;-1/Lower/-1;0/Lower/0;2/Lower/2;1/Lower/1</Property>
+      <Property Name="ImageFile">ledRedOrangeGreen.png</Property>
+      <Property Name="SymbolConfiguration">5;16;RealTimeOffsetPanel;;;LED_Sequence_Result;1;;;-1;;;</Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl1" Children="Controls" ControlName="RealTimeOffsetPanel_Output_View">
+      <Property Name="Name">CAPLOutputViewControl1</Property>
+      <Property Name="Size">533, 117</Property>
+      <Property Name="Location">3, 131</Property>
+      <Property Name="BoxBackgroundColor">White</Property>
+      <Property Name="TabIndex">11</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxECU" Children="Controls" ControlName="Group Box">
+      <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="CheckboxUseAllTargets" Children="Controls" ControlName="Check Box 2">
+        <Property Name="Name">CheckboxUseAllTargets</Property>
+        <Property Name="Size">118, 17</Property>
+        <Property Name="Location">246, 47</Property>
+        <Property Name="Text">Apply on all  targets</Property>
+        <Property Name="SymbolConfiguration">5;16;RealTimeOffsetPanel;;;Checkbox_UseAllTargets;1;;;-1;;;</Property>
+        <Property Name="TabIndex">21</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxAvailableDiagTargets" Children="Controls" ControlName="Input/Output Box 5">
+        <Property Name="Name">TextBoxAvailableDiagTargets</Property>
+        <Property Name="Size">358, 20</Property>
+        <Property Name="Location">6, 19</Property>
+        <Property Name="AlarmUpperTextColor">WindowText</Property>
+        <Property Name="ValueDecimalPlaces">0</Property>
+        <Property Name="AlarmLowerBkgColor">Salmon</Property>
+        <Property Name="ValueDisplay">Text</Property>
+        <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+        <Property Name="AlarmLowerTextColor">WindowText</Property>
+        <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+        <Property Name="DisplayLabel">Left</Property>
+        <Property Name="DescriptionText">Available DiagTargets:</Property>
+        <Property Name="DescriptionSize">118, 20</Property>
+        <Property Name="UsedValueTable">PhysicalValue</Property>
+        <Property Name="SymbolConfiguration">5;16;RealTimeOffsetPanel;;;DiagTargetList;4;;;-1;;;</Property>
+        <Property Name="TabIndex">12</Property>
+        <Property Name="ReadOnlyControl">True</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.96.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxDiagTargetECU" Children="Controls" ControlName="SingleECU">
+        <Property Name="Name">TextBoxDiagTargetECU</Property>
+        <Property Name="Size">210, 20</Property>
+        <Property Name="Location">30, 45</Property>
+        <Property Name="AlarmUpperTextColor">WindowText</Property>
+        <Property Name="ValueDecimalPlaces">0</Property>
+        <Property Name="AlarmLowerBkgColor">Salmon</Property>
+        <Property Name="ValueDisplay">Text</Property>
+        <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+        <Property Name="AlarmLowerTextColor">WindowText</Property>
+        <Property Name="AlarmGeneralSettings">1;0;0;100</Property>
+        <Property Name="DisplayLabel">Left</Property>
+        <Property Name="DescriptionText">DiagTarget_ECU:</Property>
+        <Property Name="DescriptionSize">94, 20</Property>
+        <Property Name="UsedValueTable">PhysicalValue</Property>
+        <Property Name="SymbolConfiguration">5;16;RealTimeOffsetPanel;;;DiagTarget_ECU;4;;;-1;;;</Property>
+        <Property Name="TabIndex">9</Property>
+      </Object>
+      <Property Name="Name">GroupBoxECU</Property>
+      <Property Name="Size">533, 77</Property>
+      <Property Name="Location">3, 19</Property>
+      <Property Name="Text">ECU</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">539, 257</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

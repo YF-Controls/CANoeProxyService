@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FileSystemMetainfo>
+  <Files>
+    <File Name="Automatic opening Closing.vtt" Time="Wednesday, October 18, 2023 4:51:25 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="Automatic opening Closing.vtt" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T16:51:25.6448192+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T16:51:25.6448192+05:30</LastWriteTime>
+    </File>
+    <File Name="build.log" Time="Wednesday, October 18, 2023 4:51:26 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="build.log" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.9610415+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T16:51:26.1496449+05:30</LastWriteTime>
+    </File>
+    <File Name="DCM.vtumanifest" Time="Wednesday, October 18, 2023 4:51:26 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="DCM.vtumanifest" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.9566812+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T16:51:26.1476381+05:30</LastWriteTime>
+    </File>
+    <File Name="DCM_ctrlvars1.vvarprop" Time="Wednesday, October 18, 2023 1:03:59 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="DCM_ctrlvars1.vvarprop" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.3891289+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T13:03:59.3891289+05:30</LastWriteTime>
+    </File>
+    <File Name="MMA_Window_Lifter.vtt" Time="Wednesday, October 18, 2023 4:51:25 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="MMA_Window_Lifter.vtt" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T16:51:25.6448192+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T16:51:25.6448192+05:30</LastWriteTime>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Thursday, October 5, 2023 9:09:16 AM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.9467420+05:30</CreationTime>
+      <LastWriteTime>2023-10-05T09:09:16.7825846+05:30</LastWriteTime>
+    </File>
+    <File Name="[FileSystemMetainfo]" Time="Wednesday, October 18, 2023 2:24:04 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="[FileSystemMetainfo]" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T14:24:04.4444486+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T14:24:04.4444486+05:30</LastWriteTime>
+    </File>
+    <File Name="[MakeInfo]" Time="Wednesday, October 18, 2023 4:51:26 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="[MakeInfo]" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.9596821+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T16:51:26.1486372+05:30</LastWriteTime>
+    </File>
+    <File Name="Automatic opening Closing.vtt.export.xml" Time="Wednesday, October 18, 2023 1:03:59 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\Automatic opening Closing.vtt.export.xml" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.3891289+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T13:03:59.3891289+05:30</LastWriteTime>
+    </File>
+    <File Name="MMA_Window_Lifter.vtt.export.xml" Time="Wednesday, October 18, 2023 1:03:59 PM">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\MMA_Window_Lifter.vtt.export.xml" /&gt;</SerializedBasedFileName>
+      <CreationTime>2023-10-18T13:03:59.3891289+05:30</CreationTime>
+      <LastWriteTime>2023-10-18T13:03:59.3891289+05:30</LastWriteTime>
+    </File>
+  </Files>
+</FileSystemMetainfo>

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="DIAG_Gen3_Gen2">
+    <Object Type="Vector.CANalyzer.Panels.Design.VectorTabControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabControl1" Children="Controls" ControlName="Tab Control">
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage3" Children="Controls" ControlName="Tab Control">
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="Button 4">
+          <Property Name="Name">ButtonControl4</Property>
+          <Property Name="Size">169, 23</Property>
+          <Property Name="Location">134, 502</Property>
+          <Property Name="Text">Stop</Property>
+          <Property Name="SymbolConfiguration">8;16;ACCTIONS;;;STOP;1;;;-1;;;;;;0</Property>
+          <Property Name="TabIndex">18</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="Button 3">
+          <Property Name="Name">ButtonControl3</Property>
+          <Property Name="Size">169, 23</Property>
+          <Property Name="Location">134, 473</Property>
+          <Property Name="Text">Stop</Property>
+          <Property Name="SymbolConfiguration">8;16;ACCTIONS;;;STOP;1;;;-1;;;;;;0</Property>
+          <Property Name="TabIndex">17</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="Button 2">
+          <Property Name="Name">ButtonControl2</Property>
+          <Property Name="Size">169, 23</Property>
+          <Property Name="Location">134, 444</Property>
+          <Property Name="Text">Up</Property>
+          <Property Name="SymbolConfiguration">8;16;ACCTIONS;;;UP;1;;;-1;;;;;;0</Property>
+          <Property Name="TabIndex">16</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Button 1">
+          <Property Name="Name">ButtonControl1</Property>
+          <Property Name="Size">169, 23</Property>
+          <Property Name="Location">134, 415</Property>
+          <Property Name="Text">Down</Property>
+          <Property Name="SymbolConfiguration">8;16;ACCTIONS;;;DOWN;1;;;-1;;;;;;0</Property>
+          <Property Name="TabIndex">15</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl3" Children="Controls" ControlName="Group Box 2">
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl9" Children="Controls" ControlName="Check Box 9">
+            <Property Name="Name">CheckBoxControl9</Property>
+            <Property Name="Size">265, 17</Property>
+            <Property Name="Location">47, 84</Property>
+            <Property Name="Text">Press this check box to let server disconnect client</Property>
+            <Property Name="SymbolConfiguration">8;16;COMUNICATION;;;X;1;;;-1;;;;;;0</Property>
+            <Property Name="TabIndex">11</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl6" Children="Controls" ControlName="Check Box 6">
+            <Property Name="Name">CheckBoxControl6</Property>
+            <Property Name="Size">246, 17</Property>
+            <Property Name="Location">47, 61</Property>
+            <Property Name="Text">Press this check box to disconnect from server</Property>
+            <Property Name="SymbolConfiguration">8;16;COMUNICATION;;;D;1;;;-1;;;;;;0</Property>
+            <Property Name="TabIndex">10</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl5" Children="Controls" ControlName="Check Box 5">
+            <Property Name="Name">CheckBoxControl5</Property>
+            <Property Name="Size">251, 17</Property>
+            <Property Name="Location">47, 38</Property>
+            <Property Name="Text">Press this check box to send message to server</Property>
+            <Property Name="SymbolConfiguration">8;16;COMUNICATION;;;S;1;;;-1;;;;;;0</Property>
+            <Property Name="TabIndex">9</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl3</Property>
+          <Property Name="Size">329, 119</Property>
+          <Property Name="Location">491, 115</Property>
+          <Property Name="Font">Microsoft Sans Serif, 7.841584pt</Property>
+          <Property Name="Text">NO CONNECTED</Property>
+          <Property Name="TabIndex">14</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl2" Children="Controls" ControlName="Group Box 1">
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl8" Children="Controls" ControlName="Check Box 8">
+            <Property Name="Name">CheckBoxControl8</Property>
+            <Property Name="Size">225, 17</Property>
+            <Property Name="Location">47, 61</Property>
+            <Property Name="Text">Press this check box to stop measurement</Property>
+            <Property Name="SymbolConfiguration">8;16;COMUNICATION;;;Q;1;;;-1;;;;;;0</Property>
+            <Property Name="TabIndex">10</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl7" Children="Controls" ControlName="Check Box 7">
+            <Property Name="Name">CheckBoxControl7</Property>
+            <Property Name="Size">206, 17</Property>
+            <Property Name="Location">47, 38</Property>
+            <Property Name="Text">Press this check box to connect client</Property>
+            <Property Name="SymbolConfiguration">8;16;COMUNICATION;;;C;1;;;-1;;;;;;0</Property>
+            <Property Name="TabIndex">9</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl2</Property>
+          <Property Name="Size">284, 92</Property>
+          <Property Name="Location">86, 115</Property>
+          <Property Name="Font">Microsoft Sans Serif, 7.841584pt</Property>
+          <Property Name="Text">CONNECTED</Property>
+          <Property Name="TabIndex">13</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StartStopControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="StartStopControl1" Children="Controls" ControlName="Start Stop Control 1">
+          <Property Name="Name">StartStopControl1</Property>
+          <Property Name="Size">112, 56</Property>
+          <Property Name="Location">19, 24</Property>
+          <Property Name="TabIndex">11</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl1" Children="Controls" ControlName="Group Box">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static_Text_1">
+            <Property Name="Name">StaticTextControl1</Property>
+            <Property Name="Size">349, 25</Property>
+            <Property Name="Location">313, 61</Property>
+            <Property Name="Font">Microsoft Sans Serif, 15pt</Property>
+            <Property Name="Text">Which door do you want to connect to?</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl4" Children="Controls" ControlName="Check Box 4">
+            <Property Name="Name">CheckBoxControl4</Property>
+            <Property Name="Size">90, 17</Property>
+            <Property Name="Location">47, 107</Property>
+            <Property Name="Text">DMRR_MMA</Property>
+            <Property Name="SymbolConfiguration">6;16;MMA;;;DMRR;1;;;-1;;;;</Property>
+            <Property Name="TabIndex">12</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3" Children="Controls" ControlName="Check Box 3">
+            <Property Name="Name">CheckBoxControl3</Property>
+            <Property Name="Size">88, 17</Property>
+            <Property Name="Location">47, 84</Property>
+            <Property Name="Text">DMRL_MMA</Property>
+            <Property Name="SymbolConfiguration">6;16;MMA;;;DMRL;1;;;-1;;;;</Property>
+            <Property Name="TabIndex">11</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl2" Children="Controls" ControlName="Check Box 2">
+            <Property Name="Name">CheckBoxControl2</Property>
+            <Property Name="Size">88, 17</Property>
+            <Property Name="Location">47, 61</Property>
+            <Property Name="Text">DMFR_MMA</Property>
+            <Property Name="SymbolConfiguration">6;16;MMA;;;DMFR;1;;;-1;;;;</Property>
+            <Property Name="TabIndex">10</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.3.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl1" Children="Controls" ControlName="Check Box 1">
+            <Property Name="Name">CheckBoxControl1</Property>
+            <Property Name="Size">86, 17</Property>
+            <Property Name="Location">47, 38</Property>
+            <Property Name="Text">DMFL_MMA</Property>
+            <Property Name="SymbolConfiguration">6;16;MMA;;;DMFL;1;;;-1;;;;</Property>
+            <Property Name="TabIndex">9</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl1</Property>
+          <Property Name="Size">734, 152</Property>
+          <Property Name="Location">86, 257</Property>
+          <Property Name="Font">Microsoft Sans Serif, 7.841584pt</Property>
+          <Property Name="Text">PUERTAS</Property>
+          <Property Name="TabIndex">10</Property>
+        </Object>
+        <Property Name="Name">VectorTabPage3</Property>
+        <Property Name="Size">914, 633</Property>
+        <Property Name="Location">4, 22</Property>
+        <Property Name="BackColor">PaleTurquoise</Property>
+        <Property Name="Text">SOCKET</Property>
+      </Object>
+      <Property Name="Name">VectorTabControl1</Property>
+      <Property Name="Size">922, 659</Property>
+      <Property Name="Location">3, 3</Property>
+      <Property Name="SymbolConfiguration">
+      </Property>
+      <Property Name="TabIndex">17</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">928, 663</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

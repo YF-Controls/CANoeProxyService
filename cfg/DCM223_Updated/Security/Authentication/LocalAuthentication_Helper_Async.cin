@@ -1,0 +1,129 @@
+/*@!Encoding:1252*/
+
+// Security Feature V2.10.6.0
+
+//////////////////////////////////////////////////////////////
+// LocalAuthentication_Helper.cin
+//
+// Provides functions to authenticate an tester.
+// The function must be used within a testcase.
+// 
+//////////////////////////////////////////////////////////////
+
+variables
+{
+  long DiagTargetCount = 0; // number of available diag targets
+  char DiagTargetList[200]; // available targets, one per cdd
+}
+
+// test sequence for ECU authentication
+int Authenticate(char target[],int role)
+{
+  char diagJob[30];
+  int retVal;
+  char strBuff[150];
+  int ret;
+    
+  RoleToDiagJob(role,diagJob);
+  ret = diagStartAuth(target, diagJob);
+  
+  if( debug == 1) write("DiagStartAuth result: %d", ret);
+  return ret;
+}
+
+void RoleToDiagJob(int role, char jobQualifier[] )
+{
+  switch(role)
+  {
+    case 0:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_Anybody");
+      break;
+    case 1:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_Supplier");
+      break;
+    case 2:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_Development_Enhanced");
+      break;
+    case 3:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_Production");
+      break;
+    case 4:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_After_Sales_Enhanced");
+      break;
+    case 5:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_After_Sales_Standard");
+      break;
+    case 6:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_After_Sales_Basic");
+      break;
+    case 7:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_Internal_Diagnostic_Test_Tool");
+      break;
+    case 8:
+      snprintf(jobQualifier,elCount(jobQualifier),"Job_ePTI_Test_Tool");
+      break;
+    default:
+      break;
+  }
+}
+
+int LocalAuthentication(char diagTarget[], int diagnosticRole)
+{
+  int AuthResultOverAll = 0; 
+  int i;
+
+  AuthResultOverAll = 0;
+
+  // switch between Authentication modes 
+  if( Authenticate(diagTarget,diagnosticRole)==0) // successful
+  {
+    if(debug)write("%3.5f %s: LocalAuthentication: Authentication has been successfully triggered. target=%s",timeNow()/100000.0, cNodeName,diagTarget);
+    return 1;
+  }
+  else // not successful
+  {
+    if(debug)write("%3.5f %s: LocalAuthentication: Authentication failed. target=%s",timeNow()/100000.0, cNodeName,diagTarget);
+    return -1;
+  }
+}
+
+void _AddDiagnosticInterpretation(char serviceAbstract[], diagRequest* obj,int validMessage)
+{
+  char  paramPath[2000];
+  char  paramType[50];
+  byte  data[320];
+  char hexData[120];
+  long begin;
+  char rawReq[2000];
+  byte buffer[4096];
+  int length;
+  int totalLength;
+  DWORD paramNo;
+  int ende;
+  paramNo=0;
+
+  if ((validMessage==0)&&(diagIsRaw(obj)==0)&&(DiagGetParameterPath( obj, 0, paramPath, elCount( paramPath))>0) //there is at least one parameter for a correct message
+      &&(diagGetObjectPath(obj,  paramPath, elCount( paramPath))>0))
+  {
+
+
+    //remove // from  //Door/CommonDiagnostics/Coding_Read/RDBI_RQ
+    substr_cpy(rawReq, paramPath, 2, strlen(paramPath)-2, elCount(rawReq));
+    //remove door/ from  Door/CommonDiagnostics/Coding_Read/RDBI_RQ
+    begin=strstr(rawReq,"/")+1;
+    substr_cpy(paramPath, rawReq, begin, strlen(rawReq)-begin, elCount(paramPath));
+    //remove CommonDiagnostics/ from  CommonDiagnostics/Coding_Read/RDBI_RQ
+
+    begin=strstr(paramPath,"/")+1;
+    substr_cpy(rawReq, paramPath, begin, strlen(paramPath)-begin, elCount(rawReq));
+    //copy Coding_read out of   Coding_Read/RDBI_RQ
+
+    begin=strstr(rawReq,"/");
+    substr_cpy(paramPath, rawReq, 0, begin, elCount(paramPath));
+  }
+  else
+  {
+    validMessage=-1;
+    //  strncat(logMsg, "Not specified message", 4000);
+  }
+}

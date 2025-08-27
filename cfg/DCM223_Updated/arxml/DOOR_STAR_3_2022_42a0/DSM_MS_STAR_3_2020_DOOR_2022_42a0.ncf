@@ -1,0 +1,489 @@
+/* CHECKSUM={320D4F422BE612DECB74589ED60E03D347333854} */ 
+/* ************************************************************************** */
+/*                                                                            */
+/*                              Mercedes-Benz AG                              */
+/*                            All rights reserved                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:        Node Capability file                                  */
+/*  Node:               DSM_MS                                                */
+/*                                                                            */
+/*  Interface:          Door Switch Module Memory and Seat                    */
+/*  Interface Version:  12                                                    */
+/*  Interface Status:   RELEASED                                              */
+/*                                                                            */
+/*  Creation Date:      2022-10-21                                            */
+/*                                                                            */
+/*  XDIS-Database       MBC-Database                                          */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+node_capability_file;
+LIN_language_version = "2.1";
+node DSM_MS {
+	general {
+		LIN_protocol_version = "2.1";
+		supplier = 0x0056;
+		function = 0x0001;
+		variant = 0x00;
+		bitrate = 19.200 kbps;
+		sends_wake_up_signal = "no";
+	}
+
+	diagnostic {
+		NAD = 16;
+		diagnostic_class = 1;
+		 support_sid { 0xB0, 0xB2, 0xB6, 0xB7 };
+	}
+
+	frames {
+		publish DSM_MS_Stat2_LIN_ST3 {
+			length = 8;
+			signals {
+				Seat_Func_Sw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 0;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				SeatHtSw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 2;
+					c02_NTchd_Tchd_Psd;
+				}
+				SeatVnSw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 4;
+					c02_NTchd_Tchd_Psd;
+				}
+				Seat_Func_Rwd_Sw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 6;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				Seat_Func_Fwd_Sw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 8;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw1_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 10;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw2_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 12;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw3_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 14;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw4_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 16;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw5_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 18;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MemSw_Sv_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 20;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				AirScarfSw_Psd_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 22;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				DSM_MS_MCU_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 24;
+					c02_NoErr_Err;
+				}
+				DSM_MS_ForceSens_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 26;
+					c02_NoErr_Err;
+				}
+				DSM_MS_TouchSens_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 28;
+					c02_NoErr_Err;
+				}
+				NeckHt_Sw_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 30;
+					c02_NPsd_Tchd_Psd_SNA;
+				}
+				SeatFct_CtrlPnl_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 58;
+					c02_NPsd_Psd_ST3;
+				}
+				DSM_MS2_Tgl_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 60;
+				}
+				RsErr_DSM_MS_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 61;
+				}
+				WakeupStat_DSM_MS_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 62;
+					c02_WakeUp_Stat;
+				}
+			}
+		}
+		publish DSM_MS_Stat_LIN_ST3 {
+			length = 8;
+			signals {
+				SeatAdj_Sw_Tilt_Up_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 0;
+				}
+				SeatAdj_Sw_Tilt_Dn_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 1;
+				}
+				SeatAdj_Sw_Posn_Rwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 2;
+				}
+				SeatAdj_Sw_Posn_Fwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 3;
+				}
+				SeatAdj_Sw_LowLegRst_Up_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 4;
+				}
+				SeatAdj_Sw_LowLegRst_Rwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 5;
+				}
+				SeatAdj_Sw_LowLegRst_Fwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 6;
+				}
+				SeatAdj_Sw_LowLegRst_Dn_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 7;
+				}
+				SeatAdj_Sw_Hght_Up_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 8;
+				}
+				SeatAdj_Sw_Hght_Dn_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 9;
+				}
+				SeatAdj_Sw_HdRst_Up_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 10;
+				}
+				SeatAdj_Sw_HdRst_Rwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 11;
+				}
+				SeatAdj_Sw_HdRst_Fwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 12;
+				}
+				SeatAdj_Sw_HdRst_Dn_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 13;
+				}
+				SeatAdj_Sw_Csn_Rwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 14;
+				}
+				SeatAdj_Sw_Csn_Fwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 15;
+				}
+				SeatAdj_Sw_BkRst_Rwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 16;
+				}
+				SeatAdj_Sw_BkRst_Fwd_Psd_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 17;
+				}
+				DSM_MS_Tgl_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 18;
+				}
+				SeatAdj_Sw_Tilt_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 19;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_Posn_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 24;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_LowLegRstTilt_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 29;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_LowLegRstHrzt_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 34;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_Hght_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 39;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_HdRstTilt_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 44;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_HdRstHght_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 49;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_Csn_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 54;
+					c05_NPsd_Step1_to_30_1;
+				}
+				SeatAdj_Sw_BkRst_SpdLvl_Rq_ST3{
+					init_value = 0; 
+					size = 5; 
+					offset = 59;
+					c05_NPsd_Step1_to_30_1;
+				}
+			}
+		}
+		subscribe Door_Stat_LIN_ST3 {
+			length = 8;
+			signals {
+				ISw_Stat_ST3{
+					init_value = 7; 
+					size = 3; 
+					offset = 0;
+					c03_ISw_Stat;
+				}
+				SupVolt_OutOfRng_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 3;
+					c02_Ndef_False_True_ST3;
+				}
+				PN14_DDP_Sw_Stat_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 5;
+					c03_PN14_TDP_Sw_Stat;
+				}
+				Seat_Func_Sw_Stat_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 14;
+					c02_Ndef_False_True_ST3;
+				}
+				SeatHt_Stat_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 16;
+					c02_SeatHt_Stat;
+				}
+				SeatVn_Stat_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 18;
+					c02_SeatVn_Stat;
+				}
+				SwIll_NightDay_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 24;
+					c02_InitDayNight;
+				}
+				AirScarf_Stat_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 26;
+					c02_AirScarf_Stat;
+				}
+				NeckHt_Stat_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 30;
+					c02_SeatHt_Stat;
+				}
+				SwIllLvl_ST3{
+					init_value = 255; 
+					size = 8; 
+					offset = 48;
+					c08_perc_0_100_0k4;
+				}
+				FctIllLvl_ST3{
+					init_value = 255; 
+					size = 8; 
+					offset = 56;
+					c08_perc_0_100_0k4;
+				}
+			}
+		}
+	}
+
+	encoding {
+		c02_AirScarf_Stat {
+			logical_value, 0, "AS_OFF";
+			logical_value, 1, "AS_STEP1";
+			logical_value, 2, "AS_STEP2";
+			logical_value, 3, "AS_STEP3";
+		}
+		c02_InitDayNight {
+			logical_value, 0, "INIT";
+			logical_value, 1, "DAY";
+			logical_value, 2, "NIGHT";
+			logical_value, 3, "SNA";
+		}
+		c02_NPsd_Psd_ST3 {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "PSD";
+			logical_value, 3, "SNA";
+		}
+		c02_NPsd_Tchd_Psd_SNA {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "TOUCH";
+			logical_value, 2, "PSD";
+			logical_value, 3, "SNA";
+		}
+		c02_NTchd_Tchd_Psd {
+			logical_value, 0, "NOT_TOUCH";
+			logical_value, 1, "TOUCH";
+			logical_value, 2, "PSD";
+		}
+		c02_NTchd_Tchd_Psd_SNA {
+			logical_value, 0, "NOT_TOUCH";
+			logical_value, 1, "TOUCH";
+			logical_value, 2, "PSD";
+			logical_value, 3, "SNA";
+		}
+		c02_Ndef_False_True_ST3 {
+			logical_value, 1, "FALSE";
+			logical_value, 2, "TRUE";
+			logical_value, 3, "SNA";
+		}
+		c02_NoErr_Err {
+			logical_value, 0, "NO_ERROR";
+			logical_value, 1, "ERROR";
+			logical_value, 3, "SNA";
+		}
+		c02_SeatHt_Stat {
+			logical_value, 0, "SH_OFF";
+			logical_value, 1, "SH_STEP1";
+			logical_value, 2, "SH_STEP2";
+			logical_value, 3, "SH_STEP3";
+		}
+		c02_SeatVn_Stat {
+			logical_value, 0, "SV_OFF";
+			logical_value, 1, "SV_STEP1";
+			logical_value, 2, "SV_STEP2";
+			logical_value, 3, "SV_STEP3";
+		}
+		c02_WakeUp_Stat {
+			logical_value, 0, "NO_WUP";
+			logical_value, 1, "ACTIVE_WUP";
+			logical_value, 2, "NDEF2";
+			logical_value, 3, "SNA";
+		}
+		c03_ISw_Stat {
+			logical_value, 0, "IGN_LOCK";
+			logical_value, 1, "IGN_OFF";
+			logical_value, 2, "IGN_ACC";
+			logical_value, 4, "IGN_ON";
+			logical_value, 5, "IGN_START";
+			logical_value, 7, "SNA";
+		}
+		c03_PN14_TDP_Sw_Stat {
+			logical_value, 0, "CLS";
+			logical_value, 1, "PRE_RESET";
+			logical_value, 2, "RESET";
+			logical_value, 3, "PRE_OPN";
+			logical_value, 4, "OPN";
+			logical_value, 7, "SNA";
+		}
+		c05_NPsd_Step1_to_30_1 {
+			physical_value, 1, 30, 1, 0, "Step";
+			logical_value, 0, "NPSD";
+			logical_value, 31, "SNA";
+		}
+		c08_perc_0_100_0k4 {
+			physical_value, 0, 250, 0.4, 0, "%";
+			logical_value, 255, "SNA";
+		}
+	}
+	status_management {
+		response_error = RsErr_DSM_MS_ST3;
+	}
+
+	free_text {
+null
+	}
+
+}

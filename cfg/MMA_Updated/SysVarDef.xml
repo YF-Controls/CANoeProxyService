@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="IL" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Klemme15" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="StartWithoutSending" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="UBPlugNPlay" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+    </namespace>
+    <namespace name="IL_CAN1" comment="" interface="">
+      <namespace name="NODES" comment="" interface="">
+        <namespace name="N_AD_FL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_AD_FR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_AD_RL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_AD_RR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_CEIC_M" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_CRCM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_DM_FL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_DM_FR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_DM_RL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_DM_RR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_ECFM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_EIS" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_OHCM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_SCU" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_TM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+        <namespace name="N_VectorSimulationNode" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="EnableNode" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+        </namespace>
+      </namespace>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="enable_AllNodes" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+    </namespace>
+    <namespace name="ModelGlobal" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="ISw_Stat" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0">
+        <valuetable name="Custom" definesMinMax="false">
+          <valuetableentry value="0" lowerBound="0" upperBound="0" description="I_C03_ISW_STAT_IGN_LOCK" displayString="I_C03_ISW_STAT_IGN_LOCK" />
+          <valuetableentry value="1" lowerBound="1" upperBound="1" description="I_C03_ISW_STAT_IGN_OFF" displayString="I_C03_ISW_STAT_IGN_OFF" />
+          <valuetableentry value="2" lowerBound="2" upperBound="2" description="I_C03_ISW_STAT_IGN_ACC" displayString="I_C03_ISW_STAT_IGN_ACC" />
+          <valuetableentry value="4" lowerBound="4" upperBound="4" description="I_C03_ISW_STAT_IGN_ON" displayString="I_C03_ISW_STAT_IGN_ON" />
+          <valuetableentry value="5" lowerBound="5" upperBound="5" description="I_C03_ISW_STAT_IGN_START" displayString="I_C03_ISW_STAT_IGN_START" />
+          <valuetableentry value="7" lowerBound="7" upperBound="7" description="I_C03_ISW_STAT_SNA" displayString="I_C03_ISW_STAT_SNA" />
+        </valuetable>
+      </variable>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenPanels" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="VIN" comment="" bitcount="88" isSigned="true" encoding="65001" type="string" startValue="" />
+    </namespace>
+    <namespace name="NM_CAN1" comment="" interface="">
+      <namespace name="NODES" comment="" interface="">
+        <namespace name="N_AD_FL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_AD_FR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_AD_RL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_AD_RR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_CanGeneral_BODY1" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="RequestIL" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_CEIC_M" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_CRCM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_DM_FL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_DM_FR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_DM_RL" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_DM_RR" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_ECFM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_EIS" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_OHCM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_SCU" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_TM" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+        <namespace name="N_VectorSimulationNode" comment="" interface="">
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+          <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="OpenNodePanel" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        </namespace>
+      </namespace>
+      <namespace name="StateControl" comment="" interface="">
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="ActiveNodes" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="CloseNodePanels" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="DeactivateNM" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" />
+        <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="NmPduTxEnable" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="1" />
+      </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>

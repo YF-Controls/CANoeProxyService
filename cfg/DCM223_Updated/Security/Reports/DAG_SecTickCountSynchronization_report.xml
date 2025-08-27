@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2023-12-18 14:55:29" timestamp="  24.398582" verdicts="2_basic" measurementid="3921de67-cff1-48cc-adca-f707160e49bf">
+  <testcase starttime="2023-12-18 14:55:29" timestamp="  24.398582">
+    <teststep timestamp="  24.398582" level="0" type="user" ident=" " result="pass">Available targets: DMRR223,DMRL223,DMP223,DMD223</teststep>
+    <teststep timestamp="  24.398582" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.398582" level="0" type="user" ident="loop" result="na">ECU: DMRR223</teststep>
+    <teststep timestamp="  24.398582" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="  24.401305" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRR223&apos; Elapsed time=2.72256ms (max=1000ms)</teststep>
+    <teststep timestamp="  24.416141" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMRR223&apos; Elapsed time=14.8368ms (max=2100ms)</teststep>
+    <teststep timestamp="  24.416141" level="0" type="user" ident=" " result="na">Target:DMRR223 LocalSecTickCount:0xd7ae824a36</teststep>
+    <teststep timestamp="  24.416141" level="0" type="user" ident=" " result="na"></teststep>
+    <teststep timestamp="  24.416141" level="0" type="user" ident="Calculate max TickCount" result="na">MaxSecTickCount:0xd7ae824a36 LocalSecTickCount:0xd7ae824a36</teststep>
+    <teststep timestamp="  24.416141" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.416141" level="0" type="user" ident="ReadECUDateTime" result="na">Read Date Time of ECU DMRR223</teststep>
+    <teststep timestamp="  24.421396" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMRR223&apos; Elapsed time=5.25475ms (max=0ms)</teststep>
+    <teststep timestamp="  24.421396" level="0" type="user" ident="" result="na">Received date time: 20 23 12 6 19 46 10</teststep>
+    <teststep timestamp="  24.421396" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.421396" level="0" type="user" ident="loop" result="na">ECU: DMRL223</teststep>
+    <teststep timestamp="  24.421396" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="  24.428041" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRL223&apos; Elapsed time=6.64449ms (max=1000ms)</teststep>
+    <teststep timestamp="  24.430065" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMRL223&apos; Elapsed time=2.02406ms (max=2100ms)</teststep>
+    <teststep timestamp="  24.430065" level="0" type="user" ident=" " result="na">Target:DMRL223 LocalSecTickCount:0xd7ae824a32</teststep>
+    <teststep timestamp="  24.430065" level="0" type="user" ident=" " result="na"></teststep>
+    <teststep timestamp="  24.430065" level="0" type="user" ident="Calculate max TickCount" result="na">MaxSecTickCount:0xd7ae824a36 LocalSecTickCount:0xd7ae824a32</teststep>
+    <teststep timestamp="  24.430065" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.430065" level="0" type="user" ident="ReadECUDateTime" result="na">Read Date Time of ECU DMRL223</teststep>
+    <teststep timestamp="  24.440219" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMRL223&apos; Elapsed time=10.1541ms (max=0ms)</teststep>
+    <teststep timestamp="  24.440219" level="0" type="user" ident="" result="na">Received date time: 20 23 12 6 19 46 10</teststep>
+    <teststep timestamp="  24.440219" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.440219" level="0" type="user" ident="loop" result="na">ECU: DMP223</teststep>
+    <teststep timestamp="  24.440219" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="  24.441517" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMP223&apos; Elapsed time=1.29834ms (max=1000ms)</teststep>
+    <teststep timestamp="  24.452644" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMP223&apos; Elapsed time=11.1267ms (max=2100ms)</teststep>
+    <teststep timestamp="  24.452644" level="0" type="user" ident=" " result="na">Target:DMP223 LocalSecTickCount:0xd7b23e8f4e</teststep>
+    <teststep timestamp="  24.452644" level="0" type="user" ident=" " result="na"></teststep>
+    <teststep timestamp="  24.452644" level="0" type="user" ident="Calculate max TickCount" result="na">MaxSecTickCount:0xd7b23e8f4e LocalSecTickCount:0xd7b23e8f4e</teststep>
+    <teststep timestamp="  24.452644" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.452644" level="0" type="user" ident="ReadECUDateTime" result="na">Read Date Time of ECU DMP223</teststep>
+    <teststep timestamp="  24.462517" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMP223&apos; Elapsed time=9.87336ms (max=0ms)</teststep>
+    <teststep timestamp="  24.462517" level="0" type="user" ident="" result="na">Received date time: 20 23 12 7 21 0 33</teststep>
+    <teststep timestamp="  24.462517" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.462517" level="0" type="user" ident="loop" result="na">ECU: DMD223</teststep>
+    <teststep timestamp="  24.462517" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="  24.464095" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMD223&apos; Elapsed time=1.57838ms (max=1000ms)</teststep>
+    <teststep timestamp="  24.472828" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMD223&apos; Elapsed time=8.73227ms (max=2100ms)</teststep>
+    <teststep timestamp="  24.472828" level="0" type="user" ident=" " result="na">Target:DMD223 LocalSecTickCount:0xd7b240185e</teststep>
+    <teststep timestamp="  24.472828" level="0" type="user" ident=" " result="na"></teststep>
+    <teststep timestamp="  24.472828" level="0" type="user" ident="Calculate max TickCount" result="na">MaxSecTickCount:0xd7b240185e LocalSecTickCount:0xd7b240185e</teststep>
+    <teststep timestamp="  24.472828" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="  24.472828" level="0" type="user" ident="ReadECUDateTime" result="na">Read Date Time of ECU DMD223</teststep>
+    <teststep timestamp="  24.482980" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMD223&apos; Elapsed time=10.1527ms (max=0ms)</teststep>
+    <teststep timestamp="  24.482980" level="0" type="user" ident="" result="na">Received date time: 20 23 12 7 21 14 35</teststep>
+    <teststep timestamp="  27.482980" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=3000ms (max=3000ms)</teststep>
+    <teststep timestamp="  27.482980" level="0" type="user" ident="Send RTOffsetBroadcast" result="na">DateTime: 20 23 12 7 21 14 35</teststep>
+    <verdict time="2023-12-18 14:55:29" timestamp="  24.398582" endtime="2023-12-18 14:55:32" endtimestamp="  27.482980" result="pass" />
+    <title>ReadSecTickCountForAllTargets</title>
+  </testcase>
+  <verdict time="2023-12-18 14:55:29" timestamp="  24.398582" endtime="2023-12-18 14:55:32" endtimestamp="  27.482980" result="pass" />
+  <title>DAG_SecTickCountSynchronization</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>pid389f</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.CAN.LIN /pro 15.5.23 (SP5)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\BODY1_DCM_202217b_CANoe11.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database BODY1 on BODY1</name>
+      <description>D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Databases\STAR_3_BODY1_CAN_2022_17b_AR43.arxml (2022-05-20 10:42:08)</description>
+    </xinfo>
+    <xinfo>
+      <name>Database DOOR_STAR_3_2022_42a0_2022_42a on LinDB</name>
+      <description>D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\arxml\DOOR_STAR_3_2022_42a0\DOOR_STAR_3_2022_42a0_2022_42a.ldf (2022-10-21 19:10:55)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMD223</name>
+      <description>R_21, en-US, D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMD223_04.24.06.cdd (04.24.06, 2023-07-14 08:11:08+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMP223</name>
+      <description>R_21, en-US, D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMP223_04.24.06.cdd (04.24.06, 2023-07-14 08:22:53+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMRL223</name>
+      <description>R_21, en-US, D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMRL223_04.24.06.cdd (04.24.06, 2023-07-14 08:22:03+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMRR223</name>
+      <description>R_21, en-US, D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMRR223_04.24.06.cdd (04.24.06, 2023-07-14 08:22:31+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>DAG_SecTickCountSynchronization</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Security\FreshnessSynchronization\DAG_SecTickCountSynchronization.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2022-06-21, 17:42:46</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>CGSCDRD49009236</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrPDUIL</name>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.70 (Feb  8 2022 16:10:30) , D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrPDUIL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrNM33</name>
+      <description>AsrNM (Version 3.3.73 Windows 32-Bit), D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrNM33.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module SecMgrCANoeClient</name>
+      <description>Security Manager CANoe Node Layer Client (Version 2.10.6.0), D:\DCM KHIL TESTING\CANOE Configurations\Star3\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\SecMgrCANoeClient.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module ZenzefiNodeLayer</name>
+      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.10.6.0), C:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module J1939TestServiceLibraryNL</name>
+      <description>J1939 Test Service Library for CANoe, Version 15.5.23.0, C:\Program Files\Vector CANoe 15\Exec32\J1939TestServiceLibraryNL.dll</description>
+    </xinfo>
+  </testsetup>
+  <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1640</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>36336</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>22.14.10</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>22.14.10</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+  <hardware name="LIN Channel Interfaces" category="CategoryLINIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1640</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>36336</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>22.14.10</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>22.14.10</description>
+      </xinfo>
+      <xinfo key="firmwareversion">
+        <name>LIN Firmware version</name>
+        <description>1.81</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+</testmodule>
+<!--footprint="35e41de53fc2bea545bc6cfae3711fe3" version="1"-->

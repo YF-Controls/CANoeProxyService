@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="SecTickCountSynchronization">
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl1" Children="Controls" ControlName="Group Box">
+      <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl4" Children="Controls" ControlName="Check Box">
+        <Property Name="Name">CheckBoxControl4</Property>
+        <Property Name="Size">211, 17</Property>
+        <Property Name="Location">8, 69</Property>
+        <Property Name="Text">Close DiagChannel after Authentication</Property>
+        <Property Name="SymbolConfiguration">5;16;LocalAuthentication;;;CloseDiagChannelAfterAuth;1;;;-1;;;</Property>
+        <Property Name="TabIndex">19</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3" Children="Controls" ControlName="Check Box 2">
+        <Property Name="Name">CheckBoxControl3</Property>
+        <Property Name="Size">264, 17</Property>
+        <Property Name="Location">8, 19</Property>
+        <Property Name="Text">Execute Authentication before SecTickCount read</Property>
+        <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;ExecuteAuthentication;1;;;-1;;;</Property>
+        <Property Name="TabIndex">15</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl1" Children="Controls" ControlName="Combo Box">
+        <Property Name="Name">ComboBoxControl1</Property>
+        <Property Name="Size">284, 21</Property>
+        <Property Name="Location">8, 42</Property>
+        <Property Name="DropDownWidth">137</Property>
+        <Property Name="BackColor">Window</Property>
+        <Property Name="ForeColor">WindowText</Property>
+        <Property Name="TextBackColor">White</Property>
+        <Property Name="DisplayLabel">Left</Property>
+        <Property Name="DescriptionText">Authenticate with role:    </Property>
+        <Property Name="UsedValueTable">PhysicalValue</Property>
+        <Property Name="DescriptionSize">116, 21</Property>
+        <Property Name="SymbolConfiguration">5;16;DAG_Diagnostics;;;DiagnosticsRole;1;;;-1;;;</Property>
+        <Property Name="TabIndex">13</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl1</Property>
+      <Property Name="Size">299, 97</Property>
+      <Property Name="Location">3, 2</Property>
+      <Property Name="Text">Authentication</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl2" Children="Controls" ControlName="Check Box 2">
+      <Property Name="Name">CheckBoxControl2</Property>
+      <Property Name="Size">270, 17</Property>
+      <Property Name="Location">11, 105</Property>
+      <Property Name="Text">Deactivate TesterPresent after sequence is finished</Property>
+      <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;CheckBox_DeactivateTesterPresent;1;;;-1;;;</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.VectorTabControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabControl1" Children="Controls" ControlName="Tab Control">
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage1" Children="Controls" ControlName="Tab Control">
+        <Object Type="Vector.CANalyzer.Panels.Design.PanelHelpControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="PanelHelpControl1" Children="Controls" ControlName="File Button">
+          <Property Name="Name">PanelHelpControl1</Property>
+          <Property Name="Size">23, 24</Property>
+          <Property Name="Location">236, 130</Property>
+          <Property Name="Image">iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVDhPY6Aq6O/v/48HX+/q6pKAKsUOQAqxAZD4gQMHCBuCzwAQIGgIIQNAAGYIVAsqgClkmIHAIAASR8dQLagAJEEMIGgAsgvQMQiMuoAeLiAE8BpALIZqoRQwMAAA+47s28bCLe0AAAAASUVORK5CYII=</Property>
+          <Property Name="Filename">..\Reports\DAG_SecTickCountSynchronization_report.html</Property>
+          <Property Name="WorkingDirectory">
+          </Property>
+          <Property Name="ShowToolTip">True</Property>
+          <Property Name="Text">
+          </Property>
+          <Property Name="TabIndex">15</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="SwitchControl1" ControlName="Switch/Indicator">
+          <Property Name="Name">SwitchControl1</Property>
+          <Property Name="Size">20, 20</Property>
+          <Property Name="Location">266, 132</Property>
+          <Property Name="StateCnt">4</Property>
+          <Property Name="SwitchValues">1;4;-1;0;2;1</Property>
+          <Property Name="SwitchValuesRx">1;4;-1;0;2;1</Property>
+          <Property Name="SwitchValuesVT">1;4;-1/Lower/-1;0/Lower/0;2/Lower/2;1/Lower/1</Property>
+          <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;4&lt;/Count&gt;&lt;RxValue&gt;-1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;-1&lt;/TxValue&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;2&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;2&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+          <Property Name="ImageFile">ledRedOrangeGreen.png</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;LED_Sync_Result;1;;;-1;;;</Property>
+          <Property Name="TabIndex">28</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl2" Children="Controls" ControlName="Input/Output Box 2">
+          <Property Name="Name">TextBoxControl2</Property>
+          <Property Name="Size">134, 20</Property>
+          <Property Name="Location">152, 102</Property>
+          <Property Name="AlarmUpperTextColor">WindowText</Property>
+          <Property Name="ValueDecimalPlaces">0</Property>
+          <Property Name="AlarmLowerBkgColor">Salmon</Property>
+          <Property Name="ValueDisplay">Hexadecimal</Property>
+          <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+          <Property Name="AlarmLowerTextColor">WindowText</Property>
+          <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+          <Property Name="DisplayLabel">Hide</Property>
+          <Property Name="DescriptionText">TickCountOffset:                   </Property>
+          <Property Name="DescriptionSize">0, 0</Property>
+          <Property Name="UsedValueTable">PhysicalValue</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;TickCountOffset;1;;;-1;;;</Property>
+          <Property Name="TabIndex">17</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="ButtonSign">
+          <Property Name="Name">ButtonControl4</Property>
+          <Property Name="Size">38, 23</Property>
+          <Property Name="Location">110, 100</Property>
+          <Property Name="Text">Sign</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;Button_SignTickCountOffset;1;;;-1;;;</Property>
+          <Property Name="TabIndex">24</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl2" Children="Controls" ControlName="SignTickCountOffset">
+          <Property Name="Name">CAPLOutputViewControl2</Property>
+          <Property Name="Size">17, 20</Property>
+          <Property Name="Location">144, 105</Property>
+          <Property Name="BoxBorderStyle">None</Property>
+          <Property Name="BoxFont">Microsoft Sans Serif, 8.25pt, style=Bold</Property>
+          <Property Name="BoxBackgroundColor">White</Property>
+          <Property Name="OutputMode">Overwrite</Property>
+          <Property Name="TabIndex">23</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl4" Children="Controls" ControlName="Static Text 4">
+          <Property Name="Name">StaticTextControl4</Property>
+          <Property Name="Size">103, 13</Property>
+          <Property Name="Location">6, 105</Property>
+          <Property Name="Text">Offset for tick count:</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3" Children="Controls" ControlName="Input/Output Box 3">
+          <Property Name="Name">TextBoxControl3</Property>
+          <Property Name="Size">134, 20</Property>
+          <Property Name="Location">152, 161</Property>
+          <Property Name="AlarmUpperTextColor">WindowText</Property>
+          <Property Name="ValueDecimalPlaces">0</Property>
+          <Property Name="AlarmLowerBkgColor">Salmon</Property>
+          <Property Name="ValueDisplay">Hexadecimal</Property>
+          <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+          <Property Name="AlarmLowerTextColor">WindowText</Property>
+          <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+          <Property Name="DisplayLabel">Hide</Property>
+          <Property Name="DescriptionText">CalculatedSecTickCountWithOffset:</Property>
+          <Property Name="DescriptionSize">0, 0</Property>
+          <Property Name="UsedValueTable">PhysicalValue</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;CalculatedSecTickCountWithOffset;1;;;-1;;;</Property>
+          <Property Name="TabIndex">19</Property>
+          <Property Name="ReadOnlyControl">True</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl2" Children="Controls" ControlName="Static Text 2">
+          <Property Name="Name">StaticTextControl2</Property>
+          <Property Name="Size">133, 13</Property>
+          <Property Name="Location">6, 164</Property>
+          <Property Name="Text">SecTickCount adjusted to:</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl1" Children="Controls" ControlName="Static Text">
+          <Property Name="Name">StaticTextControl1</Property>
+          <Property Name="Size">118, 13</Property>
+          <Property Name="Location">6, 6</Property>
+          <Property Name="Text">Targets to be analyzed:</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.HexEditorControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="HexEditorControl1" Children="Controls" ControlName="Hex/Text Editor">
+          <Property Name="Name">HexEditorControl1</Property>
+          <Property Name="Size">280, 46</Property>
+          <Property Name="Location">6, 25</Property>
+          <Property Name="ColumnCount">30</Property>
+          <Property Name="ViewLayout">OnlyTextfield</Property>
+          <Property Name="SymbolConfiguration">5;16;LocalAuthentication;;;DiagTargetList;4;;;-1;;;</Property>
+          <Property Name="TabIndex">18</Property>
+          <Property Name="ReadOnlyControl">True</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl1" Children="Controls" ControlName="Input/Output Box">
+          <Property Name="Name">TextBoxControl1</Property>
+          <Property Name="Size">280, 20</Property>
+          <Property Name="Location">6, 77</Property>
+          <Property Name="AlarmUpperTextColor">WindowText</Property>
+          <Property Name="ValueDecimalPlaces">0</Property>
+          <Property Name="AlarmLowerBkgColor">Salmon</Property>
+          <Property Name="ValueDisplay">Hexadecimal</Property>
+          <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+          <Property Name="AlarmLowerTextColor">WindowText</Property>
+          <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+          <Property Name="DisplayLabel">Left</Property>
+          <Property Name="DescriptionText">Highest ECU SecTickCount:</Property>
+          <Property Name="DescriptionSize">146, 20</Property>
+          <Property Name="UsedValueTable">PhysicalValue</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;SyncedMaxSecTickCount;1;;;-1;;;</Property>
+          <Property Name="TabIndex">16</Property>
+          <Property Name="ReadOnlyControl">True</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Button">
+          <Property Name="Name">ButtonControl1</Property>
+          <Property Name="Size">222, 23</Property>
+          <Property Name="Location">6, 131</Property>
+          <Property Name="Text">Adjust SecTickCount of VSM</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;Button_SecTickCountSync;1;;;-1;;;</Property>
+          <Property Name="TabIndex">15</Property>
+        </Object>
+        <Property Name="Name">VectorTabPage1</Property>
+        <Property Name="Size">295, 189</Property>
+        <Property Name="Location">4, 22</Property>
+        <Property Name="Text">Automatic Update</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage2" Children="Controls" ControlName="Tab Control">
+        <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl3" Children="Controls" ControlName="Static Text 3">
+          <Property Name="Name">StaticTextControl3</Property>
+          <Property Name="Size">158, 13</Property>
+          <Property Name="Location">3, 22</Property>
+          <Property Name="Text">New SecTickCount value (hex):</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl4" Children="Controls" ControlName="Input/Output Box 3">
+          <Property Name="Name">TextBoxControl4</Property>
+          <Property Name="Size">122, 20</Property>
+          <Property Name="Location">167, 19</Property>
+          <Property Name="AlarmUpperTextColor">WindowText</Property>
+          <Property Name="ValueDecimalPlaces">0</Property>
+          <Property Name="AlarmLowerBkgColor">Salmon</Property>
+          <Property Name="ValueDisplay">Hexadecimal</Property>
+          <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+          <Property Name="AlarmLowerTextColor">WindowText</Property>
+          <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+          <Property Name="DisplayLabel">Hide</Property>
+          <Property Name="DescriptionText">ManualUpdateValue:</Property>
+          <Property Name="DescriptionSize">0, 0</Property>
+          <Property Name="UsedValueTable">PhysicalValue</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;ManualUpdateValue;1;;;-1;;;</Property>
+          <Property Name="TabIndex">9</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="Button">
+          <Property Name="Name">ButtonControl2</Property>
+          <Property Name="Size">283, 23</Property>
+          <Property Name="Location">6, 50</Property>
+          <Property Name="Text">Change SecTickCount of VSM</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;Button_TriggerManualSeckTickCountUpdate;1;;;-1;;;</Property>
+          <Property Name="TabIndex">8</Property>
+        </Object>
+        <Property Name="Name">VectorTabPage2</Property>
+        <Property Name="Size">295, 189</Property>
+        <Property Name="Location">4, 22</Property>
+        <Property Name="Text">Manual Update </Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.VectorTabPage, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="VectorTabPage3" Children="Controls" ControlName="Tab Control">
+        <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl1" Children="Controls" ControlName="Check Box">
+          <Property Name="Name">CheckBoxControl1</Property>
+          <Property Name="Size">156, 17</Property>
+          <Property Name="Location">4, 5</Property>
+          <Property Name="Text">Read at Measurement Start</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;ReadSecTickCountAtStart;1;;;-1;;;</Property>
+          <Property Name="TabIndex">3</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="Button 2">
+          <Property Name="Name">ButtonControl3</Property>
+          <Property Name="Size">161, 23</Property>
+          <Property Name="Location">128, 160</Property>
+          <Property Name="Text">Read ECU SecTickCount</Property>
+          <Property Name="SymbolConfiguration">5;16;SeckTickSynchronization;;;Button_ReadSeckTickCount;1;;;-1;;;</Property>
+          <Property Name="TabIndex">2</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.CAPLOutputViewControl, Vector.CANalyzer.Panels.CommonControls, Version=15.0.89.0, Culture=neutral, PublicKeyToken=null" Name="CAPLOutputViewControl1" Children="Controls" ControlName="OV_SecTickCount">
+          <Property Name="Name">CAPLOutputViewControl1</Property>
+          <Property Name="Size">286, 123</Property>
+          <Property Name="Location">3, 29</Property>
+          <Property Name="BoxBackgroundColor">White</Property>
+          <Property Name="TabIndex">1</Property>
+        </Object>
+        <Property Name="Name">VectorTabPage3</Property>
+        <Property Name="Size">295, 189</Property>
+        <Property Name="Location">4, 22</Property>
+        <Property Name="Text">ECUSecTickCount</Property>
+      </Object>
+      <Property Name="Name">VectorTabControl1</Property>
+      <Property Name="Size">303, 215</Property>
+      <Property Name="Location">3, 136</Property>
+      <Property Name="SymbolConfiguration">
+      </Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">309, 354</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

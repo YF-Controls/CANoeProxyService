@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2024-11-12 15:50:10" timestamp="  14.315391" verdicts="2_basic" measurementid="c5ea3ab5-dadf-405b-b40f-b4e618e51a56">
+  <testcase starttime="2024-11-12 15:50:10" timestamp="  14.315391">
+    <teststep timestamp="  14.315391" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
+    <teststep timestamp="  14.315391" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMD223</teststep>
+    <teststep timestamp="  22.736903" level="0" type="user" ident="Result" result="fail">Authentication has failed, </teststep>
+    <verdict time="2024-11-12 15:50:18" timestamp="  22.736903" endtime="2024-11-12 15:50:18" endtimestamp="  22.736903" result="fail" />
+    <title>LocalAuthentication</title>
+  </testcase>
+  <verdict time="2024-11-12 15:50:18" timestamp="  22.736903" endtime="2024-11-12 15:50:18" endtimestamp="  22.736903" result="fail" />
+  <title>DAG_Diagnostics_Authentication</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>jesus.valdivielso</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.CAN.LIN /run 17.3.91 (SP3)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\BODY1.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database BODY1 on BODY1</name>
+      <description>C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Databases\STAR_3_BODY1_CAN_2022_17b_AR43.arxml (2024-09-23 08:31:31)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMD223</name>
+      <description>Common_Diagnostics, en-US, C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMD223_04.24.06.cdd (04.24.06, 2023-07-14 08:11:08+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>DAG_Authentication_TestModule</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Security\Authentication\DAG_Authentication_TestModule.xml</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2024-09-23, 08:31:36</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Library (CAPL)</name>
+      <description>C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Security\Authentication\LocalAuthentication_TestModule.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>ING0640L</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrPDUIL</name>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.70 (Feb  8 2022 16:10:30) , C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrPDUIL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrNM33</name>
+      <description>AsrNM (Version 3.3.73 Windows 32-Bit), C:\work\VAN\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrNM33.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module SecMgrCANoeClient</name>
+      <description>Security Manager CANoe Node Layer Client (Version 3.1.27.0), c:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_17.0.91\Windows-x86\SecMgrCANoeClient.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module DAG_ZenzefiNodeLayer</name>
+      <description>Security Manager ZenZefi Node Layer (Version 3.0.75.0), c:\Program Files\Vector CANoe 17\Exec32\RuntimeKernel.exe</description>
+    </xinfo>
+  </testsetup>
+</testmodule>
+<!--footprint="c4291de5a740157deff5391cdab966e1" version="1"-->

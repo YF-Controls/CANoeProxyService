@@ -1,0 +1,12 @@
+/*@!Encoding:1252*/
+
+// Security Feature V2.10.6.0
+
+variables
+{
+        /*
+  Up to 350 * 4096 Bytes can be coded in one sequence -> 1433600 Bytes 
+  */
+  const dword cMaxBufferSize = 1433600; // max buffer size to evaluate var coding write requests
+}
+

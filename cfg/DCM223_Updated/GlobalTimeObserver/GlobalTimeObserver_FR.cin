@@ -1,0 +1,123 @@
+/*@!Encoding:1252*/
+
+/* Include for FlexRay Global Time Observer
+*
+* Feature to monitor the global time for FlexRay.
+* To monitor the global time of a channel, 
+* the CIN file of the corresponding bus system must be included in a CAPL file via an "include".
+*
+* Version 1.0, (c) 2018 Vector Informatik GmbH, Department for Networks Distributed Systems
+*/
+
+includes
+{
+
+}
+
+variables
+{   
+  const word cARGTFR1_SlotID_0                    = 1; // FlexRay Slot ID of the Global Time frame
+  const byte cARGTFR1_CycleOffset_0               = 0; // FlexRay Cycle Offset of the Global Time frame
+  const byte cARGTFR1_CycleRepetition_0           = 4; // FlexRay Cycle Repetition of the Global Time frame
+  const byte cARGTFR1_ChannelMask_0               = 1; // FlexRay Channel Mask of the Global Time frame
+
+  const int MAXCHANNELS = 32;
+
+  const int eSYNC_PROTECTED = 0x20;
+
+  const int mMinTimeDelay = 38; // Defines the minimum time in ms between a SYNC and a FUP message
+  const int mMaxTimeDelay = 42; // Defines the maximum time in ms between a SYNC and a FUP message
+
+  int64 mSyncLastTime[MAXCHANNELS];
+  int64 mSyncCounter[MAXCHANNELS];
+
+  char mSysVarNameSpace[18] = "FlexRayGlobalTime";
+}
+
+on FRFrame MsgChannel1.(cARGTFR1_SlotID_0, cARGTFR1_CycleOffset_0, cARGTFR1_CycleRepetition_0)
+{
+  // Reception of AUTOSAR Global Time
+  setVars(this); // Handling of AUTOSAR Global Time
+}
+
+void setVars(FrFrame * msg)
+{
+  if ( msg.byte(0) == eSYNC_PROTECTED) // sync message ( Type == 0x20)
+  {
+    setSyncVars(msg);
+  }
+}  
+
+void setSyncVars( FrFrame * syncMsg)
+{  
+  qword seconds;
+  qword nanoseconds;
+  qword preciseOriginTimestamp;
+  word channel;
+  char sysvarElementName[256];
+  channel = syncMsg.msgChannel - 1 ;  
+
+  if (channel < 0 || channel >= MAXCHANNELS )
+  {
+    channel = 0;
+  }
+
+  sysBeginVariableStructUpdate( sysvar::FlexRayGlobalTime::Sync );
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].MessageType", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(0)); 
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].CRC", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(1)); 
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].TimeDomain", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, ((syncMsg.byte(2) & 0xF0) >> 4)); 
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].E2ESequenceCounter", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(2) & 0x0F);
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].CycleCounter", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, ((syncMsg.byte(3)& 0xFC) >> 6)); 
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "FUP[%d].SGW", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, ((syncMsg.byte(3) & 0x02) >> 1));
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "FUP[%d].ReservedBits", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(3) & 0x01);
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].US0", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(4));
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].US1", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, syncMsg.byte(5));  
+
+  seconds  = ((qword)syncMsg.byte(6))  << 40; 
+  seconds |= ((qword)syncMsg.byte(7))  << 32; 
+  seconds |= ((qword)syncMsg.byte(8))  << 24; 
+  seconds |= ((qword)syncMsg.byte(9))  << 16; 
+  seconds |= ((qword)syncMsg.byte(10)) <<  8; 
+  seconds |= ((qword)syncMsg.byte(11)); 
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].Seconds", channel );
+  sysSetVariableDWord(mSysVarNameSpace, sysvarElementName, seconds);
+
+  nanoseconds  = ((qword)syncMsg.byte(12)) << 24; 
+  nanoseconds |= ((qword)syncMsg.byte(13)) << 16; 
+  nanoseconds |= ((qword)syncMsg.byte(14)) <<  8; 
+  nanoseconds |= ((qword)syncMsg.byte(15)); 
+  
+  preciseOriginTimestamp = (seconds * 1000000000LL) + nanoseconds;
+
+  snprintf(sysvarElementName, elcount(sysvarElementName), "Sync[%d].NanoSeconds", channel );
+  sysSetVariableDWord(mSysVarNameSpace, sysvarElementName, nanoseconds);
+
+  // General part for Sync
+  snprintf(sysvarElementName, elcount(sysvarElementName), "General[%d].GlobalTime", channel );
+  sysSetVariableFloat(mSysVarNameSpace, sysvarElementName, ((double) preciseOriginTimestamp) / 1000000000LL);
+
+  mSyncCounter[channel] ++;
+  snprintf(sysvarElementName, elcount(sysvarElementName), "General[%d].SyncCounter", channel );
+  sysSetVariableInt(mSysVarNameSpace, sysvarElementName, mSyncCounter[channel]);  
+
+  sysEndVariableStructUpdate( sysvar::FlexRayGlobalTime::Sync );
+}

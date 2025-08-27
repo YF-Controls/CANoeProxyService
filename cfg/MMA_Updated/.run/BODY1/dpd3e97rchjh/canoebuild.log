@@ -1,0 +1,6 @@
+"16:52:34.342";"Starting build";"mode = make"
+"16:52:34.368";"Load test unit";""
+"16:52:34.671";"Transformation of test system variables";""
+"16:52:34.820";"Initialization of parameter scopes";""
+"16:52:35.179";"Compilation of VTT";"C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\Manual_Test_Bench_for_VtestStudio\CANoe Configuration\MMA\.run\BODY1\dpd3e97rchjh\MMA_Window_Lifter.vtt"
+"16:52:36.250";"Build finished";"result = NOK"

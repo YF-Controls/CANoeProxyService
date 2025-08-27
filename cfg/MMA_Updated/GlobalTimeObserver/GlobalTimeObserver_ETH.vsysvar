@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="Ethernet" comment="" interface="">
+      <struct name="FUPMessage" isUnion="False" definedBinaryLayout="True" comment="">
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="SequenceID" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="ControlField" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="NanoSeconds" comment="" bitcount="32" isSigned="false" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="MessageType" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="24" minValue="24" minValuePhys="24" maxValue="24" maxValuePhys="24" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Seconds" comment="" bitcount="32" isSigned="false" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="VersionPTP" comment="" bitcount="32" isSigned="false" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="CorrectionField" comment="" bitcount="64" isSigned="false" encoding="65001" type="longlong" />
+      </struct>
+      <struct name="GeneralMessage" isUnion="False" definedBinaryLayout="True" comment="">
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="GlobalTime" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="Delta" comment="" bitcount="64" isSigned="false" encoding="65001" type="longlong" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="MaxTimeDelayFlag" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="MinTimeDelayFlag" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1" />
+      </struct>
+      <struct name="SyncMessage" isUnion="False" definedBinaryLayout="True" comment="">
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="SequenceID" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="ControlField" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="MessageType" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="16" minValue="16" minValuePhys="16" maxValue="16" maxValuePhys="16" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="VersionPTP" comment="" bitcount="32" isSigned="false" encoding="65001" type="int" />
+        <structMember relativeOffset="0" byteOrder="0" isOptional="False" isHidden="False" name="CorrectionField" comment="" bitcount="64" isSigned="false" encoding="65001" type="longlong" />
+      </struct>
+    </namespace>
+    <namespace name="EthGlobalTime" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="FUP" comment="" bitcount="8192" isSigned="false" encoding="65001" type="genericarray" arrayLength="32" definedBinaryLayout="True">
+        <elementPrototype name="[0]" comment="" bitcount="256" isSigned="true" encoding="65001" type="struct" structDefinition="Ethernet::FUPMessage" />
+      </variable>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="General" comment="" bitcount="8192" isSigned="false" encoding="65001" type="genericarray" arrayLength="32" definedBinaryLayout="True">
+        <elementPrototype name="[0]" comment="" bitcount="256" isSigned="true" encoding="65001" type="struct" structDefinition="Ethernet::GeneralMessage" />
+      </variable>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="Sync" comment="" bitcount="6144" isSigned="false" encoding="65001" type="genericarray" arrayLength="32" definedBinaryLayout="True">
+        <elementPrototype name="[0]" comment="" bitcount="192" isSigned="true" encoding="65001" type="struct" structDefinition="Ethernet::SyncMessage" />
+      </variable>
+    </namespace>
+  </namespace>
+</systemvariables>

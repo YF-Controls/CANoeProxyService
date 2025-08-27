@@ -1,0 +1,9 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VGlobalMeasurementIndex]
+mMeasurementIndex=156
+[VTestConfigurationConfigData]
+DCM_NextTestRun=103
+[VTestExecutable]
+DCM_LastReportFile=Report_DCM.xml
+DCM_LastReportTmpFile=rpt16AF.xml

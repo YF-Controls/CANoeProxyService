@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Tt0j5v9do_Tet_TtInit</name>
+  </caplfunction>
+  <testgroup>
+    <title>Window Automatic Closing</title>
+    <navid>be50187f-d163-40ed-b8ec-3a3f4266c9dc</navid>
+    <testgroup>
+      <title>By DSM_WM</title>
+      <navid>fcb98dc5-38cb-438d-b6b4-eba20c9e5fa1</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>23797f29-befd-47f9-b391-49cecfbfbd4a</navid>
+        <testcase>
+          <title>TC_01_Button released window do not stop [FA]</title>
+          <testcaseid>37a4cae1-856b-404e-a66f-214df7d11fb7</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc0</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>55a403e7-fb17-4aa2-9d43-27c8692b3471</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>99c31bbf-7271-4dcc-8587-9ded604b46a2</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc1</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>a2db3d35-4b77-40d4-b2db-69b0ace8502e</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc2</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>43874a8e-560d-4fe9-8cbc-36a3f54e65d8</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc3</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>6371fe49-5484-4d7a-a2eb-02f50727ff05</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc4</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>d2f76f18-4240-4b11-86fd-10be0097ccae</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc5</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>02017590-ad6d-4d3f-8753-1f997a85b751</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc6</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>7f4a2f5d-eb91-48fc-914d-55a1dca7a450</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc7</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>943c62ec-741b-4420-9010-999956e7bd40</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc8</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window do not move temperature protection active - FL [VB]</title>
+          <testcaseid>87d6a849-00ab-4ac9-918f-368494e2f8bd</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc9</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - FR [VB]</title>
+          <testcaseid>cf643ce1-2eb0-4aee-a975-1500a266b11c</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc10</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>fc98324c-09ef-46b8-8fab-a68defd502a5</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc11</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>c5ef3c2a-e0eb-4143-bbf5-e6c5fc11e4a2</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc12</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_13_Window does not move denormed window [FVoA]</title>
+          <testcaseid>df7527a8-67b8-4032-916e-5ff8806983ce</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc13</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>3e2276a1-6222-4c40-8e6c-723c3e99d39d</navid>
+        <testcase>
+          <title>TC_01_Window closing interrupted remote start active [AB]</title>
+          <testcaseid>f879bc17-8983-4b6c-bc29-ec1fae65cafd</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc14</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic closing interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>cd246206-5d1e-4e9d-8ce8-dbcfe3ebd9b3</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc15</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic closing interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>b685dbb8-f48d-45a0-8292-2772e57b15bb</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc16</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window closing interrupted afterrun inactive [AB]</title>
+          <testcaseid>2070d776-b6b3-47cc-8433-5d0de5bb1914</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc17</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window closing interrupted denormed [AB]</title>
+          <testcaseid>d1fe73bb-7f55-486d-bb5b-d72b005d7ad7</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc18</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window automatic closing interrupted undervoltage</title>
+          <testcaseid>2fe14c7e-196a-46ef-8f7b-ce34d4ba3089</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc19</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic closing interrupted Overvoltage</title>
+          <testcaseid>36afaf2e-7b99-449c-a365-dd3101d97d40</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc20</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window closing interrupted engine start [AB]</title>
+          <testcaseid>9015d3cb-e09a-452e-9b5e-c00b0da13624</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc21</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+    <testgroup>
+      <title>By Discrete</title>
+      <navid>0151948d-8a9a-4cee-9d65-10f4208f5378</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>e11a864e-d8de-4a35-a425-3412ce3a79d5</navid>
+        <testcase>
+          <title>TC_01_Button released window stops [EB]</title>
+          <testcaseid>833b5fe6-25fc-4166-a071-29e4db5a1bdf</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc22</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>487b3a9d-52fb-4989-9c34-babdcb42bfc9</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>d418b932-10b4-42bf-8258-415c7cfaff96</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc23</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>77bf0466-c950-4f3b-aef0-ca9531c11374</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc24</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>9aca37d2-91d6-4a45-b7d5-0900492daff1</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc25</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>490e3111-426a-4a61-943e-25e8dc9dbcca</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc26</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>eb421f2e-4a7c-4af3-b748-66783fd4f288</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc27</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>1b9b41c2-75c3-43c3-aeb2-ede428d76482</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc28</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move CSL active [FVoA]</title>
+          <testcaseid>abb2560a-df49-4d10-b283-16abae08e6f8</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc29</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>cba6a6ad-9b5e-481f-8484-75d62cd9a6a1</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc30</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>7d038867-99b1-47db-82f0-a1615c6bc687</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc31</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - Passenger [VB]</title>
+          <testcaseid>8a21d0e4-1dd6-4399-905f-d38bfe390e50</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc32</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>dfe4f798-cd26-4aa4-8b12-543bef75195f</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc33</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>b486e023-2714-4503-9129-0893412ec818</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc34</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>35726b02-8ca3-41da-9cda-9929c24f0cb4</navid>
+        <testcase>
+          <title>TC_01_Window closing interrupted remote start active [AB]</title>
+          <testcaseid>fb983ca0-6f5c-4610-b4c4-f33d99136863</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc35</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic closing interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>1ee644a9-9a07-4195-9005-97521d13cd58</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc36</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic closing interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>a2491581-0010-46d6-befc-12f56e1c8016</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc37</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window closing interrupted afterrun inactive [AB]</title>
+          <testcaseid>4cede80d-1b74-4127-8cc6-b044ed67f43a</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc38</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window interrupted by driver control [AB]</title>
+          <testcaseid>6512fb75-253c-43cd-8581-8fa8675da162</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc39</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window closing interrupted denormed [AB]</title>
+          <testcaseid>a33fef98-3bcc-4617-bf01-fe300055e7c7</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc40</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic closing interrupted undervoltage</title>
+          <testcaseid>3e96d979-f426-4ebb-b117-79b658535fe5</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc41</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window automatic closing interrupted Overvoltage</title>
+          <testcaseid>7b936c8a-778f-46cb-b18d-813fe532a662</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc42</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window closing interrupted engine start [AB]</title>
+          <testcaseid>a31e0d31-3d86-4ee0-b497-eb041ad674ea</testcaseid>
+          <caplfunction>
+            <name>Tt0j5v9do_Tet_Tc43</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+  </testgroup>
+</testtree>

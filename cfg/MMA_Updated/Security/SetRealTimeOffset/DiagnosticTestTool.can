@@ -1,0 +1,546 @@
+/*@!Encoding:1252*/
+
+// Security Feature V2.10.6.0
+
+includes
+{
+  #include "..\Authentication\LocalAuthentication_Helper_Async.cin"
+  #include "..\CommonFiles\DebugSwitch.cin"
+  #include "HelperFunctions.cin"
+}
+
+
+variables
+{  
+  // local
+  char cNodeName[21] = "Diagnostic Test Tool";
+  
+  
+  int gCurrentTargetIndex = 0;
+  char gCurrentTargetName[150];
+  
+  
+  byte gNonce[32];
+  byte gVIN[17];
+  char gVINc[18];
+  byte gEcuBackendId[20];
+  
+  int gSequenceActive = 0;
+}
+
+
+on start
+{
+  ReadDiagQualifier();
+}
+
+
+on sysvar_update RealTimeOffsetPanel::Button_StartSetRealTimeOffset
+{
+  if(@this == 1)
+  {
+    @RealTimeOffsetPanel::AllSequencesFinished = 0;
+    @RealTimeOffsetPanel::LED_Sequence_Result = -1;
+    
+    if(@sysvar::RealTimeOffsetPanel::Checkbox_UseAllTargets == 1)
+    {
+      if(diagGetTargetCount() >= 2)
+      {
+        diagGetTargetQualifier( 0, gCurrentTargetName, elcount(gCurrentTargetName));
+        StartSetRealTimeOffsetSequence(gCurrentTargetName);
+      }
+      else
+      {
+        char msg[200];
+        snprintf(msg,elCount(msg),"Not enough Diagnostic Targets found!");
+        OutputToWriteAndPanel(msg);
+      }
+    }
+    else
+    {
+      sysGetVariableString("RealTimeOffsetPanel","DiagTarget_ECU",gCurrentTargetName,elCount(gCurrentTargetName));
+      StartSetRealTimeOffsetSequence(gCurrentTargetName);
+    }
+  }
+}
+
+int IsTestBackend()
+{
+  byte testBackendID[20] = {0x51,0x82,0xB1,0xC2,0xD6,0x8C,0xF7,0x9A,0x52,0xEC,0x83,0x4A,0x1A,0x80,0x82,0x8F,0x0C,0x53,0x58,0xD4};
+  byte vTestBackendID[20] = { 0x0B, 0xFA, 0x02, 0x48, 0x4C, 0x7D, 0xFD, 0xC7, 0x0F, 0xC7, 0x1A, 0xEC, 0x08, 0x1, 0xD0, 0x9F, 0x96, 0x70, 0x1E, 0x34};
+  int i;
+  int isTestBackend,isVTestBackend;
+  
+  isTestBackend = 1;
+  isVTestBackend = 1;
+  
+  for(i=0;i++;i<20)
+  {
+    if(testBackendID[i]!=gEcuBackendId[i])
+      isTestBackend = 0;
+    if(vTestBackendID[i]!=gEcuBackendId[i])
+      isVTestBackend = 0;
+  }
+  // isTestBackend = 1  isVTestBackend = 0
+  // isTestBackend = 0  isVTestBackend = 1
+  if( isTestBackend == 0 && isVTestBackend == 0)
+    return 0;
+  else return 1;
+}
+
+//SetLocalRealTimeOffset: 01 Preparation
+void StartSetRealTimeOffsetSequence(char targetName[])
+{
+  int result; 
+  char msg[200];
+  
+  gSequenceActive = 0;
+  SetLEDRealTimeOffsetResult(2);
+
+  snprintf(msg,elcount(msg),"-------------------------------------",targetName);
+  OutputToWriteAndPanel(msg);
+
+  snprintf(msg,elcount(msg),"Start of SetRealTimeOffset for ECU %s",targetName);
+  OutputToWriteAndPanel(msg);
+  
+  result = SetDiagTarget_ECU("on sysvar_update RealTimeOffsetPanel::Button_StartSetRealTimeOffset",targetName);
+  
+  if( result == 0 ) // ok
+  {
+    gSequenceActive++;
+    ReadBackendId();
+  }
+}
+
+
+//SetLocalRealTimeOffset: 02 Preparation (03 on ECU)
+void ReadBackendId()
+{
+  diagRequest Backend_CA_Certificate_Identification_Read backEndRead_Req;
+  char msg[200];
+  
+  snprintf(msg,elcount(msg),"Sending request Backend_CA_Certificate_Identification_Read to ECU %s",gCurrentTargetName);
+  OutputToWriteAndPanel(msg);
+  
+  backEndRead_Req.SendRequest();
+}
+
+
+//SetLocalRealTimeOffset: 04 Preparation
+on diagResponse Backend_CA_Certificate_Identification_Read
+{
+  if(gSequenceActive == 1)
+  {
+    int result;
+    char targetName[100];
+    
+    int i = 0;
+    char msg[200];
+    char buffer[200];
+    
+    if(debug)write("%s: on diagResponse Backend_CA_Certificate_Identification_Read",cNodeName);
+    
+    this.GetParameterRaw("Backend_CA_SubjectKeyIdentifier", gEcuBackendId , elcount(gEcuBackendId));
+    
+    writeByteArrayToString(gEcuBackendId,buffer);
+    snprintf(msg,elcount(msg),"Received Backend_CA_SubjectKeyIdentifier:%s from ECU %s",buffer,gCurrentTargetName);
+    OutputToWriteAndPanel(msg);
+    
+    sysSetVariableData("RealTimeOffsetPanel","ECU_Backend_ID",gEcuBackendId, elcount(gEcuBackendId));
+    sysGetVariableString("RealTimeOffsetPanel","DiagTarget_ECU",gCurrentTargetName,elCount(gCurrentTargetName));
+    
+    result = diagStopTesterPresent (gCurrentTargetName);
+    
+    gSequenceActive++;
+    VinRequest();
+  }
+}
+
+
+//SetLocalRealTimeOffset: 05 Preparation (06 on ECU)
+void VinRequest()
+{
+  diagRequest VINDataIdentifier_Read vinReq;
+  char msg[200];
+  
+  snprintf(msg,elcount(msg),"Sending request VINDataIdentifier_Read to ECU %s",gCurrentTargetName);
+  OutputToWriteAndPanel(msg);
+  
+  diagSendRequest(vinReq);
+}
+
+
+//SetLocalRealTimeOffset: 07 Preparation
+on diagResponse VINDataIdentifier_Read
+{
+  if(gSequenceActive == 2)
+  {
+    diagRequest Synchronize_Secured_System_Date_and_Time_Start syncReq;
+    
+    int i;
+    char msg[200];
+    char buffer[200];
+    
+    if(debug)write("%s: on diagResponse VINDataIdentifier_Read",cNodeName);
+    
+    diagGetParameterRaw(this, "VINDataIdentifier", gVIN, elcount(gVIN));
+    
+    VIN_Byte2Char(gVINc,gVIN);
+    
+    if(debug)
+    {
+      writeByteArrayToString(gVIN,msg);
+      snprintf(msg,elcount(msg),"VINDataIdentifier: (byte) %s",msg);
+      OutputToWriteAndPanel(msg);
+    }
+    
+    snprintf(msg,elcount(msg),"Received VINDataIdentifier:%s from ECU %s",gVINc,gCurrentTargetName);
+    OutputToWriteAndPanel(msg);
+    
+    snprintf(msg,elcount(msg),"Sending request Synchronize_Secured_System_Date_and_Time_Start to ECU %s",gCurrentTargetName);
+    OutputToWriteAndPanel(msg);
+    
+    gSequenceActive++;
+    //SetLocalRealTimeOffset: 08 "synchronize secured system date & time()" (09 on ECU)
+    diagSendRequest(syncReq);
+  }
+}
+
+
+//SetLocalRealTimeOffset: 13 "set date/time response(nonce)"
+on diagResponse Synchronize_Secured_System_Date_and_Time_Start
+{
+  if(gSequenceActive == 3)
+  {
+    char msg[200];
+    char buffer[200];
+    
+    if(debug)write("%s: on diagResponse Synchronize_Secured_System_Date_and_Time_Start",cNodeName);
+    
+    diagGetParameterRaw(this, "Nonce", gNonce, elCount(gNonce));
+    
+    writeByteArrayToString(gNonce,buffer);
+    snprintf(msg,elcount(msg),"Received nonce: %s from ECU %s",buffer,gCurrentTargetName);
+    OutputToWriteAndPanel(msg);
+    
+    gSequenceActive++;
+    GetTimeCert_BackEndRequest();
+  }
+}
+
+
+//SetLocalRealTimeOffset: 14 "get user certficate request(nonce)"
+void GetTimeCert_BackEndRequest()
+{
+  long result;
+  char msg[200];
+  
+  snprintf(msg,elcount(msg),"Sending GetTimeCertificate to DAI Backend...",gCurrentTargetName);
+  OutputToWriteAndPanel(msg);
+  
+
+  result = GetTimeCertificateAsync(gEcuBackendId,elCount(gEcuBackendId),gNonce,elcount(gNonce),gVINc, gCurrentTargetName);
+  if(debug)write("GetTimeCertificateAsync: ResultCode: %d",result);
+}
+
+
+//SetLocalRealTimeOffset: 15 "provide user certificate(certificate)"
+long GetTimeCertificateCompleted(long statusCode, byte certificateData[], byte serialNumber[], char msg[]) 
+{
+  if(gSequenceActive == 4)
+  {
+    diagRequest Authenticate_Diagnostic_User_or_Tester_Start authReq;
+    
+    char myMsg[1500];
+    char myMsg3[500];
+    char myMsg4[500];
+    byte cert[500];
+    
+    if(statusCode != 200)
+    {
+      snprintf(myMsg,elcount(myMsg),"GetTimeCertificateCompleted: Failed to retrieve certificate. Status Code: %d, Message: %s",statusCode, msg);
+      OutputToWriteAndPanel(myMsg);
+      
+      snprintf(myMsg,elcount(myMsg),"SetRealTimeOffset aborted for ECU %s",gCurrentTargetName);
+      OutputToWriteAndPanel(myMsg);
+      
+      if(IsTestBackend() == 1)
+      {
+        snprintf(myMsg3,elcount(myMsg3),"The ECU uses certificates of a test backend. For test backends there is no online time certificate available which is required for this sequence.");
+        snprintf(myMsg4,elcount(myMsg4),"A online time certificate is only available if a ECU uses certificates of a serial backend.");
+        writelineex(0,3,"%3.5f %s",timeNow()/100000.0,myMsg3);
+        writelineex(0,2,"%3.5f %s",timeNow()/100000.0,myMsg4);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View",myMsg3);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View","\n");
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View",myMsg4);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View","\n");
+      }
+
+      gSequenceActive = 0;
+      SetLEDRealTimeOffsetResult(0);
+      return -1;
+    }
+    else
+    {
+      if(debug)
+      {      
+        snprintf(myMsg,elcount(myMsg),"GetTimeCertificateCompleted: Succeeded to retrieve certificate. Status Code: %d, Message: %s",statusCode, msg);
+        OutputToWriteAndPanel(myMsg);
+      }
+      
+      if(IsTestBackend() == 1)
+      {
+        snprintf(myMsg3,elcount(myMsg3),"The ECU uses certificates of a test backend. For test backends there is no online time certificate available which is required for this sequence.");
+        snprintf(myMsg4,elcount(myMsg4),"Currently the offline time certificate of the test backend is used.");
+        writelineex(0,2,"%3.5f %s",timeNow()/100000.0,myMsg3);
+        writelineex(0,2,"%3.5f %s",timeNow()/100000.0,myMsg4);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View",myMsg3);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View","\n");
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View",myMsg4);
+        putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View","\n");
+      }
+      else
+      {
+        snprintf(myMsg,elcount(myMsg),"Received Time Certificate from DAI Backend!");
+        OutputToWriteAndPanel(myMsg);
+      }
+      
+      snprintf(myMsg,elcount(myMsg),"Sending request Authenticate_Diagnostic_User_or_Tester_Start to %s",gCurrentTargetName);
+      OutputToWriteAndPanel(myMsg);
+      
+      //SetLocalRealTimeOffset: 15 "authentication request(certificate)" (16 on ECU)
+      memcpy_off(cert, 2, certificateData, 0, elcount(certificateData)); //first two byte of diagnostic service parameter are reserverd for length (which is auto-calculated)
+      diagSetParameter(authReq, "Configuration.Uni_or_bidirectional_Authentication", 0); //Unidirectional
+      diagSetParameter(authReq, "Task", 0); //Verify Certificate (Initiate Authentication)
+      diagSetComplexParameterRaw(authReq, "Tester_Authentication", 1, "Challenge_Certificate_Proof_of_Ownership", cert, (elcount(certificateData)+2)); //set certificate as parameter of diagnostic request
+      
+      gSequenceActive++;
+      diagSendRequest(authReq);
+      return 1;
+    }
+  }
+  return -999;
+}
+
+
+//SetLocalRealTimeOffset: 22a/22b/22c (authentication succeeded/failed response, see below) (Sequence ends here)
+on diagResponse Authenticate_Diagnostic_User_or_Tester_Start
+{
+  if(gSequenceActive == 5)
+  {
+    long result;
+    char msg[200];
+    char buffer[200];
+    
+    byte routineInfo[1];
+    byte verificationResult[1];
+    
+    gSequenceActive++;
+    
+    result = diagGetParameterRaw(this, "routineInfo", routineInfo, 1);
+    result = diagGetParameterRaw(this, "Verification_Result", verificationResult, 1);
+
+    if(debug)write("%s: on diagResponse Authenticate_Diagnostic_User_or_Tester_Start",cNodeName);
+    
+    if(routineInfo[0] == 0x00)
+    {
+      if(verificationResult[0] == 0x00)
+      {
+        //SetLocalRealTimeOffset: 22a "authentication succeeded response()" (Sequence ends here)
+        snprintf(msg,elcount(msg),"Time Certificate Verification: Successful! (Verification Result: 0x%02X)",verificationResult[0]);
+        OutputToWriteAndPanel(msg);
+        
+        SetLEDRealTimeOffsetResult(1);
+        
+        if( @sysvar::RealTimeOffsetPanel::Checkbox_UseAllTargets == 1) // trigger next target for RealTimeOffset
+        {
+          @sysvar::RealTimeOffsetPanel::TriggerNextTarget = 1;
+        }
+        else
+        {
+          @sysvar::RealTimeOffsetPanel::AllSequencesFinished = 1;
+        }
+      }
+      else
+      {
+        switch(verificationResult[0])
+        {
+          case 0x10:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Time Period! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x11:
+            //SetLocalRealTimeOffset: 22c "authentication failed response()" (Sequence ends here)
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Signature! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x12:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Chain of Trust! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x13:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Type! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x14:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Format! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x15:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Content! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x16:
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Invalid Scope! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+          case 0x40:
+            //SetLocalRealTimeOffset: 22b "authentication failed response(wrong nonce)" (Sequence ends here)
+            snprintf(msg,elcount(msg),"Time Certificate Verification: Nonce not accepted! (Verification Result: 0x%02X)",verificationResult[0]);
+            break;
+            
+        }
+        OutputToWriteAndPanel(msg);
+        
+        SetLEDRealTimeOffsetResult(0);
+        
+        if( @sysvar::RealTimeOffsetPanel::Checkbox_UseAllTargets == 1) // trigger next target for RealTimeOffset
+        {
+          @sysvar::RealTimeOffsetPanel::TriggerNextTarget = 1;
+        }
+        else
+        {
+          @sysvar::RealTimeOffsetPanel::AllSequencesFinished = 1;
+        }
+      }
+    }
+    else
+    {
+      snprintf(msg,elcount(msg),"An error occurred! RoutinInfo is incorrect: RoutineInfo: 0x%02X (Verification Result: 0x%02X)",routineInfo[0],verificationResult[0]);
+      OutputToWriteAndPanel(msg);
+    }
+  }
+}
+
+
+on sysvar_update sysvar::RealTimeOffsetPanel::TriggerNextTarget
+{
+  if(@this == 1)
+  {
+    gCurrentTargetIndex = GetNextDiagTargetIndex();
+    if( gCurrentTargetIndex != -1 )
+    {
+      StartSetRealTimeOffsetSequence(gCurrentTargetName);
+    }
+    else
+    {
+      @RealTimeOffsetPanel::AllSequencesFinished = 1;
+    }
+    @sysvar::RealTimeOffsetPanel::TriggerNextTarget = 0;
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+////////// Utility Functions  ///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+int GetNextDiagTargetIndex()
+{
+  int i;
+  char targetName[150];
+  
+  for(i = gCurrentTargetIndex + 1; i < DiagGetTargetCount(); i++)
+  {        
+    diagGetTargetQualifier( i, targetName, elcount(targetName));
+    gCurrentTargetIndex = i;
+    strncpy(gCurrentTargetName,targetName,elcount(gCurrentTargetName));
+    if(debug) write("GetNextDiagTargetIndex index=%i target=%s",i,gCurrentTargetName);
+    return gCurrentTargetIndex;
+  }
+  if(debug) write("GetNextDiagTargetIndex index=%i target=%s targetCount=%i",i,gCurrentTargetName,DiagGetTargetCount());
+  return -1;
+}
+
+int ConvertFreshnessToArray(byte array[], qword freshness)
+{
+  int offset = 1;
+  if( elCount(array) < 5 + offset )
+    return -1; 
+
+  array[0 + offset] = (freshness >> 32) & 0xFF;
+  array[1 + offset] = (freshness >> 24) & 0xFF;
+  array[2 + offset] = (freshness >> 16) & 0xFF;
+  array[3 + offset] = (freshness >> 8) & 0xFF;
+  array[4 + offset] = freshness & 0xFF;  
+    
+  //write("ConvertFreshnessToArray %x %x %x %x %x %x  freshness ",array[0],array[1],array[2],array[3],array[4],array[5]);
+  return 0;
+}
+
+int SetDiagTarget_ECU(char stepName[],char targetName[])
+{
+  long ret;
+  char msg[100];
+  
+  ret = diagSetTarget(targetName);
+  if( ret != 0)
+  {
+    snprintf(msg,elcount(msg),"%3.5f Could not set ECU target %s in %s ret=%i.",timeNow()/100000.0,targetName,stepName,ret);
+    OutputToWriteAndPanel(msg);
+    writeLineEx(0,3,msg);
+    SetLEDRealTimeOffsetResult(0);
+    return 1;
+  }
+  if(debug) write("SetDiagTarget_ECU: New target %s",targetName);
+  return 0;
+}
+
+// utility function to collect all available diag targets
+void ReadDiagQualifier()
+{
+  int i;
+  char ecuQual[100];
+  char firstECU[100];
+  int doOnce = 1;
+   
+  if(debug) write("diagGetTargetCount=%i",diagGetTargetCount());
+    
+  for( i=0;i< diagGetTargetCount();++i)
+  {
+    diagGetTargetQualifier( i, ecuQual, elcount(ecuQual));
+    if( strncmp("VSM",ecuQual,3) != 0 ) 
+    {
+      strncat(DiagTargetList,ecuQual,elcount(DiagTargetList));
+      if(debug) write("ecuQual=%s index=%i",ecuQual,i);
+      
+      strncat(DiagTargetList,",",elcount(DiagTargetList));
+      
+      if ( doOnce == 1)
+      {
+        mbstrncpy(firstECU, ecuQual, elcount(ecuQual));
+        doOnce = 0;
+      }
+    }
+    else
+    {
+      if(debug) write("ignored ecuQual=%s index=%i",ecuQual,i);
+    }
+  }
+  sysSetVariableString("RealTimeOffsetPanel","DiagTargetList",DiagTargetList);
+  diagSetTarget(firstECU);
+  sysSetVariableString("RealTimeOffsetPanel","DiagTarget_ECU",firstECU);
+}
+
+on sysvar_update sysvar::RealTimeOffsetPanel::Checkbox_UseAllTargets
+{
+  if(@this == 1)
+  {
+    enableControl("Set Local Real Time Offset","SingleECU",0);
+  }
+  else
+  {
+    enableControl("Set Local Real Time Offset","SingleECU",1);
+  }
+}
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2025-05-05 13:42:54" timestamp="   0.000000" verdicts="2_basic" measurementid="1bbe9eb2-a89f-44f1-a4a0-1278cb8a0cb3">
+  <testcase starttime="2025-05-05 13:42:54" timestamp="   0.000000">
+    <verdict time="2025-05-05 13:42:54" timestamp="   0.000000" endtime="2025-05-05 13:42:54" endtimestamp="   0.000000" result="pass" />
+    <title>tc_ReadDiagQualifier</title>
+  </testcase>
+  <verdict time="2025-05-05 13:42:54" timestamp="   0.000000" endtime="2025-05-05 13:42:54" endtimestamp="   0.000000" result="pass" />
+  <title>DiagTargetAnalyser</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>emaria.hurtado</description>
+    </xinfo>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.CAN.LIN /pro 17.3.91 (SP3)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\BODY1.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database BODY1 on BODY1</name>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Databases\STAR_3_BODY1_CAN_2022_17b_AR43.arxml (2024-09-23 08:31:31)</description>
+    </xinfo>
+    <xinfo>
+      <name>Diagnostic Description of DMD223</name>
+      <description>Common_Diagnostics, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\CDD\04.24.06\DMD223_04.24.06.cdd (04.24.06, 2023-07-14 08:11:08+02:00)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>DiagTargetAnalyser</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Security\Authentication\DiagTargetAnalyser.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2024-09-23, 08:31:36</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>ING0585L</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrPDUIL</name>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.70 (Feb  8 2022 16:10:30) , C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrPDUIL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module AsrNM33</name>
+      <description>AsrNM (Version 3.3.73 Windows 32-Bit), C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\DCM_223\BODY1_DCM_202217b_CANoe11\CANoe_CFG_21 Jun 2022_v1\Exec32\AsrNM33.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module SecMgrCANoeClient</name>
+      <description>Security Manager CANoe Node Layer Client (Version 3.1.27.0), c:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_17.0.91\Windows-x86\SecMgrCANoeClient.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module DAG_ZenzefiNodeLayer</name>
+      <description>Security Manager ZenZefi Node Layer (Version 3.0.75.0), c:\Program Files\Vector CANoe 17\Exec32\RuntimeKernel.exe</description>
+    </xinfo>
+  </testsetup>
+  <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
+    <xinfoset type="device">
+      <xinfoobject type="device">
+      <xinfo key="channel">
+        <name>Channel</name>
+        <description>1</description>
+      </xinfo>
+      <xinfo key="device">
+        <name>Device</name>
+        <description>VN1630</description>
+      </xinfo>
+      <xinfo key="serialnumber">
+        <name>Serial number</name>
+        <description>44398</description>
+      </xinfo>
+      <xinfo key="driverdllversion">
+        <name>Driver DLL version</name>
+        <description>24.40.12</description>
+      </xinfo>
+      <xinfo key="driverversion">
+        <name>Driver version</name>
+        <description>24.40.10</description>
+      </xinfo>
+      </xinfoobject>
+    </xinfoset>
+  </hardware>
+</testmodule>
+<!--footprint="1fd0e907e6a297ce649c7c1ba78be36c" version="1"-->

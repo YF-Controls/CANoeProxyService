@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Ttusgr5u0_Tet_TtInit</name>
+  </caplfunction>
+  <testgroup>
+    <title>Window Automatic Closing</title>
+    <navid>be50187f-d163-40ed-b8ec-3a3f4266c9dc</navid>
+    <testgroup>
+      <title>By DSM_WM</title>
+      <navid>fcb98dc5-38cb-438d-b6b4-eba20c9e5fa1</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>23797f29-befd-47f9-b391-49cecfbfbd4a</navid>
+        <testcase>
+          <title>TC_01_Button released window do not stop [FA]</title>
+          <testcaseid>37a4cae1-856b-404e-a66f-214df7d11fb7</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc0</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>55a403e7-fb17-4aa2-9d43-27c8692b3471</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>99c31bbf-7271-4dcc-8587-9ded604b46a2</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc1</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>a2db3d35-4b77-40d4-b2db-69b0ace8502e</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc2</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>43874a8e-560d-4fe9-8cbc-36a3f54e65d8</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc3</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>6371fe49-5484-4d7a-a2eb-02f50727ff05</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc4</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>d2f76f18-4240-4b11-86fd-10be0097ccae</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc5</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>02017590-ad6d-4d3f-8753-1f997a85b751</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc6</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>7f4a2f5d-eb91-48fc-914d-55a1dca7a450</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc7</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>943c62ec-741b-4420-9010-999956e7bd40</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc8</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window do not move temperature protection active - FL [VB]</title>
+          <testcaseid>87d6a849-00ab-4ac9-918f-368494e2f8bd</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc9</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - FR [VB]</title>
+          <testcaseid>cf643ce1-2eb0-4aee-a975-1500a266b11c</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc10</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>fc98324c-09ef-46b8-8fab-a68defd502a5</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc11</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>c5ef3c2a-e0eb-4143-bbf5-e6c5fc11e4a2</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc12</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_13_Window does not move denormed window [FVoA]</title>
+          <testcaseid>df7527a8-67b8-4032-916e-5ff8806983ce</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc13</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>3e2276a1-6222-4c40-8e6c-723c3e99d39d</navid>
+        <testcase>
+          <title>TC_01_Window closing interrupted remote start active [AB]</title>
+          <testcaseid>f879bc17-8983-4b6c-bc29-ec1fae65cafd</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc14</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic closing interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>cd246206-5d1e-4e9d-8ce8-dbcfe3ebd9b3</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc15</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic closing interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>b685dbb8-f48d-45a0-8292-2772e57b15bb</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc16</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window closing interrupted afterrun inactive [AB]</title>
+          <testcaseid>2070d776-b6b3-47cc-8433-5d0de5bb1914</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc17</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window closing interrupted denormed [AB]</title>
+          <testcaseid>d1fe73bb-7f55-486d-bb5b-d72b005d7ad7</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc18</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window automatic closing interrupted undervoltage</title>
+          <testcaseid>2fe14c7e-196a-46ef-8f7b-ce34d4ba3089</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc19</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic closing interrupted Overvoltage</title>
+          <testcaseid>36afaf2e-7b99-449c-a365-dd3101d97d40</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc20</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window closing interrupted engine start [AB]</title>
+          <testcaseid>9015d3cb-e09a-452e-9b5e-c00b0da13624</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc21</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+    <testgroup>
+      <title>By Discrete</title>
+      <navid>0151948d-8a9a-4cee-9d65-10f4208f5378</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>e11a864e-d8de-4a35-a425-3412ce3a79d5</navid>
+        <testcase>
+          <title>TC_01_Button released window stops [EB]</title>
+          <testcaseid>833b5fe6-25fc-4166-a071-29e4db5a1bdf</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc22</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>487b3a9d-52fb-4989-9c34-babdcb42bfc9</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>d418b932-10b4-42bf-8258-415c7cfaff96</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc23</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>77bf0466-c950-4f3b-aef0-ca9531c11374</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc24</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>9aca37d2-91d6-4a45-b7d5-0900492daff1</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc25</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>490e3111-426a-4a61-943e-25e8dc9dbcca</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc26</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>eb421f2e-4a7c-4af3-b748-66783fd4f288</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc27</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>1b9b41c2-75c3-43c3-aeb2-ede428d76482</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc28</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move CSL active [FVoA]</title>
+          <testcaseid>abb2560a-df49-4d10-b283-16abae08e6f8</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc29</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>cba6a6ad-9b5e-481f-8484-75d62cd9a6a1</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc30</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>7d038867-99b1-47db-82f0-a1615c6bc687</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc31</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - Passenger [VB]</title>
+          <testcaseid>8a21d0e4-1dd6-4399-905f-d38bfe390e50</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc32</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>dfe4f798-cd26-4aa4-8b12-543bef75195f</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc33</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>b486e023-2714-4503-9129-0893412ec818</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc34</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>35726b02-8ca3-41da-9cda-9929c24f0cb4</navid>
+        <testcase>
+          <title>TC_01_Window closing interrupted remote start active [AB]</title>
+          <testcaseid>fb983ca0-6f5c-4610-b4c4-f33d99136863</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc35</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic closing interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>1ee644a9-9a07-4195-9005-97521d13cd58</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc36</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic closing interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>a2491581-0010-46d6-befc-12f56e1c8016</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc37</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window closing interrupted afterrun inactive [AB]</title>
+          <testcaseid>4cede80d-1b74-4127-8cc6-b044ed67f43a</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc38</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window interrupted by driver control [AB]</title>
+          <testcaseid>6512fb75-253c-43cd-8581-8fa8675da162</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc39</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window closing interrupted denormed [AB]</title>
+          <testcaseid>a33fef98-3bcc-4617-bf01-fe300055e7c7</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc40</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic closing interrupted undervoltage</title>
+          <testcaseid>3e96d979-f426-4ebb-b117-79b658535fe5</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc41</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window automatic closing interrupted Overvoltage</title>
+          <testcaseid>7b936c8a-778f-46cb-b18d-813fe532a662</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc42</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window closing interrupted engine start [AB]</title>
+          <testcaseid>a31e0d31-3d86-4ee0-b497-eb041ad674ea</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc43</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+  </testgroup>
+  <testgroup>
+    <title>Window Automatic Opening</title>
+    <navid>14a28344-27ab-4fc7-b265-1ea5d61f626d</navid>
+    <testgroup>
+      <title>By DSM_WM</title>
+      <navid>f8e7387a-0581-4978-b72d-3fea6ad58bb0</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>8e884c52-6070-4d03-8322-3a228f480d78</navid>
+        <testcase>
+          <title>TC_01_Button released window do not stop [FA]</title>
+          <testcaseid>63e6e5e5-2644-4cca-bd1e-a8ac806236b9</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc44</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window opening by denormed window [FA]</title>
+          <testcaseid>53d56013-370b-4f1b-9050-03b8f3f0b78c</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc45</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window opens emergency mode active [FA]</title>
+          <testcaseid>b62ae645-aebc-4943-b5a1-733ebec643bc</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc46</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>2c60103e-5813-4ab8-82c0-ca72800f1f1a</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>9a3efd10-52e8-40c7-b603-f605a5201f4c</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc47</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>232d9bd4-324b-4480-a221-cfc73fbbe8cb</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc48</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>022d409d-5b1d-4837-b85d-a9c7ed6a02f1</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc49</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>56e0b631-5fd4-41b4-a88f-72765cff8cae</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc50</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>4d1b09b8-e0a7-4ce1-9f17-bc2d25b716bd</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc51</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>09482d80-920d-4382-908d-7cd499e9b41a</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc52</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>ad27afaf-27b0-4f06-869b-97f6c07cb8e9</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc53</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>e66bd609-d317-47e4-b514-3a1310edf83e</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc54</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window do not move temperature protection active - FL [VB]</title>
+          <testcaseid>b8f480c0-871b-470b-bbe0-524215495df3</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc55</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - FR [VB]</title>
+          <testcaseid>2f741497-a222-447b-aa46-bd4f3e7af36a</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc56</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>e5470760-cbac-4548-8cb8-1310d147c17b</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc57</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>d95269d5-e49c-4e57-8854-914f10cbaf8c</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc58</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_13_Window does not move denormed window [FVoA]</title>
+          <testcaseid>706bc5fd-4fc3-4e9e-b076-58b4eb07d753</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc59</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>feed4866-1b32-4c51-9729-3ec65a06c061</navid>
+        <testcase>
+          <title>TC_01_Window opening interrupted remote start active [AB]</title>
+          <testcaseid>db437589-a587-49a2-a459-ca46755a09ae</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc60</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic opening interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>dcab6720-08f1-4b4c-85a1-e3366d0a3ce4</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc61</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic opening interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>4badfb6e-277c-4bc9-99ab-c2bec38c097f</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc62</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window opening interrupted new button press [AB]</title>
+          <testcaseid>593ae36b-316a-486c-95c8-d517dc8cc055</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc63</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window opening interrupted new button press [AB]</title>
+          <testcaseid>eaa81d77-3b11-444b-9b28-b5a02a93501e</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc64</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window automatic opening interrupted undervoltage</title>
+          <testcaseid>52ab112b-f1f3-4902-b555-4332dabc8776</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc65</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic opening interrupted Overvoltage</title>
+          <testcaseid>5477332a-2b8b-4423-be91-d4d1e5b4d348</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc66</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window opening interrupted engine start [AB]</title>
+          <testcaseid>0d643417-2aa5-4289-9b78-82136d7c20b8</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc67</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+    <testgroup>
+      <title>By Discrete</title>
+      <navid>af9b6c5d-a5b6-4c49-a343-35ebb617e885</navid>
+      <testgroup>
+        <title>Function Execution</title>
+        <navid>aae32ef6-2594-4403-9d21-23a1c1297e67</navid>
+        <testcase>
+          <title>TC_01_Button released window stops [EB]</title>
+          <testcaseid>df72ba92-5e04-4b45-a6a8-3591f4150d14</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc68</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window opening by denormed window [FA]</title>
+          <testcaseid>25dc2eee-fc84-4a08-ac0b-0895ec4492ff</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc69</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window opens emergency mode active [FA]</title>
+          <testcaseid>44d6176f-db93-4e96-b985-d0ad53d82174</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc70</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Disable</title>
+        <navid>f7872c61-d16f-4d26-b9e7-dd549270dc0d</navid>
+        <testcase>
+          <title>TC_01_Window does not move when key is outside [FVoA]</title>
+          <testcaseid>2a11ec7f-730d-4593-bbbb-58312cfefc83</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc71</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window does not move when afterrun is inactive [FVoA]</title>
+          <testcaseid>1009bc30-b000-4292-9789-83d6a2fa00cb</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc72</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window does not move when remote start is active [FVoA]</title>
+          <testcaseid>7e222055-e09a-4c34-b59c-a5a1ea9e0487</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc73</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window does not move undervoltage [FVoA]</title>
+          <testcaseid>c499954f-244b-4d7a-8c2f-1754b43bcf1a</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc74</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window does not move overvoltage [FVoA]</title>
+          <testcaseid>4235d8ae-e8a0-4913-8f2c-2e254a98efa7</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc75</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window does not move engine start [FVoA]</title>
+          <testcaseid>70bbc14f-e284-44d1-8de9-3eb3d45932be</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc76</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window does not move CSL active [FVoA]</title>
+          <testcaseid>e6b3484a-fb36-4bbd-b6a5-f4650d26df5b</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc77</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window does not move WL_front_disabled [FVoA]</title>
+          <testcaseid>b1fd3856-c3d3-43a7-9d97-580575f78c2e</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc78</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window does not move short stroke request rear active [FVoA]</title>
+          <testcaseid>f2760af4-f813-4315-bd8f-98e4cbb30c59</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc79</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_10_Window do not move temperature protection active - Passenger [VB]</title>
+          <testcaseid>20042d15-d57b-4e9e-8c3b-510636ef9b16</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc80</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_11_Window do not move temperature protection active - RL [VB]</title>
+          <testcaseid>3d808f0f-9a6d-4f8c-be17-465ae66b6a19</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc81</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_12_Window do not move temperature protection active - RR [VB]</title>
+          <testcaseid>1377adcb-2ecd-4e06-902c-8055058de9f0</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc82</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+      <testgroup>
+        <title>Function Interruption</title>
+        <navid>b2903169-b0bf-45f6-9af0-8dddeb1296c3</navid>
+        <testcase>
+          <title>TC_01_Window opening interrupted remote start active [AB]</title>
+          <testcaseid>2bb0b857-b69f-4f62-85fe-4abbd376aa2e</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc83</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_02_Window automatic opening interrupted, wrong ignition state - IGN_LOCK [AB]</title>
+          <testcaseid>98b19b4f-b5c6-4e1d-b260-fd1810261962</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc84</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_03_Window automatic opening interrupted, wrong ignition state - IGN_OFF [AB]</title>
+          <testcaseid>bc1bef99-8741-49da-9bd5-e1def5ebac3c</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc85</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_04_Window opening interrupted afterrun inactive [AB]</title>
+          <testcaseid>a5f2a5ca-8939-4111-904b-248265c1bbbc</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc86</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_05_Window opening interrupted CSL active [AB]</title>
+          <testcaseid>143ebd26-9008-4c5c-96ea-150cbe625007</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc87</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_06_Window opening interrupted new button press [AB]</title>
+          <testcaseid>7904e8ac-c475-48a8-ac59-ef43f7745dda</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc88</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_07_Window automatic opening interrupted undervoltage</title>
+          <testcaseid>48733190-d894-4fb0-b2ee-3f4b6a3c8425</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc89</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_08_Window automatic opening interrupted Overvoltage</title>
+          <testcaseid>09ce5cb9-9cee-47a6-a672-2abcf3e21750</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc90</name>
+          </caplfunction>
+        </testcase>
+        <testcase>
+          <title>TC_09_Window opening interrupted engine start [AB]</title>
+          <testcaseid>61514399-44b1-4e69-9059-a8154c04263f</testcaseid>
+          <caplfunction>
+            <name>Ttusgr5u0_Tet_Tc91</name>
+          </caplfunction>
+        </testcase>
+      </testgroup>
+    </testgroup>
+    <testgroup>
+      <title>Special cases</title>
+      <navid>049bdd04-9127-49a6-8e20-036d58e13cea</navid>
+      <testcase>
+        <title>TC_01_Window opens emergency mode active CSL active [FVoA]</title>
+        <testcaseid>f6c087f1-d8bb-467c-ba81-18cdf693cd46</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc92</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_02_Window opens emergency mode active no interruption CSL active [FVoA]</title>
+        <testcaseid>37a12f5f-81e6-454e-984f-fae28e99e3c0</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc93</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_03_Window opens emergency mode active key not detected [FVoA]</title>
+        <testcaseid>f10d5581-ed98-49f2-b08c-b4e4bced49db</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc94</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_04_Window opens emergency mode active no interruption [FVoA]</title>
+        <testcaseid>ebcb504a-0c98-415d-a3f9-be9dda4ffb79</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc95</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_05_Window opens emergency mode active no interruption afterrun inactive [FVoA]</title>
+        <testcaseid>6d5e4085-e9b0-429e-b51f-df93a6d87c8a</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc96</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_06_Window opens emergency mode active no interruption remote start active [FVoA]</title>
+        <testcaseid>0b270849-1546-471d-9f42-d2345ce2da48</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc97</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_07_Window opens emergency mode active no interruption undervoltage [FVoA]</title>
+        <testcaseid>50b83819-7ba5-429c-ade1-20449d389117</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc98</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_08_Window opens emergency mode active no interruption overvoltage [FVoA]</title>
+        <testcaseid>3c2742f5-d438-48b1-ad0e-5ad3263a2765</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc99</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_09_Window opens emergency mode active no interruption CRCM [FVoA]</title>
+        <testcaseid>62fc87f1-f9e0-4d20-8ebb-03a2bcefc036</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc100</name>
+        </caplfunction>
+      </testcase>
+    </testgroup>
+  </testgroup>
+  <testgroup>
+    <title>Window Closing PRE-SAFE</title>
+    <navid>5d315eb2-d94c-476b-81d5-5a19bf873743</navid>
+    <testgroup>
+      <title>Function Execution</title>
+      <navid>f24ee94b-c527-4da7-9354-44c189ce6542</navid>
+      <testcase>
+        <title>TC_01_Trigger PRE-SAFE in IGN_ACC [FA]</title>
+        <testcaseid>5825d671-b2c4-4949-a280-06b4b5ac11ce</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc101</name>
+        </caplfunction>
+      </testcase>
+    </testgroup>
+    <testgroup>
+      <title>Function Disable</title>
+      <navid>188b1a34-9807-4ffd-bc72-ea226a167f7b</navid>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>88f4c712-8f04-4643-a2e7-4acdbefee84d</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc102</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>ced7afee-bc77-4935-b603-64f6a102ac46</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc103</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>abe7f5aa-8d11-4269-9246-6e46d41acb1c</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc104</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>a5912c6e-e161-4300-84dc-cd1f2403d724</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc105</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>7d344257-3146-400a-9e2e-604c032c59ec</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc106</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>6a688c25-4b7b-45c7-b7e3-2ff0b5191bb8</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc107</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>24484e0a-9f48-47eb-b526-2c71a63b464d</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc108</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>d80ad703-8279-4bde-bcee-adac6e540862</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc109</name>
+        </caplfunction>
+      </testcase>
+      <testcase>
+        <title>TC_01_No PRE-SAFE closing when near presafe position [VB]</title>
+        <testcaseid>78936363-f769-4709-b48e-b6005c442a36</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc110</name>
+        </caplfunction>
+      </testcase>
+    </testgroup>
+    <testgroup>
+      <title>Function Interruption</title>
+      <navid>11b2c2df-f0e2-4b25-a9a9-e0fd3af3ee7a</navid>
+      <testcase>
+        <title>TC_01_PRE-SAFE interrupted by undervoltage [AB]</title>
+        <testcaseid>e3a8cc98-9953-4fe4-b0b9-2784c718510c</testcaseid>
+        <caplfunction>
+          <name>Ttusgr5u0_Tet_Tc111</name>
+        </caplfunction>
+      </testcase>
+    </testgroup>
+    <testgroup>
+      <title>Special Cases</title>
+      <navid>1207d4eb-5b18-4ecc-9848-2c5484a9a87c</navid>
+    </testgroup>
+  </testgroup>
+</testtree>

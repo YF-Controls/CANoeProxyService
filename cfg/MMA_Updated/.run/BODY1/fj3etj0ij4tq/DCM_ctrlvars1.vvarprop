@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectVariantPropertyModel>
+  <FileFormatVersion>3</FileFormatVersion>
+  <ProjectVariantProperties>
+    <VariantProperties>
+      <VariantProperty>
+        <Name>Carline</Name>
+        <Info>Valid for Which Carline</Info>
+        <ValueType>String</ValueType>
+        <Modifiable>false</Modifiable>
+        <TUStartValueRef></TUStartValueRef>
+        <PreDefinedValues />
+        <PossibleValues />
+      </VariantProperty>
+      <VariantProperty>
+        <Name>Architecture</Name>
+        <Info></Info>
+        <ValueType>String</ValueType>
+        <Modifiable>false</Modifiable>
+        <TUStartValueRef></TUStartValueRef>
+        <PreDefinedValues />
+        <PossibleValues />
+      </VariantProperty>
+    </VariantProperties>
+    <ModifiableParameters />
+  </ProjectVariantProperties>
+</ProjectVariantPropertyModel>

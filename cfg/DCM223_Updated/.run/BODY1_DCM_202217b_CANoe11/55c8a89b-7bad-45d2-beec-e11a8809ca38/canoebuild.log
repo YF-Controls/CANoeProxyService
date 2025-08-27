@@ -1,0 +1,6 @@
+"11:48:02.146";"Starting build";"mode = make"
+"11:48:02.306";"Load test unit";""
+"11:48:02.970";"Transformation of test system variables";""
+"11:48:03.380";"Initialization of parameter scopes";""
+"11:48:07.826";"Compilation of VTT";"D:\DCM KHIL TESTING\CANoe_CFG_21 Jun 2022_v1\.run\BODY1_DCM_202217b_CANoe11\55c8a89b-7bad-45d2-beec-e11a8809ca38\PostCrash.vtt"
+"11:48:09.977";"Build finished";"result = NOK"

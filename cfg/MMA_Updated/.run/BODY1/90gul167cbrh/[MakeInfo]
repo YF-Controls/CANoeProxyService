@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeInfo>
+  <EnvironmentHash>2517765663977133030</EnvironmentHash>
+  <ExportTableHash>437429301082376594</ExportTableHash>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <Files>
+    <File Name="0mlrri2b0b2s=VP.vvarprop" Time="Monday, October 9, 2023 3:56:50 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\0mlrri2b0b2s=VP.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-09T15:56:50.6311294+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="MMA_Window_Lifter.vtt" Time="Thursday, October 12, 2023 4:24:21 PM" DependentOn="0mlrri2b0b2s=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\DCM\MMA\MMA_Window_Lifter.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-12T16:24:21.5209051+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="0mlrri2b0b2s=VP.vvarprop" Time="Monday, October 9, 2023 3:56:50 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\0mlrri2b0b2s=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-10-09T15:56:50.6311294+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Thursday, October 5, 2023 9:09:16 AM" DependentOn="9j8iga63uj1a-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-05T09:09:16.7825846+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="9j8iga63uj1a-MTSV" Time="Thursday, October 5, 2023 9:09:16 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\9j8iga63uj1a-MTSV" /&gt;</File>
+          <LastWriteTime>2023-10-05T09:09:16.7825846+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="9j8iga63uj1a-MTSV" Time="Thursday, October 5, 2023 9:09:16 AM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\9j8iga63uj1a-MTSV" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-05T09:09:16.7825846+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="DCM_ctrlvars1.vvarprop" Time="Thursday, October 12, 2023 5:03:34 PM" DependentOn="0mlrri2b0b2s=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="DCM_ctrlvars1.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-12T17:03:34.3108507+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="0mlrri2b0b2s=VP.vvarprop" Time="Monday, October 9, 2023 3:56:50 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\0mlrri2b0b2s=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-10-09T15:56:50.6311294+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Automatic opening Closing.vtt" Time="Tuesday, October 10, 2023 3:52:35 PM" DependentOn="0mlrri2b0b2s=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\DCM\MMA\Automatic opening Closing.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-10-10T15:52:35.3763972+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="0mlrri2b0b2s=VP.vvarprop" Time="Monday, October 9, 2023 3:56:50 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\0mlrri2b0b2s=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-10-09T15:56:50.6311294+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+  </Files>
+</MakeInfo>

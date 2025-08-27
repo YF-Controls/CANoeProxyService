@@ -1,0 +1,5 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VTestExecutable]
+TestNode0_LastReportTmpFile=rptea7.xml
+TestNode1_LastReportTmpFile=Security\Authentication

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<tclibrary>
+  <function name="RC_10_Ignition_Status" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="5d5a0450-e2d6-43d8-b6a5-964d64d7d143">
+    <parameter name="Specify_Ign_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[1]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_11_Vehicle_state" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b68b7109-d0bd-4395-9c0d-1d9548cb8357">
+    <parameter name="Specify_Vehicle_Living_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[2]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_12_Key_State" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="fe3b0013-5dc1-4e7b-b69c-988dfdd7d720">
+    <parameter name="Specify_Key_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[3]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_6_Key_Less_Go" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="bedaefa4-82d4-4917-b9a5-581ff2e1a374">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[4]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_0_Power_Windows_Close" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0b080453-03d8-427a-9429-9785c1510f84">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[5]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_1_Power_Windows_Open" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b79c48d8-9c9b-4d14-a94c-52f87f210546">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[6]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_2_Short_Stroke_High" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d93280dd-872e-43b8-8b56-4e289ca79be8">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[7]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_1_3_Short_Stroke_Low" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="acceb1fb-5a59-4c49-82f6-127def83896b">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[8]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_FL_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="5035c4a3-1816-40ad-aa0d-4f8d47906bc1">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[9]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_FR_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a87b0928-6766-41f8-a509-a451656848b2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[10]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_RL_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="316db4ce-2daa-4634-b6af-6605b3069725">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[11]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_3_RR_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="25bee752-1266-414f-a0b3-f4eaa92c4f2d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[12]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_7_UI_Handler_Key_Inside" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="c43f4d43-364f-4bf5-99c9-b0b40c8176c5">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[13]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_8_UI_Handler_No_Key" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="4f45d93a-b41a-48d9-a3d2-9f26eedeab86">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[14]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_13_1_Child_Security_Lock_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2d39d24a-817b-43f4-9808-f9d294cc120c">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[15]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_13_0_Child_Security_Lock_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9df2147e-a439-4fb9-815e-7cfafc760c7d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[16]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_1_Code_Automatic_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0bd6c210-61e2-435e-83f6-49f0298011c8">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[17]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="RC_4_0_Code_Manual_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2020932c-8c7d-4109-a824-bc13c2833c89">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[18]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_1_SecOC_With_Role" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b74521ac-2912-4377-a9bc-7191ea4a93f5">
+    <parameter name="Role" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[19]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_2_Start_Values" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="365ed321-53c4-479a-80b9-2364ed39cb45">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[20]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_3_1_Enable_VSL_Living" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="16dc6ab9-28a4-440c-a801-8344b55277f6">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[21]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_3_2_Disable_VSL_Living" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="b783ea11-b4e2-41dc-83b9-c67c620802ef">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[22]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_4_1_Denormalization_Of_Windows" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="93ebc57b-52ef-4842-98ec-be06eb6645e2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[23]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_4_2_Normalization_Of_Windows" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="01ace7b6-a82c-4202-9284-9278c24360f4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[24]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_1_Manual_Close_FL" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="e23488c9-6150-4419-a6fd-0f77a7573fd8">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[25]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_2_Manual_Close_FR" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="fd87d2d1-b57a-4b23-87a0-57f261bbd1e5">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[26]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_3_Manual_Close_RL" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="e0453168-3a76-4885-bf33-74e72340305a">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[27]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_5_4_Manual_Close_RR" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="0dd397c8-7ab5-4f66-ac96-316bf7976e81">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[28]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_6_1_Start_Variant_Coding" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="bc9ed1cd-b59e-4e83-82cd-9a184975580f">
+    <parameter name="Specify_ECU_Name" type="string" raw_type="string" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[29]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_6_2_Finish_Variant_Coding" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="ad033a20-2492-4442-ab15-f1cdf7d41750">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[30]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_7_ALL_DEACT_Thermal_Protection" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="e09809f6-a6df-48b4-9d22-e31baeeb027d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[31]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_8_Remote_Start" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="eda3c635-935f-48b2-b242-f96ada423c0e">
+    <parameter name="Specify_Remote_Start_State" type="int64" raw_type="int" />
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[32]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_9_1_Coding_of_Temperatures" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="119e0c6f-e7b7-49d8-b01d-2c8718593602">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[33]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_9_2_Coding_Default_Temperatures" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="50d0425e-78f6-458a-a691-d498bdf1d6c1">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[34]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_10_Windows_Close_Recirculation" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a8e425e5-bc6b-4521-a488-9f3da11628a4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[35]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_11_Enter_Extended_Session_All_ECUs" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="08914af0-969f-4364-805d-e0d643702c71">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[36]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_12_1_Select_Rear_Button" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="e41345bc-dca7-4fab-893a-2904143876db">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[37]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_12_2_Deselect_Rear_Button" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a1f34665-ab6c-42a6-8265-46f31e16c300">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[38]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_13_Set_AfterRun_Inactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="4fa1e5af-20f1-4fc4-8a94-9d14329de19d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[39]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_1_Set_Under_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="542803bf-be23-4555-908f-8a9400bb96ce">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[40]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_2_Set_Over_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="1525deaa-91be-4ed0-9cb3-f1555ab4bcd1">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[41]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_14_3_Set_Normal_Voltage" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9c580e7b-8561-4cdf-9abc-ba7e80510651">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[42]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_1_WL_Front_Disabled_or_SS_Front_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="78f51e7f-a097-4c5b-a359-c6adbcd95438">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[43]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_2_WL_Front_Enabled_or_SS_Front_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="8b4aee2a-65c9-4666-9e9e-3e94e2b90fd4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[44]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_3_WL_Rear_Disabled_or_SS_Rear_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="3785442d-80ca-4a12-944f-64f3be417995">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[45]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_15_4_WL_Rear_Enabled_or_SS_Rear_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9d5e3034-03b0-485b-a053-20c4d43c640f">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[46]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_16_1_Emergency_Mode_Active" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="70e81288-b7a7-42af-90c1-7ba3e07fac98">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[47]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_16_2_Emergency_Mode_Deactive" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="96c70049-0ae1-450d-b9b9-5521795e8a63">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[48]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_17_1_Activate_Key_Search" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2b009021-a80f-4df8-a13e-4540e9a7c6ac">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[49]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_17_2_Deactivate_Key_Search" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d50a0e48-3340-41b8-acbe-d715c9fa79b6">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[50]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_18_1_Precondition_for_Windows_Close" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2ea46627-c485-4676-86e4-9198e5199911">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[51]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_18_2_Precondition_for_Windows_Open" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9b8ef221-97e5-4681-ad91-19dc53be1629">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[52]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_1_Drivers_Manual_Open_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="da4723f3-8771-4611-b241-dd70428ef141">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[53]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_2_Drivers_Manual_Open_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="a987419f-a052-4af5-80e0-9a11a7e69026">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[54]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_1_Drivers_Manual_Close_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="22178d45-1588-4b7b-a2c2-43227b97c254">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[55]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_2_Drivers_Manual_Close_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="7d840fc4-2e3b-4b26-8037-24a1de7b4eca">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[56]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_21_Precondition_for_Ign_Start_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="032b8cc6-bd43-46c5-9a11-e864de880f37">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[57]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_1_Drivers_Automatic_Open_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="2d8c1788-86d5-44ec-9d2f-af839788b9e4">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[58]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_19_2_Drivers_Automatic_Open_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="3f123b91-6b0c-4373-8608-3823ade53b36">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[59]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_1_Drivers_Automatic_Close_Front_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d6405486-2d8c-4e50-b2fa-1a786d760b6d">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[60]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="BS_20_2_Drivers_Automatic_Close_Rear_Windows_for_Disable_Cases" id="0" comment="" signature="" file="C:\Users\JGARAPA\Documents\Jahnavi\DCM\MMA\vTESTstudio\DCM\MMA\Automatic opening Closing.vtt" SourceFilePersistencyGuid="n5t39497j7a6" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="d9c93856-1b15-4650-b796-185c43691da2">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[61]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+</tclibrary>

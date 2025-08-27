@@ -1,0 +1,173 @@
+/*@!Encoding:1252*/
+
+// Security Feature V2.10.6.0
+
+//////////////////////////////////////////////////////////////
+// HelperFunctions.cin
+//
+// Provides helper functions for a diagnostic sequence
+// 
+//////////////////////////////////////////////////////////////
+void AddSizeBytesToParameter(dword numberOfSizeBytes, qword size, byte parameter[], byte parameterWithSizeBytes[])
+{
+  int i;
+  // Insert size bytes at beginning of array
+  for(i = 0; i < numberOfSizeBytes; i++)
+  {
+    parameterWithSizeBytes[i] = (size >> (numberOfSizeBytes - 1 - i) * 8) & 0xFF; 
+  }
+  memcpy_off(parameterWithSizeBytes, numberOfSizeBytes, parameter, 0, size);
+}
+
+/// \brief Converts time from the GTC time format to a binary time format
+///
+/// The GTC time without milliseconds is expected. Hence length 15 is expected.
+/// The binary time will have length 7 and the format {year, year, month, day, hours, minutes, seconds}
+/// Example: 32 30 31 37 30 31 31 38 32 33 30 30 31 36 5a -> 20170118230016Z -> {20, 17, 1, 18, 23, 00, 16}
+/// Return value: -1 -> error occurred, 0 -> no error
+long ConvertGTCTimeToBinaryTime(byte gtcTime[], dword gtcTimeLength, byte binaryTime[], dword& binaryTimeLength)
+{
+  int i, j;
+  // expected format: yyyy mm dd hh mm ss Z
+  if (gtcTimeLength != 15)
+  {
+    return -1;
+  }
+
+  // the binary time will have length 7
+  if (elcount(binaryTime) < 7)
+  {
+    return -1;
+  }
+  binaryTimeLength = 7;
+
+  i = 0;
+  j = 0;
+  while (i < 7 && j < 15)
+  {
+    binaryTime[i] = (gtcTime[j] - 0x30) * 10 + (gtcTime[j+1] - 0x30);
+    i = i + 1;
+    j = j + 2;
+  }
+
+  return 0;  
+}
+
+/// \brief Converts time from the GTC time format to a binary time format
+///
+/// The binary time with length 7 and the format {year, year, month, day, hours, minutes, seconds} is expected
+/// The GTC time without milliseconds will be assumed. Hence length will be 15.
+/// Example: {20, 17, 1, 18, 23, 00, 16} -> 20170118230016Z -> 32 30 31 37 30 31 31 38 32 33 30 30 31 36 5a
+/// Return value: -1 -> error occurred, 0 -> no error
+dword ConvertBinaryTimeToGTCTime(byte binaryTime[], dword binaryTimeLength, byte gtcTime[], dword& gtcTimeLength)
+{
+  int i, j;
+
+  // expected binary time format
+  if (binaryTimeLength != 7) return -1;
+  binaryTimeLength = 7;
+  
+  // the GTC time will have length 15 (yyyy mm dd hh mm ss Z)
+  if (elcount(gtcTime) < 15) return -1;
+  gtcTimeLength = 15;  
+
+  i = 0;
+  j = 0;
+  while (i < 15 && j < 7)
+  {    
+    gtcTime[i] = (binaryTime[j] / 10) + 0x30;
+    gtcTime[i + 1] = (binaryTime[j] % 10) + 0x30;
+
+    i = i + 2;
+    j = j + 1;
+  }
+
+  return 0;  
+}
+
+//"01-00-12-00-45"
+long GetSerialLength(char serialNo[])
+{
+  if(debug) write("strlen %i",strlen(serialNo));
+  return ((strlen(serialNo)+1)/3);
+}
+
+dword ConvertCharArrayToByteArray(char charArray[], dword charArrayLength, byte byteArray[], dword byteArrayLength)
+{
+  int i;
+  byte tmp;
+  
+  if(charArrayLength < (3 * byteArrayLength) - 1)
+  {
+    write("Failed with length: %d, %d", charArrayLength, byteArrayLength);
+    return -1;
+  }
+  for(i = 0; i < byteArrayLength; i++)
+  {
+    byteArray[i] = ConvertToByte(charArray[i * 3], charArray[(i * 3) + 1]);
+  }
+  return 1;
+}
+
+byte ConvertToByte(char char1, char char2)
+{
+  byte tmp;
+  if(char1 <= '9')
+  {
+    tmp = (char1 - '0') << 4;
+  }
+  else
+  {
+    tmp = (char1 - 'A' + 10) << 4;
+  }
+  if(char2 <= '9')
+  {
+    tmp = tmp + (char2 - '0');
+  }
+  else
+  {
+    tmp = tmp + (char2 - 'A' + 10);
+  }
+  return tmp;
+}
+
+
+void OutputToWriteAndPanel(char msg[])
+{
+  write("%3.5f %s",timeNow()/100000.0,msg);
+  snprintf(msg,elcount(msg),"%s\n",msg);
+  putValueToControl("Set Local Real Time Offset","RealTimeOffsetPanel_Output_View",msg);
+}
+
+void SetLEDRealTimeOffsetResult(int result)
+{
+  if(@sysvar::RealTimeOffsetPanel::LED_Sequence_Result == 0)
+    return;
+  @sysvar::RealTimeOffsetPanel::LED_Sequence_Result = result;
+}
+
+
+void writeByteArrayToString(byte arr[],char str[])
+{
+  int i;
+  
+  if( (elcount(arr)==0) //No Bytes to copy
+    ||(((elcount(arr)*3)+1)>(elcount(str)))) //Char-Array is to small to contain the byte array.
+  {
+    return;
+  }
+  
+  snprintf(str,elcount(str),"");
+  
+  for(i = 0; i < (elCount(arr)-1); i++)
+  {
+    snprintf(str,elcount(str),"%s%02X-",str,arr[i]);
+  }
+  snprintf(str,elcount(str),"%s%02X",str,arr[(elCount(arr)-1)]);
+}
+
+void VIN_Byte2Char(char outVIN[], byte inVIN[])
+{
+  memcpy(outVIN,inVIN,elcount(outVIN)-1);
+  outVIN[elcount(outVIN)-1] = 0;
+}
