@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-28 12:51:22" timestamp="   0.000000" verdicts="2_basic" measurementid="1fc101e9-2b31-4a6a-be56-c2576b8004d8">
-  <testcase starttime="2025-08-28 12:51:22" timestamp="   0.000000">
+<testmodule starttime="2025-08-28 15:23:47" timestamp="   0.000000" verdicts="2_basic" measurementid="fd68662b-48da-4cee-acc9-b272e5a91464">
+  <testcase starttime="2025-08-28 15:23:47" timestamp="   0.000000">
     <teststep timestamp="   0.000000" level="0" type="user" ident=" " result="pass">Available targets: DMRR_MMA,DMRL_MMA,DMFR_MMA,DMFL_MMA</teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident="" result="na"></teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident="loop" result="na">ECU: DMRR_MMA</teststep>
     <teststep timestamp="   0.000000" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   0.080130" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRR_MMA&apos; Elapsed time=80.1301ms (max=1000ms)</teststep>
-    <teststep timestamp="   2.180130" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   2.180130" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   2.180130" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   2.180130" level="0" type="user" ident="loop" result="na">ECU: DMRL_MMA</teststep>
-    <teststep timestamp="   2.180130" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   2.182186" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRL_MMA&apos; Elapsed time=2.0558ms (max=1000ms)</teststep>
-    <teststep timestamp="   4.282186" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   4.282186" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   4.282186" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   4.282186" level="0" type="user" ident="loop" result="na">ECU: DMFR_MMA</teststep>
-    <teststep timestamp="   4.282186" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   4.284024" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFR_MMA&apos; Elapsed time=1.838ms (max=1000ms)</teststep>
-    <teststep timestamp="   4.293502" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMFR_MMA&apos; Elapsed time=9.47822ms (max=2100ms)</teststep>
-    <teststep timestamp="   4.293502" level="0" type="user" ident=" " result="na">Target:DMFR_MMA LocalSecTickCount:0x4a837</teststep>
-    <teststep timestamp="   4.293502" level="0" type="user" ident="" result="na"></teststep>
-    <teststep timestamp="   4.293502" level="0" type="user" ident="loop" result="na">ECU: DMFL_MMA</teststep>
-    <teststep timestamp="   4.293502" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
-    <teststep timestamp="   4.296040" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFL_MMA&apos; Elapsed time=2.53798ms (max=1000ms)</teststep>
-    <teststep timestamp="   6.396040" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
-    <teststep timestamp="   6.396040" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
-    <teststep timestamp="   6.396040" level="0" type="user" ident="Send RTOffsetBroadcast" result="fail">No ECU DateTime Info available.</teststep>
-    <verdict time="2025-08-28 12:51:29" timestamp="   6.396040" endtime="2025-08-28 12:51:29" endtimestamp="   6.396040" result="fail" />
+    <teststep timestamp="   0.084220" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRR_MMA&apos; Elapsed time=84.2202ms (max=1000ms)</teststep>
+    <teststep timestamp="   2.184220" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   2.184220" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   2.184220" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   2.184220" level="0" type="user" ident="loop" result="na">ECU: DMRL_MMA</teststep>
+    <teststep timestamp="   2.184220" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   2.186004" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMRL_MMA&apos; Elapsed time=1.78348ms (max=1000ms)</teststep>
+    <teststep timestamp="   4.286004" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   4.286004" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   4.286004" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   4.286004" level="0" type="user" ident="loop" result="na">ECU: DMFR_MMA</teststep>
+    <teststep timestamp="   4.286004" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   4.288162" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFR_MMA&apos; Elapsed time=2.158ms (max=1000ms)</teststep>
+    <teststep timestamp="   4.298174" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics response from &apos;DMFR_MMA&apos; Elapsed time=10.0122ms (max=2100ms)</teststep>
+    <teststep timestamp="   4.298174" level="0" type="user" ident=" " result="na">Target:DMFR_MMA LocalSecTickCount:0x455d2</teststep>
+    <teststep timestamp="   4.298174" level="0" type="user" ident="" result="na"></teststep>
+    <teststep timestamp="   4.298174" level="0" type="user" ident="loop" result="na">ECU: DMFL_MMA</teststep>
+    <teststep timestamp="   4.298174" level="0" type="user" ident=" " result="na">Read ECU SecTickCount</teststep>
+    <teststep timestamp="   4.300100" level="1" type="auto" ident="Resume reason" result="na">Resumed on Diagnostics request sent to &apos;DMFL_MMA&apos; Elapsed time=1.92598ms (max=1000ms)</teststep>
+    <teststep timestamp="   6.400100" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=2100ms (max=2100ms)</teststep>
+    <teststep timestamp="   6.400100" level="0" type="user" ident="" result="warn">No response within P2 timeout.</teststep>
+    <teststep timestamp="   6.400100" level="0" type="user" ident="Send RTOffsetBroadcast" result="fail">No ECU DateTime Info available.</teststep>
+    <verdict time="2025-08-28 15:23:53" timestamp="   6.400100" endtime="2025-08-28 15:23:53" endtimestamp="   6.400100" result="fail" />
     <title>ReadSecTickCountForAllTargets</title>
   </testcase>
-  <verdict time="2025-08-28 12:51:29" timestamp="   6.396040" endtime="2025-08-28 12:51:29" endtimestamp="   6.396040" result="fail" />
+  <verdict time="2025-08-28 15:23:53" timestamp="   6.400100" endtime="2025-08-28 15:23:53" endtimestamp="   6.400100" result="fail" />
   <title>DAG_SecTickCountSynchronization</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_12-54-36_554_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_15-23-47_571_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
@@ -134,4 +134,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="2d2007c9523e2b870b7304f414207786" version="1"-->
+<!--footprint="ac56fa3b41ff58ec6319ab26b645cb96" version="1"-->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-28 12:51:22" timestamp="   0.000000" verdicts="2_basic" measurementid="1fc101e9-2b31-4a6a-be56-c2576b8004d8">
-  <testcase starttime="2025-08-28 12:51:22" timestamp="   0.000000">
-    <verdict time="2025-08-28 12:51:22" timestamp="   0.000000" endtime="2025-08-28 12:51:22" endtimestamp="   0.000000" result="pass" />
+<testmodule starttime="2025-08-28 15:23:47" timestamp="   0.000000" verdicts="2_basic" measurementid="fd68662b-48da-4cee-acc9-b272e5a91464">
+  <testcase starttime="2025-08-28 15:23:47" timestamp="   0.000000">
+    <verdict time="2025-08-28 15:23:47" timestamp="   0.000000" endtime="2025-08-28 15:23:47" endtimestamp="   0.000000" result="pass" />
     <title>tc_ReadDiagQualifier</title>
   </testcase>
-  <verdict time="2025-08-28 12:51:22" timestamp="   0.000000" endtime="2025-08-28 12:51:22" endtimestamp="   0.000000" result="pass" />
+  <verdict time="2025-08-28 15:23:47" timestamp="   0.000000" endtime="2025-08-28 15:23:47" endtimestamp="   0.000000" result="pass" />
   <title>DiagTargetAnalyser</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_12-54-36_554_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_15-23-47_571_DM_FL_Shortstroke_Issue.blf" logbegin="   0.000000" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
@@ -108,4 +108,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="7bdb40e1f296bdc0f23c720ecc8eb6eb" version="1"-->
+<!--footprint="c6042c287763563efe2c26bc9465830e" version="1"-->

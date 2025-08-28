@@ -39,7 +39,7 @@ variables
   
   int TargOK = 0;
   
-  
+  int target = 0;
   
   //int Action_Type_DOWN = 0;
 }
@@ -78,10 +78,19 @@ on message 0x18E13080x /*FL*/
     // Código que se ejecuta cuando se recibe un mensaje con ID 0x18E13080x
     if (this.byte(1)==0x7E)
     {
-      TargetFL = 1;
-      TargetFR = 0;
-      TargetRL = 0;
-      TargetRR = 0;
+      if (target != 1)
+      {
+        TargetFL = 1;
+        TargetFR = 0;
+        TargetRL = 0;
+        TargetRR = 0;
+        DMRR_ACTIVE = 0;
+        DMRL_ACTIVE = 0;
+        DMFR_ACTIVE = 0;
+        DMFL_ACTIVE = 1;
+        sysSetVariableString("LocalAuthentication", "DiagTarget", "DMFL_MMA") ;
+        target = 1; 
+      }
     }
    }
   
@@ -90,10 +99,20 @@ on message 0x18E13080x /*FL*/
     // Código que se ejecuta cuando se recibe un mensaje con ID 0x18E13280x
     if (this.byte(1)==0x7E)
     {
-      TargetFL = 0;
-      TargetFR = 1;
-      TargetRL = 0;
-      TargetRR = 0;
+      if (target !=2)
+      {
+        TargetFL = 0;
+        TargetFR = 1;
+        TargetRL = 0;
+        TargetRR = 0;
+        DMRR_ACTIVE = 0;
+        DMRL_ACTIVE = 0;
+        DMFR_ACTIVE = 1;
+        DMFL_ACTIVE = 0;
+        sysSetVariableString("LocalAuthentication", "DiagTarget", "DMFR_MMA") ;
+        target = 2; 
+      }
+      
     }
    }
   
@@ -103,10 +122,19 @@ on message 0x18E13080x /*FL*/
     // Código que se ejecuta cuando se recibe un mensaje con ID 0x18E13480x
     if (this.byte(1)==0x7E)
     {
-      TargetFL = 0;
-      TargetFR = 0;
-      TargetRL = 1;
-      TargetRR = 0;
+      if (target !=3)
+      {
+        TargetFL = 0;
+        TargetFR = 0;
+        TargetRL = 1;
+        TargetRR = 0;
+        DMRR_ACTIVE = 0;
+        DMRL_ACTIVE = 1;
+        DMFR_ACTIVE = 0;
+        DMFL_ACTIVE = 0;
+        sysSetVariableString("LocalAuthentication", "DiagTarget", "DMRL_MMA") ;
+        target = 3;
+      }
     }
    }
   
@@ -115,10 +143,19 @@ on message 0x18E13080x /*FL*/
     // Código que se ejecuta cuando se recibe un mensaje con ID 0x18E13680x
     if (this.byte(1)==0x7E)
     {
-      TargetFL = 0;
-      TargetFR = 0;
-      TargetRL = 0;
-      TargetRR = 1;
+      if (target !=4)
+      {
+        TargetFL = 0;
+        TargetFR = 0;
+        TargetRL = 0;
+        TargetRR = 1;
+        DMRR_ACTIVE = 1;
+        DMRL_ACTIVE = 0;
+        DMFR_ACTIVE = 0;
+        DMFL_ACTIVE = 0;
+        sysSetVariableString("LocalAuthentication", "DiagTarget", "DMRR_MMA") ;
+        target = 4;
+      }
     }
    }
 
@@ -910,31 +947,29 @@ void sendTcpData( dword socket, char data[] )
       else
       {
         writeLineEx( 1, 3, " [ S: sendTcpData: Error sending data. (%d) ]", result);
-        write("supu1");
-//        cancelTimer(DMRR_timer);
-//        cancelTimer(DMRL_timer);
-//        cancelTimer(DMFL_timer);
-//        cancelTimer(DMFR_timer);
+        cancelTimer(DMRR_timer);
+        cancelTimer(DMRL_timer);
+        cancelTimer(DMFL_timer);
+        cancelTimer(DMFR_timer);
 //        //totalVersions[0] = '\0';
-//        TargetFL = 0;
-//        TargetFR = 0;
-//        TargetRL = 0;
-//        TargetRR = 0;
+        TargetFL = 0;
+        TargetFR = 0;
+        TargetRL = 0;
+        TargetRR = 0;
       }
     }
     else
     {
       writeLineEx( 1, 3, " [ S: sendTcpData: Error sending data. (%d) ]", result);
-      write("supu2");
-//      cancelTimer(DMRR_timer);
-//      cancelTimer(DMRL_timer);
-//      cancelTimer(DMFL_timer);
-//      cancelTimer(DMFR_timer);
+      cancelTimer(DMRR_timer);
+      cancelTimer(DMRL_timer);
+      cancelTimer(DMFL_timer);
+      cancelTimer(DMFR_timer);
 //      //totalVersions[0] = '\0';
-//      TargetFL = 0;
-//      TargetFR = 0;
-//      TargetRL = 0;
-//      TargetRR = 0;
+      TargetFL = 0;
+      TargetFR = 0;
+      TargetRL = 0;
+      TargetRR = 0;
     }
   }
 }
@@ -948,10 +983,6 @@ void DiagFuntionality (char data[])
         if (TargetRR==1)
         {
           @LocalAuthentication::Button_Authenticate = 1;
-          DMRR_ACTIVE = 1;
-          DMRL_ACTIVE = 0;
-          DMFR_ACTIVE = 0;
-          DMFL_ACTIVE = 0;
           Cont = 0;
           //setTimer(DMRR_timer,3);
         }
@@ -965,10 +996,6 @@ void DiagFuntionality (char data[])
         if (TargetFR==1)
         {
           @LocalAuthentication::Button_Authenticate = 1;
-          DMRR_ACTIVE = 0;
-          DMRL_ACTIVE = 0;
-          DMFR_ACTIVE = 1;
-          DMFL_ACTIVE = 0;
           Cont = 0;
           //setTimer(DMFR_timer,3);
        
@@ -983,10 +1010,6 @@ void DiagFuntionality (char data[])
         if (TargetRL==1)
         {
           @LocalAuthentication::Button_Authenticate = 1;
-          DMRR_ACTIVE = 0;
-          DMRL_ACTIVE = 1;
-          DMFR_ACTIVE = 0;
-          DMFL_ACTIVE = 0;
           Cont = 0;
           //setTimer(DMRL_timer,3);
         }
@@ -1000,10 +1023,6 @@ void DiagFuntionality (char data[])
         if (TargetFL==1)
         {
           @LocalAuthentication::Button_Authenticate = 1;
-          DMRR_ACTIVE = 0;
-          DMRL_ACTIVE = 0;
-          DMFR_ACTIVE = 0;
-          DMFL_ACTIVE = 1;
           Cont = 0;
           //setTimer(DMFL_timer,3);
         }

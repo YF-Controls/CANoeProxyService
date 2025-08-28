@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<systemvariables version="4">
-  <namespace name="" comment=""><namespace name="DCM_167mopf2_Sleep" comment=""><namespace name="WindowLifter" comment="">
-    <namespace name="SysVar_PW_Adj_FL_ST3" comment="" interface="">
-      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="SysVar_PW_Adj_FL_ST3" comment="Varaible for Manual Close Button for FL" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1" />
-    </namespace>
-  </namespace></namespace></namespace>
-</systemvariables>

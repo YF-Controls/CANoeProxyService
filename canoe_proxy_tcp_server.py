@@ -84,7 +84,11 @@ class CANoeProxyTcpServer:
         if not command:
           self.log_info(f'Client[{client_id}] command: No command, disconnecting') # Log
           break # Exit loop
-          
+        
+        
+        
+        
+        
         # Get CANoe application status
         elif command == 'status': # No parameters
           # PLC command: status
@@ -126,7 +130,11 @@ class CANoeProxyTcpServer:
           self.log_info(f'Client[{client_id}] response: {response}')
           continue
           
-                    
+        
+        
+        
+        
+        
         # Start CANoe application
         elif command == 'start': # parameters: cfg_id
           # PLC command: start {cfg_id}
@@ -168,6 +176,8 @@ class CANoeProxyTcpServer:
           continue
           
         
+        
+        
         elif command == 'close': # No parameters
           # PLC command: close
           # Service response:
@@ -183,6 +193,10 @@ class CANoeProxyTcpServer:
           client_socket.send(response.encode('utf-8'))
           self.log_info(f'Client[{client_id}] response: {response}')
           continue
+        
+        
+        
+        
         
         elif command == 'help': # No parameters
           # PLC command: help

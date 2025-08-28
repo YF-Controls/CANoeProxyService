@@ -3,6 +3,8 @@ from time import sleep
 import win32com.client
 import pythoncom
 import gc
+import os
+import logging
 from contextlib import contextmanager
 from .util.process_util import count_running_processes, kill_process
 
@@ -105,7 +107,7 @@ def is_measurement_running(canoe_exe: str) -> bool:
     #print(f"Error: {e}")
     return False
     
-def start_measurement(cfg_id: str, cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> str:
+def start_measurement2(cfg_id: str, cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> str:
   '''Start the CANoe application with the specified configuration file.
   Args:
     cfg_file: The path to the CANoe configuration file.
@@ -192,14 +194,92 @@ def start_measurement(cfg_id: str, cfg_path: str, canoe_exe: str, wit_ui: bool =
       attempt += 1
   
   if not done:
+    del canoe_inst
     return f'8111,{cfg_id} Impossible to open file: {cfg_path}'
   
   # Try to start measurment
   try:
     canoe_inst.start_measurement()
+    del canoe_inst
+    
   except Exception as e:
+    del canoe_inst
     return f'8112,{cfg_id} Impossible to start measurement, file: {cfg_path}'
   
   # Done
   return f'0000,{cfg_id} {cfg_path} measurement running'
 
+def start_measurement(cfg_id: str, cfg_path: str, canoe_exe: str, with_ui: bool = False) -> str:
+  """
+  Start measurement in Vector CANoe using COM API
+  Args:
+    cfg_id (str): Cfg ID
+    cfg_path (str): Cfg file path
+    with_ui (bool): True use GUI, otherwise hidden
+
+  Returns:
+    str: 0000,{cfg_file} measurement running\n
+    8110,{cfg_id} Impossible to start measurement, file: {cfg_path}
+    8111,{cfg_id} Some error when opening file {cfg_path}
+  """
+  logger = logging.getLogger('start_measurement')
+  
+  try:
+    with canoe_application_context() as app:
+      
+      logger.debug('Get meas and cfg')
+      meas = app.Measurement
+      cfg = app.Configuration
+
+      target_cfg = os.path.abspath(cfg_path).lower()
+      current_cfg = (cfg.FullName or "").lower()
+      logger.debug(f'target: {target_cfg}, current: {current_cfg}')
+      
+      # Case 1: it's already running
+      if meas.Running and current_cfg == target_cfg:
+        logger.debug('Case 1: It is already running')
+        return f'0000,{cfg_id} {cfg_path} measurement running'
+      
+      # Case 2: Other config is running, stop it!
+      if meas.Running and current_cfg != target_cfg:
+        logger.debug(f"⚠️ Measurement is running with: {cfg.FullName}, stopping")
+        meas.Stop()
+        sleep(1.0)
+        logger.debug('Measurment stop!')
+
+      # Case 3: Load new cfg file
+      if current_cfg != target_cfg:
+        logger.debug(f"🔄 Load new cfg: {cfg_path}")
+        app.Visible = with_ui
+        app.Open(cfg_path)
+        
+        sleep(2)
+        logger.debug('Loaded')
+                  
+      # Start measurement
+      if not meas.Running:
+        logger.debug('Start measurment.')
+        meas.Start()
+        
+        # Waiting measurment running
+        for _ in range(20):
+          logger.debug('Waiting measurement')
+          
+          if meas.Running:
+            return f'0000,{cfg_id} {cfg_path} measurement running'
+          sleep(0.5)
+          
+        # Impossible to start measurement
+        logger.error("\n⛔ No se pudo arrancar la medición.")
+        return f'8110,{cfg_id} Impossible to start measurement, file: {cfg_path}'
+
+      
+      return f'0000,{cfg_id} {cfg_path} measurement running'
+                    
+  except pythoncom.com_error as e:
+    logger.error(f"COM Error: {e}")
+    return f'8111,{cfg_id} Some error when opening file {cfg_path}'
+  
+  except Exception as e:
+    logger.error(f"Error: {e}")
+    return f'8111,{cfg_id} Some error when opening file {cfg_path}'

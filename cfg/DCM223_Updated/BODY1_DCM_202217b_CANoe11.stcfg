@@ -1,9 +1,0 @@
-[NStatePersistence]
-Signature=VectorStatePersistence
-[VGlobalMeasurementIndex]
-mMeasurementIndex=809
-[VTestConfigurationConfigData]
-DCM_167mopf2_Sleep_NextTestRun=19
-[VTestExecutable]
-DCM_167mopf2_Sleep_LastReportFile=..\..\..\..\..\Users\PID389F\AppData\Local\Temp\Report_DCM_167mopf2_Sleep.xml
-DCM_167mopf2_Sleep_LastReportTmpFile=..\..\..\..\..\Users\PID389F\AppData\Local\Temp

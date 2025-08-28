@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-28 12:12:39" timestamp=" 908.027000" verdicts="2_basic" measurementid="5e9b3574-85ea-41ee-a607-f10b3a124aec">
-  <testcase starttime="2025-08-28 12:12:39" timestamp=" 908.027000">
-    <teststep timestamp=" 908.027000" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
-    <teststep timestamp=" 908.027000" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
-    <teststep timestamp=" 909.800680" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
-    <verdict time="2025-08-28 12:12:39" timestamp=" 908.027000" endtime="2025-08-28 12:12:41" endtimestamp=" 909.800680" result="pass" />
+<testmodule starttime="2025-08-28 15:39:27" timestamp=" 940.097000" verdicts="2_basic" measurementid="fd68662b-48da-4cee-acc9-b272e5a91464">
+  <testcase starttime="2025-08-28 15:39:27" timestamp=" 940.097000">
+    <teststep timestamp=" 940.097000" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
+    <teststep timestamp=" 940.097000" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
+    <teststep timestamp=" 941.917083" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <verdict time="2025-08-28 15:39:27" timestamp=" 940.097000" endtime="2025-08-28 15:39:29" endtimestamp=" 941.917083" result="pass" />
     <title>LocalAuthentication</title>
   </testcase>
-  <verdict time="2025-08-28 12:12:39" timestamp=" 908.027000" endtime="2025-08-28 12:12:41" endtimestamp=" 909.800680" result="pass" />
+  <verdict time="2025-08-28 15:39:27" timestamp=" 940.097000" endtime="2025-08-28 15:39:29" endtimestamp=" 941.917083" result="pass" />
   <title>DAG_Diagnostics_Authentication</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_11-57-32_553_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_15-23-47_571_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
@@ -115,4 +115,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="87bf2ca936676bec81bdc1eb936c29e1" version="1"-->
+<!--footprint="642c276082dfea5fb7db859e27e26a42" version="1"-->
