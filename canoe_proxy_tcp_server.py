@@ -93,12 +93,12 @@ class CANoeProxyTcpServer:
         elif command == 'status': # No parameters
           # PLC command: status
           # Service response:
-          # 0000,{cfg_file} measurement running
-          # 7000,{canoe.exe} closed
+          # 0000,{cfg_id} {cfg_file} measurement running
+          # 7000,{canoe_exe} closed
           # 7001,No cfg file loaded
           # 7002,{cfg_file} waiting to start measurement
-          # 8000,Too many open {canoe.exe} instances
-                    
+          # 8000,Too many open {canoe_exe} instances
+                
           # Count processes
           count = count_running_processes(self.config.canOe.exe)
           
@@ -139,11 +139,12 @@ class CANoeProxyTcpServer:
         elif command == 'start': # parameters: cfg_id
           # PLC command: start {cfg_id}
           # Service response: 
-          # 0000,{cfg_file} measurement running
+          # 0000,{cfg_id} {cfg_file} measurement running
           # 8100,Missing parameters
           # 8101,Too many parameters
-          # 8102,Unknown cfg_id {cfg_id}
-          
+          # 8102,Unknown cfg_id: {cfg_id}
+          # 8110,{cfg_id} Impossible to start measurement, file: {cfg_path}
+          # 8111,{cfg_id} Some error when opening file {cfg_path}
           
           # No arguments
           if args_nr < 1:
@@ -164,7 +165,7 @@ class CANoeProxyTcpServer:
           cfg: CanOeCfgModel = self.config.canOe.get_cfg_by_id(cfg_id)
           
           if cfg is None:
-            response = f'8102,Unknown cfg_id {cfg_id}'
+            response = f'8102,Unknown cfg_id: {cfg_id}'
             client_socket.send(response.encode('utf-8'))
             self.log_info(f'Client[{client_id}] response: {response}')
             continue
@@ -182,7 +183,7 @@ class CANoeProxyTcpServer:
           # PLC command: close
           # Service response:
           # 0000,{canoe.exe} closed!
-          # 8200,Impossible to close {canoe.exe}. Force manually!
+          # 8200,Impossible to close {canoe_exe}. Force manually!
           
           if kill_process(self.config.canOe.exe):
             response = f'0000,{self.config.canOe.exe} closed!'

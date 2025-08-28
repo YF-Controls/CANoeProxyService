@@ -218,8 +218,8 @@ def start_measurement(cfg_id: str, cfg_path: str, canoe_exe: str, with_ui: bool 
     with_ui (bool): True use GUI, otherwise hidden
 
   Returns:
-    str: 0000,{cfg_file} measurement running\n
-    8110,{cfg_id} Impossible to start measurement, file: {cfg_path}
+    str: 0000,{cfg_id} {cfg_path} measurement running\n
+    8110,{cfg_id} Impossible to start measurement, file: {cfg_path}\n
     8111,{cfg_id} Some error when opening file {cfg_path}
   """
   logger = logging.getLogger('start_measurement')

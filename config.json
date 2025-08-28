@@ -22,14 +22,14 @@
         "id" : "MMA",
         "description" : "DCU type: DMxx_MMA",
         "path" : "C:\\CanOeProxy\\cfg\\MMA_Updated\\BODY1_15.cfg",
-        "host" : "localhost",
+        "host" : "0.0.0.0",
         "port" : 4242
       },
       {
         "id" : "223",
         "description" : "DCU type: DMxx223",
         "path" : "C:\\CanOeProxy\\cfg\\DCM223_Updated\\BODY1_15.cfg",
-        "host" : "localhost",
+        "host" : "0.0.0.0",
         "port" : 4242
       }
     ]
