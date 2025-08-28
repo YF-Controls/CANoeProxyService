@@ -59,9 +59,9 @@ Service installation steps
 Open cmd in can_oe_service.py path and type:
 
 ```Python
-python can_oe_service.py install --config "C:\CanOeService\config.json"
-python can_oe_service.py start
-python can_oe_service.py status
+python canoe_proxy_service.py install --config "C:\CanOeProxy\config.json"
+python canoe_proxy_service.py start
+python canoe_proxy_service.py status
 ```
 
 ### 2.2. Uninstall service
