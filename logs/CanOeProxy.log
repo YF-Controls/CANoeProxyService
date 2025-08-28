@@ -90,3 +90,30 @@
 2025-08-28 13:15:34,858 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:51399] received command: 
 2025-08-28 13:15:34,859 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:51399] command: No command, disconnecting
 2025-08-28 13:15:34,859 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:51399] disconnected!
+2025-08-28 15:15:51,914 [INFO    ] [CANoeProxyTcpServer , log_info , 286] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 15:16:17,408 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] connected from 192.168.2.130:63197
+2025-08-28 15:16:23,292 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: status
+2025-08-28 15:16:23,565 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 15:17:25,863 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: close
+2025-08-28 15:17:26,183 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,CANoe64.exe closed!
+2025-08-28 15:17:34,815 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: start
+2025-08-28 15:19:01,083 [DEBUG   ] [start_measurement , start_measurement , 230] Get meas and cfg
+2025-08-28 15:19:01,125 [DEBUG   ] [start_measurement , start_measurement , 236] target: c:\canoeproxy\cfg\mma_updated\body1_15.cfg, current: c:\canoeproxy\cfg\mma_updated\body1_15.cfg
+2025-08-28 15:19:01,162 [DEBUG   ] [start_measurement , start_measurement , 261] Start measurment.
+2025-08-28 15:19:01,166 [DEBUG   ] [start_measurement , start_measurement , 266] Waiting measurement
+2025-08-28 15:19:01,670 [DEBUG   ] [start_measurement , start_measurement , 266] Waiting measurement
+2025-08-28 15:19:27,336 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 15:20:21,477 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: close
+2025-08-28 15:20:21,847 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,CANoe64.exe closed!
+2025-08-28 15:21:18,376 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: start
+2025-08-28 15:22:45,962 [DEBUG   ] [start_measurement , start_measurement , 230] Get meas and cfg
+2025-08-28 15:22:46,288 [DEBUG   ] [start_measurement , start_measurement , 236] target: c:\canoeproxy\cfg\mma_updated\body1_15.cfg, current: c:\canoeproxy\cfg\mma_updated\body1_15.cfg
+2025-08-28 15:22:46,290 [DEBUG   ] [start_measurement , start_measurement , 261] Start measurment.
+2025-08-28 15:22:46,304 [DEBUG   ] [start_measurement , start_measurement , 266] Waiting measurement
+2025-08-28 15:22:46,818 [DEBUG   ] [start_measurement , start_measurement , 266] Waiting measurement
+2025-08-28 15:23:47,980 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 15:40:02,063 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: close
+2025-08-28 15:40:02,398 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] response: 0000,CANoe64.exe closed!
+2025-08-28 15:40:06,353 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] received command: 
+2025-08-28 15:40:06,353 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] command: No command, disconnecting
+2025-08-28 15:40:06,353 [INFO    ] [CANoeProxyTcpServer , log_info , 286] Client[192.168.2.130:63197] disconnected!
