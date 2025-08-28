@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-27 13:48:07" timestamp="   8.390000" verdicts="2_basic" measurementid="1cd4ae3c-38c2-4fea-a999-078b2bedea52">
-  <testcase starttime="2025-08-27 13:48:07" timestamp="   8.390000">
-    <teststep timestamp="   8.390000" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
-    <teststep timestamp="   8.390000" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
-    <teststep timestamp="  10.260553" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
-    <verdict time="2025-08-27 13:48:07" timestamp="   8.390000" endtime="2025-08-27 13:48:08" endtimestamp="  10.260553" result="pass" />
+<testmodule starttime="2025-08-28 12:12:39" timestamp=" 908.027000" verdicts="2_basic" measurementid="5e9b3574-85ea-41ee-a607-f10b3a124aec">
+  <testcase starttime="2025-08-28 12:12:39" timestamp=" 908.027000">
+    <teststep timestamp=" 908.027000" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
+    <teststep timestamp=" 908.027000" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
+    <teststep timestamp=" 909.800680" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <verdict time="2025-08-28 12:12:39" timestamp=" 908.027000" endtime="2025-08-28 12:12:41" endtimestamp=" 909.800680" result="pass" />
     <title>LocalAuthentication</title>
   </testcase>
-  <verdict time="2025-08-27 13:48:07" timestamp="   8.390000" endtime="2025-08-27 13:48:08" endtimestamp="  10.260553" result="pass" />
+  <verdict time="2025-08-28 12:12:39" timestamp=" 908.027000" endtime="2025-08-28 12:12:41" endtimestamp=" 909.800680" result="pass" />
   <title>DAG_Diagnostics_Authentication</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-27_13-47-58_526_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_11-57-32_553_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
@@ -25,27 +25,27 @@
     </xinfo>
     <xinfo>
       <name>Configuration</name>
-      <description>C:\CANoeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
     </xinfo>
     <xinfo>
       <name>Database BODY1 on BODY1</name>
-      <description>C:\CANoeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFL_MMA</name>
-      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFR_MMA</name>
-      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRL_MMA</name>
-      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRR_MMA</name>
-      <description>R08, en-US, C:\CANoeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
+      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Test Module Name</name>
@@ -53,7 +53,7 @@
     </xinfo>
     <xinfo>
       <name>Test Module File</name>
-      <description>C:\CANoeProxy\cfg\MMA_Updated\Security\Authentication\DAG_Authentication_TestModule.xml</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\Authentication\DAG_Authentication_TestModule.xml</description>
     </xinfo>
     <xinfo>
       <name>Last modification of Test Module File</name>
@@ -61,7 +61,7 @@
     </xinfo>
     <xinfo>
       <name>Test Module Library (CAPL)</name>
-      <description>C:\CANoeProxy\cfg\MMA_Updated\Security\Authentication\LocalAuthentication_TestModule.can</description>
+      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\Authentication\LocalAuthentication_TestModule.can</description>
     </xinfo>
     <xinfo>
       <name>Windows Computer Name</name>
@@ -115,4 +115,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="47c336083c0f5ccb9f3be1f4cb96af7e" version="1"-->
+<!--footprint="87bf2ca936676bec81bdc1eb936c29e1" version="1"-->

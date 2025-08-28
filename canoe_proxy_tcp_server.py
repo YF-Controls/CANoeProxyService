@@ -15,6 +15,7 @@ from modules.models.config_model import ConfigModel
 from modules.util.process_util import *
 from modules.util.string_util import *
 from modules.vector_canoe import *
+from modules.models.canoe_model import CanOeCfgModel
 
 ##############################################################
 # Class to handle TCP Server and Process (Apps)
@@ -45,10 +46,10 @@ class CANoeProxyTcpServer:
     # host = 127.0.0.1 listen local connection
     # host = x.x.x.x listen in specific address
     
-    self.server_socket.bind((self.config.host, self.config.port))
+    self.server_socket.bind((self.config.service.host, self.config.service.port))
     self.server_socket.listen(5) # Listen until 5 clients
     self.isRunning = True
-    self.log_info(f'TCP Server is starting on {self.config.host}:{self.config.port}')
+    self.log_info(f'TCP Server is listening on {self.config.service.host}:{self.config.service.port}')
     
     try:
       while self.isRunning:
@@ -106,15 +107,19 @@ class CANoeProxyTcpServer:
           
           else:
             cfg_path = some_cfg_loaded(self.config.canOe.exe)
+            cfg_id = self.config.canOe.get_cfg_id_by_path(cfg_path)
+            
+            if cfg_id is None:
+              cfg_id = '???'
             
             if cfg_path is None:
               response = f'7001,No cfg file loaded' 
             
             elif is_measurement_running(self.config.canOe.exe):
-              response = f'0000,{cfg_path} measurement running'
+              response = f'0000,{cfg_id} {cfg_path} measurement running'
             
             else:
-              response = f'7002,{cfg_path} waiting to start measurement'
+              response = f'7002,{cfg_id} {cfg_path} waiting to start measurement'
 
           # Send response
           client_socket.send(response.encode('utf-8'))
@@ -135,31 +140,30 @@ class CANoeProxyTcpServer:
           # No arguments
           if args_nr < 1:
             response = '8100,Missing parameters'
-            socket.send(response.encode('utf-8'))
+            client_socket.send(response.encode('utf-8'))
             self.log_info(f'Client[{client_id}] response: {response}')
             continue
         
           # Too many arguments
           if args_nr > 1:
             response = '8101,Too many parameters'
-            socket.send(response.encode('utf-8'))
+            client_socket.send(response.encode('utf-8'))
             self.log_info(f'Client[{client_id}] response: {response}')
             continue
         
           # Cfg_id argument
           cfg_id = args[1] # Get cfg_id
-          cfg_path = self.config.canOe.get_cfg_path_by_id(cfg_id) # Get cfg_path
+          cfg: CanOeCfgModel = self.config.canOe.get_cfg_by_id(cfg_id)
           
-          if cfg_path is None:
+          if cfg is None:
             response = f'8102,Unknown cfg_id {cfg_id}'
-            socket.send(response.encode('utf-8'))
+            client_socket.send(response.encode('utf-8'))
             self.log_info(f'Client[{client_id}] response: {response}')
             continue
           
           # Start application
-          response = start_measurement(cfg_path, self.config.canOe.exe, True)
-          response = f'8003,Impossible to start {cfg_id}'
-          socket.send(response.encode('utf-8'))
+          response = start_measurement(cfg_id, cfg.path, self.config.canOe.exe, True)
+          client_socket.send(response.encode('utf-8'))
           self.log_info(f'Client[{client_id}] response: {response}')
           continue
           
@@ -202,7 +206,7 @@ class CANoeProxyTcpServer:
       self.log_error(f'Client[{client_id}] error: {e}')
     
     finally:
-      socket.close()
+      client_socket.close()
       del self.clients[client_id]
       self.log_info(f'Client[{client_id}] disconnected!')
 

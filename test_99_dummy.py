@@ -1,9 +1,6 @@
+from modules.vector_canoe import *
 
-a = ' data'
+CANOE_EXE = 'CANoe64.exe'
+a = some_cfg_loaded(CANOE_EXE)
 
-if a is None:
-  print('No data')
-
-else:
-  print(a)
-
+print(a)

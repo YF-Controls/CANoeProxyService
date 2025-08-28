@@ -1,0 +1,81 @@
+2025-08-28 11:00:19,961 [INFO    ] TCP Server is starting on 0.0.0.0:3000                                           [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:02:14,192 [INFO    ] Client[192.168.2.130:64536] connected from 192.168.2.130:64536                   [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:02:19,768 [INFO    ] Client[192.168.2.130:64536] received command: status                             [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:02:19,933 [INFO    ] Client[192.168.2.130:64536] response: 7000,CANoe64.exe closed                    [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:24,408 [INFO    ] Client[192.168.2.130:64536] received command: help                               [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:24,408 [INFO    ] Client[192.168.2.130:64536] response: 0000,Available commands: status, start {cfg_id}, close, help [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:33,759 [INFO    ] Client[192.168.2.130:64536] received command: close                              [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:33,766 [INFO    ] Client[192.168.2.130:64536] response: 0000,CANoe64.exe closed!                   [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:47,294 [INFO    ] Client[192.168.2.130:64536] received command: start                              [CANoeProxyTcpServer , log_info , 268]
+2025-08-28 11:06:47,294 [ERROR   ] Client[192.168.2.130:64536] error: 'CanOeModel' object has no attribute 'get_cfg_path_by_id' [CANoeProxyTcpServer , log_error , 278]
+2025-08-28 11:17:10,760 [INFO    ] TCP Server is listening on 0.0.0.0:3000                                          [CANoeProxyTcpServer , log_info , 269]
+2025-08-28 11:17:21,252 [INFO    ] Client[192.168.2.130:64593] connected from 192.168.2.130:64593                   [CANoeProxyTcpServer , log_info , 269]
+2025-08-28 11:17:24,741 [INFO    ] Client[192.168.2.130:64593] received command: start                              [CANoeProxyTcpServer , log_info , 269]
+2025-08-28 11:17:24,741 [ERROR   ] Client[192.168.2.130:64593] error: module 'socket' has no attribute 'send'       [CANoeProxyTcpServer , log_error , 279]
+2025-08-28 11:19:26,199 [INFO    ] TCP Server is listening on 0.0.0.0:3000                                          [CANoeProxyTcpServer , log_info , 269]
+2025-08-28 11:19:42,453 [INFO    ] TCP Server is listening on 0.0.0.0:3000                                          [CANoeProxyTcpServer , log_info , 269]
+2025-08-28 11:25:22,949 [INFO    ] [CANoeProxyTcpServer , log_info , 269] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 11:27:26,757 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] connected from 192.168.2.130:52967
+2025-08-28 11:27:31,535 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] received command: start
+2025-08-28 11:27:31,536 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] response: 8102,Unknown cfg_id moco
+2025-08-28 11:27:43,029 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] received command: start
+2025-08-28 11:31:15,480 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] response: 8003,Impossible to start MMA
+2025-08-28 11:31:39,606 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] received command: status
+2025-08-28 11:31:39,627 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] response: 0000,C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 11:48:44,916 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53168] connected from 192.168.2.130:53168
+2025-08-28 11:48:44,918 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53168] received command: 
+2025-08-28 11:48:44,919 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53168] command: No command, disconnecting
+2025-08-28 11:48:44,919 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53168] disconnected!
+2025-08-28 11:48:57,200 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] received command: 
+2025-08-28 11:48:57,201 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] command: No command, disconnecting
+2025-08-28 11:48:57,201 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:52967] disconnected!
+2025-08-28 11:53:27,337 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] connected from 192.168.2.130:53193
+2025-08-28 11:53:30,997 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] received command: status
+2025-08-28 11:53:31,011 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] response: 7001,No cfg file loaded
+2025-08-28 11:53:42,788 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] received command: status
+2025-08-28 11:53:42,793 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] response: 7001,No cfg file loaded
+2025-08-28 12:13:33,873 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] received command: status
+2025-08-28 12:13:33,883 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53193] response: 7001,No cfg file loaded
+2025-08-28 12:17:00,998 [INFO    ] [CANoeProxyTcpServer , log_info , 269] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 12:17:07,055 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53314] connected from 192.168.2.130:53314
+2025-08-28 12:17:10,712 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53314] received command: status
+2025-08-28 12:17:10,938 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 264] Cfg_path: None
+2025-08-28 12:17:10,939 [INFO    ] [CANoeProxyTcpServer , log_info , 269] Client[192.168.2.130:53314] response: 7001,No cfg file loaded
+2025-08-28 12:18:05,887 [INFO    ] [CANoeProxyTcpServer , log_info , 270] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 12:18:10,883 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:53323] connected from 192.168.2.130:53323
+2025-08-28 12:18:13,189 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:53323] received command: status
+2025-08-28 12:18:13,418 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] canoe_exe: CANoe64.exe
+2025-08-28 12:18:13,419 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] Cfg_path: None
+2025-08-28 12:18:13,419 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:53323] response: 7001,No cfg file loaded
+2025-08-28 12:34:47,002 [INFO    ] [CANoeProxyTcpServer , log_info , 270] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 12:34:54,419 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61023] connected from 192.168.2.130:61023
+2025-08-28 12:34:57,802 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61023] received command: status
+2025-08-28 12:34:58,028 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] canoe_exe: CANoe64.exe
+2025-08-28 12:34:58,089 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] Cfg_path: C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg
+2025-08-28 12:34:58,091 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61023] response: 7002,C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg waiting to start measurement
+2025-08-28 12:39:27,009 [INFO    ] [CANoeProxyTcpServer , log_info , 270] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 12:39:30,346 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] connected from 192.168.2.130:61049
+2025-08-28 12:39:32,147 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] received command: status
+2025-08-28 12:39:32,370 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] canoe_exe: CANoe64.exe
+2025-08-28 12:39:32,428 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] Cfg_path: C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg
+2025-08-28 12:39:32,433 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] response: 0000,C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 12:39:50,605 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] received command: 
+2025-08-28 12:39:50,605 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] command: No command, disconnecting
+2025-08-28 12:39:50,606 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61049] disconnected!
+2025-08-28 12:39:52,837 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61050] connected from 192.168.2.130:61050
+2025-08-28 12:39:58,442 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61050] received command: help
+2025-08-28 12:39:58,442 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61050] response: 0000,Available commands: status, start {cfg_id}, close, help
+2025-08-28 12:40:02,002 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61050] received command: status
+2025-08-28 12:40:02,007 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] canoe_exe: CANoe64.exe
+2025-08-28 12:40:02,015 [DEBUG   ] [CANoeProxyTcpServer , log_debug , 265] Cfg_path: C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg
+2025-08-28 12:40:02,022 [INFO    ] [CANoeProxyTcpServer , log_info , 270] Client[192.168.2.130:61050] response: 0000,C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 12:48:27,277 [INFO    ] [CANoeProxyTcpServer , log_info , 272] TCP Server is listening on 0.0.0.0:3000
+2025-08-28 12:48:32,341 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] connected from 192.168.2.130:61097
+2025-08-28 12:48:34,173 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] received command: help
+2025-08-28 12:48:34,174 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] response: 0000,Available commands: status, start {cfg_id}, close, help
+2025-08-28 12:48:38,581 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] received command: status
+2025-08-28 12:48:38,869 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] response: 0000,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running
+2025-08-28 12:48:51,596 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] received command: status
+2025-08-28 12:48:51,613 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] response: 7002,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg waiting to start measurement
+2025-08-28 12:49:07,028 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] received command: start
+2025-08-28 12:51:23,841 [INFO    ] [CANoeProxyTcpServer , log_info , 272] Client[192.168.2.130:61097] response: 0000,MMA C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg measurement running

@@ -1,7 +1,31 @@
 from py_canoe import CANoe, wait
 from time import sleep
-import win32com.client, time
+import win32com.client
+import pythoncom
+import gc
+from contextlib import contextmanager
 from .util.process_util import count_running_processes, kill_process
+
+
+@contextmanager
+def canoe_application_context():
+  """Context manager para manejar seguro la aplicación CANoe"""
+  pythoncom.CoInitialize()
+  app = None
+  try:
+    app = win32com.client.Dispatch("CANoe.Application")
+    yield app
+  finally:
+    # Limpieza segura
+    if app is not None:
+      try:
+        # No forzamos Quit() para no cerrar CANoe si estaba abierto
+        pass
+      except:
+        pass
+      # Eliminar referencia
+      del app
+    pythoncom.CoUninitialize()
 
 def some_cfg_loaded(canoe_exe: str) -> str | None:
   '''Check if a configuration file is loaded in CANoe.
@@ -9,42 +33,56 @@ def some_cfg_loaded(canoe_exe: str) -> str | None:
       canoe_exe: The name of the CANoe executable.
   Returns:
       str | None: 
-        - Returns the full path of the configuration file if loaded, otherwise None.'''
-
+        - Returns the full path of the configuration file if loaded, otherwise None.
+  '''
+  
   # Check if the application is running  
-  #if count_running_processes(canoe_exe) != 1:
-  #  return None
-  try:
-    app = win32com.client.Dispatch("CANoe.Application")
-    name = app.Configuration.Name
-    full = app.Configuration.FullName
-    return full if name else None
-  
-  except Exception as e:
-    return None
-   
-  
-
-def some_measurement_running(canoe_exe: str) -> str | None:
-  '''Check if a measurement is running in CANoe.
-  Args:
-    canoe_exe: The name of the CANoe executable.
-  Returns:
-    str | None: 
-      - Returns the configuration full path if a measurement is running, otherwise None.'''
-  
-  cfg_full_name = some_cfg_loaded(canoe_exe)
-  
-  if cfg_full_name is None:
-    return None
+  # if count_running_processes(canoe_exe) != 1:
+  #   return None
   
   try:
-    app = win32com.client.Dispatch("CANoe.Application")
-  except Exception as e:
+    with canoe_application_context() as app:
+      # Verificar si hay una configuración cargada
+      name = app.Configuration.Name
+      full_name = app.Configuration.FullName
+      
+      # Devolver el path completo solo si hay un nombre de configuración
+      return full_name if name else None
+          
+  except pythoncom.com_error as e:
+    # Error específico de COM
+    #print(f"COM Error al acceder a CANoe: {e}")
     return None
   
-  return cfg_full_name if app.Measurement.Running else None
+  except Exception as e:
+    # Otros errores
+    #print(f"Error inesperado: {e}")
+    return None
+  
+def some_measurement_running_optimized(canoe_exe: str) -> str | None:
+  '''Check if a measurement is running in CANoe (optimized version).
+  Combines both configuration check and measurement check in a single COM connection.'''
+  
+  try:
+    with canoe_application_context() as app:
+      # Verificar si hay configuración cargada
+      config_name = app.Configuration.Name
+      config_full_name = app.Configuration.FullName
+      
+      if not config_name:
+        return None
 
+      # Verificar si la medición está corriendo
+      is_running = app.Measurement.Running
+      return config_full_name if is_running else None
+        
+  except pythoncom.com_error as e:
+    #print(f"COM Error: {e}")
+    return None
+  
+  except Exception as e:
+    #print(f"Error: {e}")
+    return None
 
 def is_measurement_running(canoe_exe: str) -> bool:
   '''Check if measurement is running
@@ -53,17 +91,21 @@ def is_measurement_running(canoe_exe: str) -> bool:
     
   Returns:
     bool: True if the measurement is running, False otherwise.'''
-    
-  try:
-    app = win32com.client.Dispatch("CANoe.Application")
-    return app.Measurement.Running
   
-  except Exception as e:
+  try:
+    with canoe_application_context() as app:
+       
+      return app.Measurement.Running
+        
+  except pythoncom.com_error as e:
+    #print(f"COM Error: {e}")
     return False
   
-
+  except Exception as e:
+    #print(f"Error: {e}")
+    return False
     
-def start_measurement(cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> str:
+def start_measurement(cfg_id: str, cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> str:
   '''Start the CANoe application with the specified configuration file.
   Args:
     cfg_file: The path to the CANoe configuration file.
@@ -121,13 +163,13 @@ def start_measurement(cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> st
       
       else:
         status = STATUS_6_CFG_LOADED_MATCHES_AND_MEASUREMENT
-        return f'0000,{cfg_path} measurement running'
+        return f'0000,{cfg_id} {cfg_path} measurement running'
       
   # Open CANoe application with the specified configuration file
   try:
     canoe_inst = CANoe()
   except Exception as e:
-    return f'8110,Impossible to load CANoe() instance'
+    return f'8110,{cfg_id} Impossible to load CANoe() instance'
   
   # Try to open cfg file.
   # We use a while loop because may be when a previous cfg file is in measurement, sometimes it fails.
@@ -150,14 +192,14 @@ def start_measurement(cfg_path: str, canoe_exe: str, wit_ui: bool = False) -> st
       attempt += 1
   
   if not done:
-    return f'8111,Impossible to open file: {cfg_path}'
+    return f'8111,{cfg_id} Impossible to open file: {cfg_path}'
   
   # Try to start measurment
   try:
     canoe_inst.start_measurement()
   except Exception as e:
-    return f'8112,Impossible to start measurement, file: {cfg_path}'
+    return f'8112,{cfg_id} Impossible to start measurement, file: {cfg_path}'
   
   # Done
-  return f'0000,{cfg_path} measurement running'
+  return f'0000,{cfg_id} {cfg_path} measurement running'
 

@@ -37,7 +37,9 @@ variables
   int TargetRL = 0;
   int TargetRR = 0;
   
-  char totalVersions[50];
+  int TargOK = 0;
+  
+  
   
   //int Action_Type_DOWN = 0;
 }
@@ -126,6 +128,9 @@ on timer DMRR_timer
   diagRequest DMRR_MMA.HardwareVersion_Read DMRR_HW;
   diagRequest DMRR_MMA.ECUSerialNumberDataIdentifier_Read DMRR_SN;
   
+  
+ if (TargOK == 1)
+ {
   switch(Cont)
   {
     case 0: // SW
@@ -146,10 +151,16 @@ on timer DMRR_timer
     case 3: // Fin
         Cont = 0;
         cancelTimer(DMRR_timer);
+        TargOK = 0;
       break;
     default:
       break;
   }
+}
+else
+{
+  setTimer(DMRR_timer,1);
+}
 }
 
 on timer DMRL_timer
@@ -158,6 +169,8 @@ on timer DMRL_timer
   diagRequest DMRL_MMA.HardwareVersion_Read DMRL_HW;
   diagRequest DMRL_MMA.ECUSerialNumberDataIdentifier_Read DMRL_SN;
   
+  if (TargOK == 1)
+ {
   switch(Cont)
   {
     case 0: // SW
@@ -178,10 +191,16 @@ on timer DMRL_timer
     case 3: // Fin
         Cont = 0;
         cancelTimer(DMRL_timer);
+        TargOK = 0;
       break;
     default:
       break;
   }
+}
+else
+{
+  setTimer(DMRL_timer,1);
+}
 }
 
 on timer DMFR_timer
@@ -190,6 +209,8 @@ on timer DMFR_timer
   diagRequest DMFR_MMA.HardwareVersion_Read DMFR_HW;
   diagRequest DMFR_MMA.ECUSerialNumberDataIdentifier_Read DMFR_SN;
   
+  if (TargOK == 1)
+ {
   switch(Cont)
   {
     case 0: // SW
@@ -210,10 +231,16 @@ on timer DMFR_timer
     case 3: // Fin
         Cont = 0;
         cancelTimer(DMFR_timer);
+        TargOK = 0;
       break;
     default:
       break;
   }
+}
+else
+{
+  setTimer(DMFR_timer,1);
+}
 }
 
 on timer DMFL_timer
@@ -221,7 +248,8 @@ on timer DMFL_timer
   diagRequest DMFL_MMA.SoftwareVersion_Read DMFL_SW;
   diagRequest DMFL_MMA.HardwareVersion_Read DMFL_HW;
   diagRequest DMFL_MMA.ECUSerialNumberDataIdentifier_Read DMFL_SN;
-  
+  if (TargOK == 1)
+ {
   switch(Cont)
   {
     case 0: // SW
@@ -242,10 +270,16 @@ on timer DMFL_timer
     case 3: // Fin
         Cont = 0;
         cancelTimer(DMFL_timer);
+        TargOK = 0;
       break;
     default:
       break;
   }
+}
+else
+{
+  setTimer(DMFL_timer,1);
+}
 }
 
 on sysvar MMA::DMFL
@@ -416,7 +450,10 @@ on sysvar ACCTIONS::Auto
           DMFR_ACTIVE = 0;
           DMFL_ACTIVE = 1;
           Cont = 0;
-          setTimer(DMFL_timer,3);
+          if (TargOK == 1)
+          {
+            setTimer(DMFL_timer,3);
+          }
         }
   }
 }
@@ -650,15 +687,15 @@ void OnTcpListen( dword socket, long result)
       else
       {
         write("S: Accepted client on socket %d to socket %d.", gListenSocket, gServerClientSocket);
-        cancelTimer(DMRR_timer);
-        cancelTimer(DMRL_timer);
-        cancelTimer(DMFL_timer);
-        cancelTimer(DMFR_timer);
-        totalVersions[0] = '\0';
-        TargetFL = 0;
-        TargetFR = 0;
-        TargetRL = 0;
-        TargetRR = 0;
+//        cancelTimer(DMRR_timer);
+//        cancelTimer(DMRL_timer);
+//        cancelTimer(DMFL_timer);
+//        cancelTimer(DMFR_timer);
+        //totalVersions[0] = '\0';
+//        TargetFL = 0;
+//        TargetFR = 0;
+//        TargetRL = 0;
+//        TargetRR = 0;
         // start to receive data on the server's client socket...
         startReceive(gServerClientSocket, gServerTcpBuffer);
         // do more stuff on server to initialize the incoming accepted client...
@@ -826,12 +863,12 @@ void serverSend(int replyNr, dword socket)
     {
       case gSERVER_REPLY_WELCOME:
       {
-        //sendTcpData( socket, " Server data: WELCOME.");
+        sendTcpData( socket, " Server data: WELCOME.");
         break;
       }
       case gSERVER_REPLY_ANSWER:
       {
-        //sendTcpData(socket, "Server data: ANSWER.");
+        sendTcpData(socket, "Server data: ANSWER.");
         break;
       }
       default:
@@ -873,29 +910,31 @@ void sendTcpData( dword socket, char data[] )
       else
       {
         writeLineEx( 1, 3, " [ S: sendTcpData: Error sending data. (%d) ]", result);
-        cancelTimer(DMRR_timer);
-        cancelTimer(DMRL_timer);
-        cancelTimer(DMFL_timer);
-        cancelTimer(DMFR_timer);
-        totalVersions[0] = '\0';
-        TargetFL = 0;
-        TargetFR = 0;
-        TargetRL = 0;
-        TargetRR = 0;
+        write("supu1");
+//        cancelTimer(DMRR_timer);
+//        cancelTimer(DMRL_timer);
+//        cancelTimer(DMFL_timer);
+//        cancelTimer(DMFR_timer);
+//        //totalVersions[0] = '\0';
+//        TargetFL = 0;
+//        TargetFR = 0;
+//        TargetRL = 0;
+//        TargetRR = 0;
       }
     }
     else
     {
       writeLineEx( 1, 3, " [ S: sendTcpData: Error sending data. (%d) ]", result);
-      cancelTimer(DMRR_timer);
-      cancelTimer(DMRL_timer);
-      cancelTimer(DMFL_timer);
-      cancelTimer(DMFR_timer);
-      totalVersions[0] = '\0';
-      TargetFL = 0;
-      TargetFR = 0;
-      TargetRL = 0;
-      TargetRR = 0;
+      write("supu2");
+//      cancelTimer(DMRR_timer);
+//      cancelTimer(DMRL_timer);
+//      cancelTimer(DMFL_timer);
+//      cancelTimer(DMFR_timer);
+//      //totalVersions[0] = '\0';
+//      TargetFL = 0;
+//      TargetFR = 0;
+//      TargetRL = 0;
+//      TargetRR = 0;
     }
   }
 }
@@ -914,7 +953,7 @@ void DiagFuntionality (char data[])
           DMFR_ACTIVE = 0;
           DMFL_ACTIVE = 0;
           Cont = 0;
-          setTimer(DMRR_timer,3);
+          //setTimer(DMRR_timer,3);
         }
         else 
         {
@@ -931,8 +970,9 @@ void DiagFuntionality (char data[])
           DMFR_ACTIVE = 1;
           DMFL_ACTIVE = 0;
           Cont = 0;
-          setTimer(DMFR_timer,3);
-          }
+          //setTimer(DMFR_timer,3);
+       
+         }
         else 
         {
           sendTcpData(Socket_nvm, "Set_target ERROR Target not conected");
@@ -948,7 +988,7 @@ void DiagFuntionality (char data[])
           DMFR_ACTIVE = 0;
           DMFL_ACTIVE = 0;
           Cont = 0;
-          setTimer(DMRL_timer,3);
+          //setTimer(DMRL_timer,3);
         }
         else 
         {
@@ -965,7 +1005,7 @@ void DiagFuntionality (char data[])
           DMFR_ACTIVE = 0;
           DMFL_ACTIVE = 1;
           Cont = 0;
-          setTimer(DMFL_timer,3);
+          //setTimer(DMFL_timer,3);
         }
         else 
         {
@@ -1205,6 +1245,28 @@ on sysvar LocalAuthentication::AuthResult
   {
     //sendTcpData(Socket_nvm, "Authenticate OK");
     write("Set_target OK");
+    TargOK = 1;
+    if (TargetRR==1)
+    {
+      setTimer(DMRR_timer,3);
+	  }
+    else if (TargetFR==1)
+    {
+      setTimer(DMFR_timer,3);
+    }
+    else if (TargetRL==1)
+    {
+      setTimer(DMRL_timer,3);
+    }
+    else if (TargetFL==1)
+    {
+      setTimer(DMFL_timer,3);
+    }
+    else
+    {
+      sendTcpData(Socket_nvm, "Set_target ERROR Target not conected");
+      write("Set_target ERROR Target not conected");
+    }
     @LocalAuthentication::AuthResult = 3;
   }
   else if (@LocalAuthentication::AuthResult == 0)
@@ -1230,6 +1292,8 @@ on diagResponse *
   char nuevo_string[50];
   char myStringSW[20];
   char myStringHW[10];
+  
+  char totalVersions[50];
 
   int i;
   diagResponse * resp; // declare response with no concrete interpretation
@@ -1293,7 +1357,7 @@ on diagResponse *
         strncat(totalVersions, serialNumber, 50);
         write("SW,HW,SN: %s", totalVersions);
         sendTcpData(Socket_nvm, totalVersions);
-        totalVersions[0] = '\0';
+        //totalVersions[0] = '\0';
       }
       break;
     case 0x71: // UDS: EcuReset_Process positive Response

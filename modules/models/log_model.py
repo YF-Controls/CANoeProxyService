@@ -13,13 +13,13 @@ from typing import Dict, Any
 class LogModel:
   """Log model class
   """
-  help: str = "Log levels: NOTSET, DEBUG, INFO, WARNING, ERROR, CRITICAL"
-  level: str = "DEBUG"
-  printToConsole: bool = False
+  help: str
+  level: str
+  printToConsole: bool
   filePath: str
-  maxSize: int = 10485760  # 10 MB
-  maxFiles: int = 20
-  format: str = "%(asctime)s [%(levelname)-8s] %(message)-80s [%(name)s , %(funcName)s , %(lineno)d]"
+  maxSize: int
+  maxFiles: int
+  format: str
 
   @classmethod
   def from_dic(cls, data: Dict[str, Any]) -> 'LogModel':
@@ -29,9 +29,8 @@ class LogModel:
       help = data.get('help', "Log levels: NOTSET, DEBUG, INFO, WARNING, ERROR, CRITICAL"),
       level = data.get('level', "DEBUG"),
       printToConsole = data.get('printToConsole', False),
-      printToEventViewer = data.get('printToEventViewer', False),
-      filePath = data.get('filePath', f"c:\CanOeProxy.log"),
-      maxSize = data.get('maxSize', 10485760),
+      filePath = data.get('filePath', r"c:\CanOeProxy.log"),
+      maxSize = data.get('maxSize', 10485760),# 10 MB
       maxFiles = data.get('maxFiles', 20),
       format = data.get('format', "%(asctime)s [%(levelname)-8s] %(message)-80s [%(name)s , %(funcName)s , %(lineno)d]")
     )

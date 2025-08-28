@@ -28,7 +28,7 @@ class CanOeModel:
       cfgs = cfgs
     )
   
-  def get_cfg_id_by_path(self, path: str) -> str | None:
+  def get_cfg_id_by_path(self, path: str) -> Dict[str, None]:
     """Get the ID of a CanOeCfgModel by its path.
     Args:
       path (str): The path of the configuration file to search for.
@@ -40,7 +40,7 @@ class CanOeModel:
         return cfg.id
     return None
   
-  def get_cfg_by_id(self, cfg_id: str) -> CanOeCfgModel | None:
+  def get_cfg_by_id(self, cfg_id: str) -> Dict['CanOeCfgModel', None]:
     '''Get the CanOeCfgModel by its ID.
     Args:
       cfg_id (str): The ID of the configuration to search for.

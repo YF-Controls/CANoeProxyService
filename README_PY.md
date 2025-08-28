@@ -30,7 +30,18 @@ https://127.0.0.1:61000/#/zenzefi/ui/error/401
 Usuario: S1AZENZE
 Contraseña: GA0525,Prod
 
+HMI
+user: admin
+pass: ide
+
+
 Hacer login offline de vez en cuando.
 
 Hacer pantalla de advertencia para que el operario
 haga login offline.
+
+
+Log format:
+
+%(asctime)s [%(levelname)-8s] %(message)-80s [%(name)s , %(funcName)s , %(lineno)d]
+%(asctime)s [%(levelname)-8s] [%(name)s , %(funcName)s , %(lineno)d] %(message)
