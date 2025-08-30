@@ -901,6 +901,17 @@ void serverSend(int replyNr, dword socket)
       case gSERVER_REPLY_WELCOME:
       {
         sendTcpData( socket, " Server data: WELCOME.");
+        cancelTimer(DMRR_timer);
+        cancelTimer(DMRL_timer);
+        cancelTimer(DMFL_timer);
+        cancelTimer(DMFR_timer);
+//        //totalVersions[0] = '\0';
+        TargetFL = 0;
+        TargetFR = 0;
+        TargetRL = 0;
+        TargetRR = 0;
+        target = 0;
+        Cont = 0;
         break;
       }
       case gSERVER_REPLY_ANSWER:
@@ -956,6 +967,8 @@ void sendTcpData( dword socket, char data[] )
         TargetFR = 0;
         TargetRL = 0;
         TargetRR = 0;
+        target = 0;
+        Cont = 0;
       }
     }
     else
@@ -970,6 +983,8 @@ void sendTcpData( dword socket, char data[] )
       TargetFR = 0;
       TargetRL = 0;
       TargetRR = 0;
+      target = 0;
+      Cont = 0;
     }
   }
 }
@@ -1267,18 +1282,22 @@ on sysvar LocalAuthentication::AuthResult
     TargOK = 1;
     if (TargetRR==1)
     {
+      Cont = 0;
       setTimer(DMRR_timer,3);
 	  }
     else if (TargetFR==1)
     {
+      Cont = 0;
       setTimer(DMFR_timer,3);
     }
     else if (TargetRL==1)
     {
+      Cont = 0;
       setTimer(DMRL_timer,3);
     }
     else if (TargetFL==1)
     {
+      Cont = 0;
       setTimer(DMFL_timer,3);
     }
     else

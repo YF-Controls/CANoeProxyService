@@ -1,0 +1,5 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VTestExecutable]
+TestNode0_LastReportTmpFile=rpt40D4.xml
+TestNode1_LastReportTmpFile=Security\Authentication

@@ -1,0 +1,509 @@
+/* CHECKSUM={8B779F37F3D67513B179EF438B39C7CBA5D5EAC1} */ 
+/* ************************************************************************** */
+/*                                                                            */
+/*                              Mercedes-Benz AG                              */
+/*                            All rights reserved                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:   LIN Description file                                       */
+/*  Network:       DOOR STAR 3 2020                                           */
+/*  Release:       2022-42a                                                   */
+/*                                                                            */
+/*  Engineer:      RD/UPT Glodd,                                              */
+/*                 Sifi, 20.07.2018                                           */
+/*  Creation Date: 2022-10-21                                                 */
+/*  Status:        RELEASED                                                   */
+/*  XDIS-Database: MBC-Database                                               */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+LIN_description_file;
+LIN_protocol_version = "2.1";
+LIN_language_version = "2.1";
+LIN_speed = 19.200 kbps;
+
+Channel_name = "DOOR";
+
+Nodes {
+	Master : DM, 5.000 ms, 0.170 ms;
+	Slaves : DSM_MS, DSM_WM;
+}
+
+
+Signals {
+	AirScarfSw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	AirScarf_Stat_ST3 : 2, 0, DM, DSM_MS;
+	CSL_SwLED_Rq_ST3 : 2, 3, DM, DSM_WM;
+	CSL_Sw_Psd_ST3 : 2, 3, DSM_WM, DM;
+	Cpcty_IntCom_Err_ST3 : 2, 3, DSM_WM, DM;
+	DSM_MS2_Tgl_ST3 : 1, 0, DSM_MS, DM;
+	DSM_MS_ForceSens_Err_ST3 : 2, 3, DSM_MS, DM;
+	DSM_MS_MCU_Err_ST3 : 2, 3, DSM_MS, DM;
+	DSM_MS_Tgl_ST3 : 1, 0, DSM_MS, DM;
+	DSM_MS_TouchSens_Err_ST3 : 2, 3, DSM_MS, DM;
+	DSM_WM_Tgl_ST3 : 1, 0, DSM_WM, DM;
+	FctIllLvl_ST3 : 8, 255, DM, DSM_MS, DSM_WM;
+	ISw_Stat_ST3 : 3, 7, DM, DSM_MS, DSM_WM;
+	MemSw1_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MemSw2_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MemSw3_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MemSw4_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MemSw5_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MemSw_Sv_Psd_ST3 : 2, 0, DSM_MS, DM;
+	MirrAdj_Ctrl_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_LED_Sel_FL_Rq_ST3 : 2, 3, DM, DSM_WM;
+	MirrAdj_LED_Sel_FR_Rq_ST3 : 2, 3, DM, DSM_WM;
+	MirrAdj_Sw_Dn_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Dn_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Fld_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Fld_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Lt_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Lt_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Rt_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Rt_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Sel_FL_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Sel_FL_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Sel_FR_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Sel_FR_Psd_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Up_Err_ST3 : 2, 3, DSM_WM, DM;
+	MirrAdj_Sw_Up_Psd_ST3 : 2, 3, DSM_WM, DM;
+	NeckHt_Stat_ST3 : 2, 0, DM, DSM_MS;
+	NeckHt_Sw_Psd_ST3 : 2, 3, DSM_MS, DM;
+	NwId_DOOR_ST3 : 8, 125, DM;
+	PN14_DDP_Sw_Stat_ST3 : 3, 0, DM, DSM_MS;
+	PW_Adj_FL_ST3 : 3, 0, DSM_WM, DM;
+	PW_Adj_FR_ST3 : 3, 0, DSM_WM, DM;
+	PW_Adj_RL_ST3 : 3, 0, DSM_WM, DM;
+	PW_Adj_RR_ST3 : 3, 0, DSM_WM, DM;
+	RB_R_Sw_Psd_F_ST3 : 2, 0, DSM_WM, DM;
+	RB_R_Sw_Psd_R_ST3 : 2, 0, DSM_WM, DM;
+	RsErr_DSM_MS_ST3 : 1, 0, DSM_MS, DM;
+	RsErr_DSM_WM_ST3 : 1, 0, DSM_WM, DM;
+	SeatAdj_Sw_BkRst_Fwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_BkRst_Rwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_BkRst_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_Csn_Fwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Csn_Rwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Csn_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRstHght_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRstTilt_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRst_Dn_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRst_Fwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRst_Rwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_HdRst_Up_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Hght_Dn_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Hght_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_Hght_Up_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRstHrzt_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRstTilt_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRst_Dn_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRst_Fwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRst_Rwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_LowLegRst_Up_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Posn_Fwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Posn_Rwd_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Posn_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_Tilt_Dn_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatAdj_Sw_Tilt_SpdLvl_Rq_ST3 : 5, 0, DSM_MS, DM;
+	SeatAdj_Sw_Tilt_Up_Psd_ST3 : 1, 0, DSM_MS, DM;
+	SeatFct_CtrlPnl_Psd_ST3 : 2, 3, DSM_MS, DM;
+	SeatHtSw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	SeatHt_Stat_ST3 : 2, 0, DM, DSM_MS;
+	SeatVnSw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	SeatVn_Stat_ST3 : 2, 0, DM, DSM_MS;
+	Seat_Func_Fwd_Sw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	Seat_Func_Rwd_Sw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	Seat_Func_Sw_Psd_ST3 : 2, 0, DSM_MS, DM;
+	Seat_Func_Sw_Stat_ST3 : 2, 3, DM, DSM_MS;
+	SupVolt_OutOfRng_ST3 : 2, 3, DM, DSM_MS, DSM_WM;
+	SwIllLvl_ST3 : 8, 255, DM, DSM_MS, DSM_WM;
+	SwIll_NightDay_ST3 : 2, 0, DM, DSM_MS;
+	TSSR_RB_R_Sw_Psd_ST3 : 3, 0, DSM_WM, DM;
+	VehSL_LivingStat_ST3 : 4, 15, DM, DSM_WM;
+	WakeupStat_DSM_MS_ST3 : 2, 3, DSM_MS, DM;
+	WakeupStat_DSM_WM_ST3 : 2, 3, DSM_WM, DM;
+	WinAll_SwLED_Rq_ST3 : 2, 3, DM, DSM_WM;
+	WinAll_Sw_Psd_ST3 : 2, 1, DSM_WM, DM;
+}
+
+
+Diagnostic_signals {
+	MasterReqB0:8,0;
+	MasterReqB1:8,0;
+	MasterReqB2:8,0;
+	MasterReqB3:8,0;
+	MasterReqB4:8,0;
+	MasterReqB5:8,0;
+	MasterReqB6:8,0;
+	MasterReqB7:8,0;
+	SlaveRespB0:8,0;
+	SlaveRespB1:8,0;
+	SlaveRespB2:8,0;
+	SlaveRespB3:8,0;
+	SlaveRespB4:8,0;
+	SlaveRespB5:8,0;
+	SlaveRespB6:8,0;
+	SlaveRespB7:8,0;
+}
+
+Frames {
+	DOOR_Data_LIN_ST3 : 0, DM, 2 {
+		NwId_DOOR_ST3, 0;
+	}
+	DSM_MS_Stat2_LIN_ST3 : 2, DSM_MS, 8 {
+		Seat_Func_Sw_Psd_ST3, 0;
+		SeatHtSw_Psd_ST3, 2;
+		SeatVnSw_Psd_ST3, 4;
+		Seat_Func_Rwd_Sw_Psd_ST3, 6;
+		Seat_Func_Fwd_Sw_Psd_ST3, 8;
+		MemSw1_Psd_ST3, 10;
+		MemSw2_Psd_ST3, 12;
+		MemSw3_Psd_ST3, 14;
+		MemSw4_Psd_ST3, 16;
+		MemSw5_Psd_ST3, 18;
+		MemSw_Sv_Psd_ST3, 20;
+		AirScarfSw_Psd_ST3, 22;
+		DSM_MS_MCU_Err_ST3, 24;
+		DSM_MS_ForceSens_Err_ST3, 26;
+		DSM_MS_TouchSens_Err_ST3, 28;
+		NeckHt_Sw_Psd_ST3, 30;
+		SeatFct_CtrlPnl_Psd_ST3, 58;
+		DSM_MS2_Tgl_ST3, 60;
+		RsErr_DSM_MS_ST3, 61;
+		WakeupStat_DSM_MS_ST3, 62;
+	}
+	DSM_MS_Stat_LIN_ST3 : 3, DSM_MS, 8 {
+		SeatAdj_Sw_Tilt_Up_Psd_ST3, 0;
+		SeatAdj_Sw_Tilt_Dn_Psd_ST3, 1;
+		SeatAdj_Sw_Posn_Rwd_Psd_ST3, 2;
+		SeatAdj_Sw_Posn_Fwd_Psd_ST3, 3;
+		SeatAdj_Sw_LowLegRst_Up_Psd_ST3, 4;
+		SeatAdj_Sw_LowLegRst_Rwd_Psd_ST3, 5;
+		SeatAdj_Sw_LowLegRst_Fwd_Psd_ST3, 6;
+		SeatAdj_Sw_LowLegRst_Dn_Psd_ST3, 7;
+		SeatAdj_Sw_Hght_Up_Psd_ST3, 8;
+		SeatAdj_Sw_Hght_Dn_Psd_ST3, 9;
+		SeatAdj_Sw_HdRst_Up_Psd_ST3, 10;
+		SeatAdj_Sw_HdRst_Rwd_Psd_ST3, 11;
+		SeatAdj_Sw_HdRst_Fwd_Psd_ST3, 12;
+		SeatAdj_Sw_HdRst_Dn_Psd_ST3, 13;
+		SeatAdj_Sw_Csn_Rwd_Psd_ST3, 14;
+		SeatAdj_Sw_Csn_Fwd_Psd_ST3, 15;
+		SeatAdj_Sw_BkRst_Rwd_Psd_ST3, 16;
+		SeatAdj_Sw_BkRst_Fwd_Psd_ST3, 17;
+		DSM_MS_Tgl_ST3, 18;
+		SeatAdj_Sw_Tilt_SpdLvl_Rq_ST3, 19;
+		SeatAdj_Sw_Posn_SpdLvl_Rq_ST3, 24;
+		SeatAdj_Sw_LowLegRstTilt_SpdLvl_Rq_ST3, 29;
+		SeatAdj_Sw_LowLegRstHrzt_SpdLvl_Rq_ST3, 34;
+		SeatAdj_Sw_Hght_SpdLvl_Rq_ST3, 39;
+		SeatAdj_Sw_HdRstTilt_SpdLvl_Rq_ST3, 44;
+		SeatAdj_Sw_HdRstHght_SpdLvl_Rq_ST3, 49;
+		SeatAdj_Sw_Csn_SpdLvl_Rq_ST3, 54;
+		SeatAdj_Sw_BkRst_SpdLvl_Rq_ST3, 59;
+	}
+	DSM_WM_Stat_LIN_ST3 : 4, DSM_WM, 8 {
+		PW_Adj_FL_ST3, 0;
+		PW_Adj_FR_ST3, 3;
+		CSL_Sw_Psd_ST3, 6;
+		PW_Adj_RL_ST3, 8;
+		PW_Adj_RR_ST3, 11;
+		MirrAdj_Sw_Fld_Psd_ST3, 14;
+		MirrAdj_Sw_Up_Psd_ST3, 16;
+		MirrAdj_Sw_Dn_Psd_ST3, 18;
+		MirrAdj_Sw_Lt_Psd_ST3, 20;
+		MirrAdj_Sw_Rt_Psd_ST3, 22;
+		MirrAdj_Sw_Sel_FL_Psd_ST3, 24;
+		MirrAdj_Sw_Sel_FR_Psd_ST3, 26;
+		RB_R_Sw_Psd_F_ST3, 28;
+		RB_R_Sw_Psd_R_ST3, 30;
+		TSSR_RB_R_Sw_Psd_ST3, 32;
+		WinAll_Sw_Psd_ST3, 35;
+		MirrAdj_Sw_Up_Err_ST3, 40;
+		MirrAdj_Sw_Rt_Err_ST3, 42;
+		MirrAdj_Sw_Lt_Err_ST3, 44;
+		MirrAdj_Sw_Dn_Err_ST3, 46;
+		MirrAdj_Sw_Sel_FL_Err_ST3, 48;
+		MirrAdj_Sw_Sel_FR_Err_ST3, 50;
+		MirrAdj_Sw_Fld_Err_ST3, 52;
+		Cpcty_IntCom_Err_ST3, 54;
+		MirrAdj_Ctrl_Psd_ST3, 58;
+		DSM_WM_Tgl_ST3, 60;
+		RsErr_DSM_WM_ST3, 61;
+		WakeupStat_DSM_WM_ST3, 62;
+	}
+	Door_Stat_LIN_ST3 : 5, DM, 8 {
+		ISw_Stat_ST3, 0;
+		SupVolt_OutOfRng_ST3, 3;
+		PN14_DDP_Sw_Stat_ST3, 5;
+		CSL_SwLED_Rq_ST3, 8;
+		MirrAdj_LED_Sel_FL_Rq_ST3, 10;
+		MirrAdj_LED_Sel_FR_Rq_ST3, 12;
+		Seat_Func_Sw_Stat_ST3, 14;
+		SeatHt_Stat_ST3, 16;
+		SeatVn_Stat_ST3, 18;
+		VehSL_LivingStat_ST3, 20;
+		SwIll_NightDay_ST3, 24;
+		AirScarf_Stat_ST3, 26;
+		WinAll_SwLED_Rq_ST3, 28;
+		NeckHt_Stat_ST3, 30;
+		SwIllLvl_ST3, 48;
+		FctIllLvl_ST3, 56;
+	}
+}
+
+
+Diagnostic_frames {
+	MasterReq : 60 {
+		MasterReqB0, 0;
+		MasterReqB1, 8;
+		MasterReqB2, 16;
+		MasterReqB3, 24;
+		MasterReqB4, 32;
+		MasterReqB5, 40;
+		MasterReqB6, 48;
+		MasterReqB7, 56;
+	}
+	SlaveResp : 61 {
+		SlaveRespB0, 0;
+		SlaveRespB1, 8;
+		SlaveRespB2, 16;
+		SlaveRespB3, 24;
+		SlaveRespB4, 32;
+		SlaveRespB5, 40;
+		SlaveRespB6, 48;
+		SlaveRespB7, 56;
+	}
+}
+
+Node_attributes {
+	DSM_MS {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x10;
+		initial_NAD = 0x10;
+		product_id = 0x0056, 0x0001, 0x00;
+		response_error = RsErr_DSM_MS_ST3;
+		P2_min = 50 ms;
+		ST_min = 0 ms;
+		configurable_frames {
+			DSM_MS_Stat_LIN_ST3;
+			Door_Stat_LIN_ST3;
+			DSM_MS_Stat2_LIN_ST3;
+		}
+	}
+	DSM_WM {
+		LIN_protocol = "2.1";
+		configured_NAD = 0x0F;
+		initial_NAD = 0x0F;
+		product_id = 0x0066, 0x0001, 0x01;
+		response_error = RsErr_DSM_WM_ST3;
+		P2_min = 50 ms;
+		ST_min = 0 ms;
+		N_As_timeout = 1000 ms;
+		N_Cr_timeout = 1000 ms;
+		configurable_frames {
+			DSM_WM_Stat_LIN_ST3;
+			Door_Stat_LIN_ST3;
+		}
+	}
+}
+
+
+Schedule_tables {
+	sch_mreq {
+		MasterReq	delay	10.000 ms;
+	}
+	sch_normal {
+		DSM_WM_Stat_LIN_ST3	delay	10.000 ms;
+		DSM_MS_Stat_LIN_ST3	delay	10.000 ms;
+		Door_Stat_LIN_ST3	delay	10.000 ms;
+		DSM_MS_Stat2_LIN_ST3	delay	10.000 ms;
+		DSM_WM_Stat_LIN_ST3	delay	10.000 ms;
+		DSM_MS_Stat_LIN_ST3	delay	10.000 ms;
+		DOOR_Data_LIN_ST3	delay	10.000 ms;
+		DSM_MS_Stat2_LIN_ST3	delay	10.000 ms;
+	}
+	sch_sresp {
+		SlaveResp	delay	10.000 ms;
+	}
+}
+
+
+Signal_encoding_types {
+	c02_AirScarf_Stat {
+		logical_value, 0, "AS_OFF";
+		logical_value, 1, "AS_STEP1";
+		logical_value, 2, "AS_STEP2";
+		logical_value, 3, "AS_STEP3";
+	}
+	c02_CpctyErr_Type {
+		logical_value, 0, "SHRT_CIRC_BAT";
+		logical_value, 1, "SHRT_CIRC_GND";
+		logical_value, 2, "OPN_LOAD";
+		logical_value, 3, "NO_ERR";
+	}
+	c02_Cpcty_IntCom_Err {
+		logical_value, 0, "ERR_NVM_MAIN";
+		logical_value, 1, "ERR_NVM_TOUCH";
+		logical_value, 2, "ERR_SPI_COM";
+		logical_value, 3, "NO_ERR";
+	}
+	c02_Fls_Tru {
+		logical_value, 1, "FALSE";
+		logical_value, 2, "TRUE";
+		logical_value, 3, "SNA";
+	}
+	c02_InitDayNight {
+		logical_value, 0, "INIT";
+		logical_value, 1, "DAY";
+		logical_value, 2, "NIGHT";
+		logical_value, 3, "SNA";
+	}
+	c02_NPsd_Opn_Cls_Imp {
+		logical_value, 0, "NPSD";
+		logical_value, 1, "OPEN";
+		logical_value, 2, "CLOSE";
+		logical_value, 3, "IMPL";
+	}
+	c02_NPsd_Psd_NDef {
+		logical_value, 0, "NPSD";
+		logical_value, 1, "PSD";
+		logical_value, 2, "NDEF2";
+		logical_value, 3, "SNA";
+	}
+	c02_NPsd_Psd_ST3 {
+		logical_value, 0, "NPSD";
+		logical_value, 1, "PSD";
+		logical_value, 3, "SNA";
+	}
+	c02_NPsd_Tchd_Psd_SNA {
+		logical_value, 0, "NPSD";
+		logical_value, 1, "TOUCH";
+		logical_value, 2, "PSD";
+		logical_value, 3, "SNA";
+	}
+	c02_NTchd_Tchd_Psd {
+		logical_value, 0, "NOT_TOUCH";
+		logical_value, 1, "TOUCH";
+		logical_value, 2, "PSD";
+	}
+	c02_NTchd_Tchd_Psd_SNA {
+		logical_value, 0, "NOT_TOUCH";
+		logical_value, 1, "TOUCH";
+		logical_value, 2, "PSD";
+		logical_value, 3, "SNA";
+	}
+	c02_Ndef_False_True_ST3 {
+		logical_value, 1, "FALSE";
+		logical_value, 2, "TRUE";
+		logical_value, 3, "SNA";
+	}
+	c02_NoErr_Err {
+		logical_value, 0, "NO_ERROR";
+		logical_value, 1, "ERROR";
+		logical_value, 3, "SNA";
+	}
+	c02_SeatHt_Stat {
+		logical_value, 0, "SH_OFF";
+		logical_value, 1, "SH_STEP1";
+		logical_value, 2, "SH_STEP2";
+		logical_value, 3, "SH_STEP3";
+	}
+	c02_SeatVn_Stat {
+		logical_value, 0, "SV_OFF";
+		logical_value, 1, "SV_STEP1";
+		logical_value, 2, "SV_STEP2";
+		logical_value, 3, "SV_STEP3";
+	}
+	c02_WakeUp_Stat {
+		logical_value, 0, "NO_WUP";
+		logical_value, 1, "ACTIVE_WUP";
+		logical_value, 2, "NDEF2";
+		logical_value, 3, "SNA";
+	}
+	c03_ISw_Stat {
+		logical_value, 0, "IGN_LOCK";
+		logical_value, 1, "IGN_OFF";
+		logical_value, 2, "IGN_ACC";
+		logical_value, 4, "IGN_ON";
+		logical_value, 5, "IGN_START";
+		logical_value, 7, "SNA";
+	}
+	c03_NPsd_Man_AutOpnCls_Imp {
+		logical_value, 0, "NPSD";
+		logical_value, 1, "MANOPN";
+		logical_value, 2, "MANCLS";
+		logical_value, 5, "AUTOOPN";
+		logical_value, 6, "AUTOCLS";
+		logical_value, 7, "IMPL";
+	}
+	c03_PN14_TDP_Sw_Stat {
+		logical_value, 0, "CLS";
+		logical_value, 1, "PRE_RESET";
+		logical_value, 2, "RESET";
+		logical_value, 3, "PRE_OPN";
+		logical_value, 4, "OPN";
+		logical_value, 7, "SNA";
+	}
+	c04_FWLB_LivingStat {
+		logical_value, 0, "VSL_PARKING";
+		logical_value, 1, "VSL_WELCOME";
+		logical_value, 2, "VSL_LIVING";
+		logical_value, 3, "VSL_BYE";
+		logical_value, 4, "VSL_SILENT_PARKING";
+		logical_value, 5, "VSL_SILENT_WELCOME";
+		logical_value, 6, "VSL_SILENT_LIVING";
+		logical_value, 7, "VSL_SILENT_BYE";
+		logical_value, 8, "VSL_DRIVING";
+		logical_value, 9, "VSL_CHECK_IN";
+		logical_value, 10, "VSL_CHECK_OUT";
+		logical_value, 11, "VSL_PRE_WELCOME";
+		logical_value, 12, "VSL_PRE_DRIVING";
+		logical_value, 13, "VSL_DIAGNOSTICS";
+		logical_value, 15, "SNA";
+	}
+	c05_NPsd_Step1_to_30_1 {
+		physical_value, 1, 30, 1, 0, "Step";
+		logical_value, 0, "NPSD";
+		logical_value, 31, "SNA";
+	}
+	c08_0_254_1_SNA_255 {
+		physical_value, 0, 254, 1, 0, "NoUnit";
+		logical_value, 255, "SNA";
+	}
+	c08_perc_0_100_0k4 {
+		physical_value, 0, 250, 0.4, 0, "%";
+		logical_value, 255, "SNA";
+	}
+}
+
+
+Signal_representation {
+	c02_AirScarf_Stat : AirScarf_Stat_ST3;
+	c02_CpctyErr_Type : MirrAdj_Sw_Dn_Err_ST3, MirrAdj_Sw_Fld_Err_ST3, MirrAdj_Sw_Lt_Err_ST3, MirrAdj_Sw_Rt_Err_ST3, MirrAdj_Sw_Sel_FL_Err_ST3, MirrAdj_Sw_Sel_FR_Err_ST3, MirrAdj_Sw_Up_Err_ST3;
+	c02_Cpcty_IntCom_Err : Cpcty_IntCom_Err_ST3;
+	c02_Fls_Tru : WinAll_SwLED_Rq_ST3, WinAll_Sw_Psd_ST3;
+	c02_InitDayNight : SwIll_NightDay_ST3;
+	c02_NPsd_Opn_Cls_Imp : RB_R_Sw_Psd_R_ST3;
+	c02_NPsd_Psd_NDef : RB_R_Sw_Psd_F_ST3;
+	c02_NPsd_Psd_ST3 : MirrAdj_Ctrl_Psd_ST3, SeatFct_CtrlPnl_Psd_ST3;
+	c02_NPsd_Tchd_Psd_SNA : NeckHt_Sw_Psd_ST3;
+	c02_NTchd_Tchd_Psd : SeatHtSw_Psd_ST3, SeatVnSw_Psd_ST3;
+	c02_NTchd_Tchd_Psd_SNA : AirScarfSw_Psd_ST3, MemSw1_Psd_ST3, MemSw2_Psd_ST3, MemSw3_Psd_ST3, MemSw4_Psd_ST3, MemSw5_Psd_ST3, MemSw_Sv_Psd_ST3, MirrAdj_Sw_Dn_Psd_ST3, MirrAdj_Sw_Fld_Psd_ST3, MirrAdj_Sw_Lt_Psd_ST3, MirrAdj_Sw_Rt_Psd_ST3, MirrAdj_Sw_Sel_FL_Psd_ST3, MirrAdj_Sw_Sel_FR_Psd_ST3, MirrAdj_Sw_Up_Psd_ST3, Seat_Func_Fwd_Sw_Psd_ST3, Seat_Func_Rwd_Sw_Psd_ST3, Seat_Func_Sw_Psd_ST3;
+	c02_Ndef_False_True_ST3 : CSL_SwLED_Rq_ST3, CSL_Sw_Psd_ST3, MirrAdj_LED_Sel_FL_Rq_ST3, MirrAdj_LED_Sel_FR_Rq_ST3, Seat_Func_Sw_Stat_ST3, SupVolt_OutOfRng_ST3;
+	c02_NoErr_Err : DSM_MS_ForceSens_Err_ST3, DSM_MS_MCU_Err_ST3, DSM_MS_TouchSens_Err_ST3;
+	c02_SeatHt_Stat : NeckHt_Stat_ST3, SeatHt_Stat_ST3;
+	c02_SeatVn_Stat : SeatVn_Stat_ST3;
+	c02_WakeUp_Stat : WakeupStat_DSM_MS_ST3, WakeupStat_DSM_WM_ST3;
+	c03_ISw_Stat : ISw_Stat_ST3;
+	c03_NPsd_Man_AutOpnCls_Imp : PW_Adj_FL_ST3, PW_Adj_FR_ST3, PW_Adj_RL_ST3, PW_Adj_RR_ST3, TSSR_RB_R_Sw_Psd_ST3;
+	c03_PN14_TDP_Sw_Stat : PN14_DDP_Sw_Stat_ST3;
+	c04_FWLB_LivingStat : VehSL_LivingStat_ST3;
+	c05_NPsd_Step1_to_30_1 : SeatAdj_Sw_BkRst_SpdLvl_Rq_ST3, SeatAdj_Sw_Csn_SpdLvl_Rq_ST3, SeatAdj_Sw_HdRstHght_SpdLvl_Rq_ST3, SeatAdj_Sw_HdRstTilt_SpdLvl_Rq_ST3, SeatAdj_Sw_Hght_SpdLvl_Rq_ST3, SeatAdj_Sw_LowLegRstHrzt_SpdLvl_Rq_ST3, SeatAdj_Sw_LowLegRstTilt_SpdLvl_Rq_ST3, SeatAdj_Sw_Posn_SpdLvl_Rq_ST3, SeatAdj_Sw_Tilt_SpdLvl_Rq_ST3;
+	c08_0_254_1_SNA_255 : NwId_DOOR_ST3;
+	c08_perc_0_100_0k4 : FctIllLvl_ST3, SwIllLvl_ST3;
+}
+
+

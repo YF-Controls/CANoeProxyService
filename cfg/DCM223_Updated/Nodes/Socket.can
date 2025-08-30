@@ -1,0 +1,433 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+// ---------------------------------------------------
+// node global variables.
+// ---------------------------------------------------
+variables
+{
+  const int gMTU = 1500;                  // tcp mtu
+  const dword gIPV4_STR_SIZE = 16;        // IPv4 string size
+  const dword gINVALID_SOCKET = ~0;       // invalid socket constant
+  dword gListenPort = 4242;              // port to send udp to.
+  dword gClientSocket = gINVALID_SOCKET;  // client side: a demo client's socket.
+  char gClientTcpBuffer[gMTU];            // tcp receive buffer of client
+  char gServerIpAddrStr[gIPV4_STR_SIZE] = "127.0.0.1"; // the IP of the server
+  //char gServerIpAddrStr[gIPV4_STR_SIZE] = "192.168.1.2"; // the IP of the server
+  
+}
+
+// ---------------------------------------------------
+// Interaction: Client connects to server
+// ---------------------------------------------------
+on sysvar COMUNICATION::C//key 'c'
+{
+  if (@COMUNICATION::C == 1)
+  {
+    clientConnect();
+  }
+}
+
+// ---------------------------------------------------
+// Interaction: Client disconnects from server.
+// ---------------------------------------------------
+on sysvar COMUNICATION::D//key 'd'
+{
+  if (@COMUNICATION::D == 1)
+  {
+    clientDisconnect();
+  }
+}
+
+// ---------------------------------------------------
+// Interaction: Client sends a request to the server
+// ---------------------------------------------------
+on sysvar COMUNICATION::S//key 's'
+{
+  if (@COMUNICATION::S == 1)
+  {
+    clientSendRequest();
+  }
+}
+
+
+// ---------------------------------------------------
+// Interaction: Stop measurement
+// ---------------------------------------------------
+on sysvar COMUNICATION::Q//key 'q'
+{
+  if (@COMUNICATION::Q == 1)
+  {
+    stop();
+  }
+}
+
+
+//----------------------------------------------------
+//
+//----------------------------------------------------
+on sysvar SOCKET_COMM::Command
+{
+  if (@SOCKET_COMM::Command == 1)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 1);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+  }
+  else if (@SOCKET_COMM::Command == 2)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+    sendTcpData(gClientSocket, "Start_com");
+  }
+  else if (@SOCKET_COMM::Command == 3)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+    sendTcpData(gClientSocket, "Authenticate");
+  }
+  else if (@SOCKET_COMM::Command == 4)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+    sendTcpData(gClientSocket, "Read_SW_version");
+  }
+  else if (@SOCKET_COMM::Command == 5)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+    sendTcpData(gClientSocket, "Read_HW_version");
+  }
+  else if (@SOCKET_COMM::Command == 6)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+    sendTcpData(gClientSocket, "Read_Serial_number");
+  }
+  else //if (@SOCKET_COMM::Command == 7)
+  {
+    SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+    SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 1);
+  }
+}
+
+on sysvar SOCKET_COMM::DCU_Type
+{
+  if (@SOCKET_COMM::DCU_Type == 1)
+  {
+      sendTcpData(gClientSocket, "Set_target DMFL_MMA");
+  }
+  else if (@SOCKET_COMM::DCU_Type == 2)
+  {
+      sendTcpData(gClientSocket, "Set_target DMFR_MMA");
+  }
+  else if (@SOCKET_COMM::DCU_Type == 3)
+  {
+      sendTcpData(gClientSocket, "Set_target DMRL_MMA");
+  }
+  else if (@SOCKET_COMM::DCU_Type == 4)
+  {
+      sendTcpData(gClientSocket, "Set_target DMRR_MMA");
+  }
+    else if (@SOCKET_COMM::DCU_Type == 5)
+  {
+      sendTcpData(gClientSocket, "Set_target DMD223");
+  }
+    else if (@SOCKET_COMM::DCU_Type == 6)
+  {
+      sendTcpData(gClientSocket, "Set_target DMP223");
+  }
+    else if (@SOCKET_COMM::DCU_Type == 7)
+  {
+      sendTcpData(gClientSocket, "Set_target DMRL223");
+  }
+    else if (@SOCKET_COMM::Command == 8)
+  {
+      sendTcpData(gClientSocket, "Set_target DMRR223");
+  }
+  else
+  {
+    
+  }
+}
+
+on sysvar SOCKET_COMM::WindowAction_type
+{
+  if (@SOCKET_COMM::WindowAction_type == 1)
+  {
+      sendTcpData(gClientSocket, "Window_control UP");
+  }
+  else if (@SOCKET_COMM::WindowAction_type == 2)
+  {
+      sendTcpData(gClientSocket, "Window_control DOWN");
+  }
+  else if (@SOCKET_COMM::WindowAction_type == 3)
+  {
+      sendTcpData(gClientSocket, "Window_control STOP");
+  }
+  else
+  {
+    
+  }
+}
+
+
+
+// ---------------------------------------------------
+// Connection operation completes
+// ---------------------------------------------------
+void OnTcpConnect( dword socket, long result)
+{
+  writeLineEx(1, 1, " [ C: OnTcpConnect called. (result: %d)]", result);
+  if (result == 0)
+  {
+    if (socket == gClientSocket)
+    {
+      write("C: Client connected to server done. (socket: %d, result: %d)", socket, result);
+      startReceive(gClientSocket, gClientTcpBuffer);
+    }
+  }
+}
+
+// ---------------------------------------------------
+// When asynchronous TcpSend completes...
+// ---------------------------------------------------
+void OnTcpSend( dword socket, long result, char buffer[], dword size)
+{
+  writeLineEx(1, 1, " [ C: OnTcpSend called. (result: %d)]", result);
+  if (result == 0)
+  {
+    if (socket != gINVALID_SOCKET)
+    {
+      if (socket == gClientSocket)
+      {
+        write("C: Client sent %d bytes to server done. (socket %d, result: %d)", size, socket, result);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------
+// When receiving data on socket...
+// ---------------------------------------------------
+void OnTcpReceive( dword socket, long result, dword address, dword port, char buffer[], dword size)
+{
+  writeLineEx(1, 1, " [ C: OnTcpReceive called. (result: %d) ]", result);
+  if (result == 0)
+  {
+    if (socket == gClientSocket)
+    {
+      // client receives from server...
+      write("C: Client received %d bytes from server: %s (result: %d)", size, buffer, result);
+      // check server's answer...
+      if (strstr(buffer, "WELCOME") >= 0)
+      {
+        write("C: Server told us WELCOME. Connection established.");
+      }
+      else if (strstr(buffer, "ANSWER") >= 0)
+      {
+        write("C: Received server answer: %s", buffer);
+      }
+      // continue receiving data on valid socket.
+      startReceive(gClientSocket, gClientTcpBuffer);
+      // show menu...
+      showMenu(1);
+      //poner aqui que sea visible algo del panel como lo de la letra c...
+    }
+    else if (socket != gINVALID_SOCKET)
+    {
+      writeLineEx(1, 3, " [ C: UNIMPLEMENTED: Received %d bytes on socket %d from 0x%x:%d with data: %s (result: %d) ]", size, socket, address, port, buffer, result);
+    }
+  }
+}
+
+// ---------------------------------------------------
+// TCP socket receives a close notification
+// ( remote closed )
+// ---------------------------------------------------
+void OnTcpClose( dword socket, long result)
+{
+  if (socket == gClientSocket)
+  {
+    TcpClose(gClientSocket);
+    gClientSocket = gINVALID_SOCKET;
+    writeLineEx(1, 1, " [ C: OnTcpClose called. (socket: %d, result: %d) ]", socket, result);
+    showMenu(0);
+  }
+}
+
+// ---------------------------------------------------
+// connect a client...
+// ---------------------------------------------------
+void clientConnect()
+{
+  dword result;
+  if (gClientSocket != gINVALID_SOCKET)
+  {
+    writeLineEx(1, 2, " [ C: The client is already connected. ]");
+    return;
+  }
+  writeLineEx(1, 1, " [ C: DEMO connecting one client... ]");
+  gClientSocket = TcpOpen( 0, 4243 );
+  if (gClientSocket == gINVALID_SOCKET)
+  {
+    writeLineEx(1, 3, " [ C: TcpOpen: FAILED. ]");
+  }
+  else
+  {
+    result = TcpConnect( gClientSocket, IpGetAddressAsNumber(gServerIpAddrStr), gListenPort );
+    if ( result == -1 )
+    {
+      result = IpGetLastSocketError(gClientSocket);
+      if (result != 10035)
+      {
+        writeLineEx( 1, 3, " [ C: TcpConnect for client failed with error %d ]", result );
+      }
+    }
+    else
+    {
+      writeLineEx(1, 3, " [ C: TcpConnect for client failed with error %d ]", result);
+    };
+    // => Connection established in callback OnTcpConnect...
+  }
+}
+
+// ---------------------------------------------------
+// client disconnects...
+// ---------------------------------------------------
+void clientDisconnect()
+{
+  if (gClientSocket != gINVALID_SOCKET)
+  {
+    write("C: Disconnecting from server. (socket %d)", gClientSocket);
+    TcpClose(gClientSocket);
+    gClientSocket = gINVALID_SOCKET;
+    showMenu(0);
+  }
+}
+
+// ---------------------------------------------------
+// client sends a request to server.
+// ---------------------------------------------------
+void clientSendRequest()
+{
+  // if client is connected...
+  if (gClientSocket != gINVALID_SOCKET)
+  {
+    write("C: Sending data to server. (socket %d)", gClientSocket);
+    sendTcpData(gClientSocket, "SW"); /*que quieres hacer?*/
+  }
+}
+
+// ---------------------------------------------------
+// show a little write menu to let you know what you can do next.
+// ---------------------------------------------------
+void showMenu(int connected)
+{
+  write("--------------[MENU]--------------------");
+  if (!connected)
+  {
+    write("- Press 'c' to connect client ...");
+  }
+  else
+  {
+    //write("- Press 's' to send message to server...");
+    write("- Press 'd' to disconnect from server...");
+    //write("- Press 'x' to let server disconnect client...");
+  }
+  write("- Press 'q' to stop measurement...");
+  write("----------------------------------------");
+}
+
+// ---------------------------------------------------
+// send tcp data.
+// ---------------------------------------------------
+void sendTcpData( dword socket, char data[] )
+{
+ long result;
+  dword size;
+  size = elcount(data);
+  result = TcpSend(socket, data, size);
+  if (result == 0)
+  {
+    // sending took place immediately.
+    writeLineEx(1, 1, " [ C: Synchronous sending: '%s' on socket %d ]", data, socket);
+    OnTcpSend(socket, result, data, size); // trigger callback manually
+  }
+  else
+  {
+    if (result == -1)
+    {
+      result = IpGetLastSocketError(socket);
+      if (result == 997)
+      {
+        // sending is done asynchronously.
+        writeLineEx(1, 1, " [ C: Asynchronous sending: '%s' on socket %d ]", data, socket);
+        // => OnTcpSend is called when done sending.
+      }
+      else
+      {
+        writeLineEx( 1, 3, " [ C: sendTcpData: Error sending data. (%d) ]", result);
+      }
+    }
+    else
+    {
+      writeLineEx( 1, 3, " [ C: sendTcpData: Error sending data. (%d) ]", result);
+    }
+  }
+}
+on start
+{
+  showMenu(0);
+  setControlVisibility("MMA_Socket_EMHA", "Check Box 1", 1);
+  setControlVisibility("MMA_Socket_EMHA", "Check Box 2", 1);
+  setControlVisibility("MMA_Socket_EMHA", "Check Box 3", 1);
+  setControlVisibility("MMA_Socket_EMHA", "Check Box 4", 1);
+  @SOCKET_COMM::Command = 0;
+  @SOCKET_COMM::DCU_Type = 0;
+  @SOCKET_COMM::WindowAction_type = 0;
+  SetControlVisibility("MMA_Socket_EMHA", "Command", 1);
+  SetControlVisibility("MMA_Socket_EMHA", "Parameter", 0);
+  SetControlVisibility("MMA_Socket_EMHA", "DCU_Type", 0);
+  SetControlVisibility("MMA_Socket_EMHA", "WindowAction", 0);
+  @DM223::DMRL = 0;
+  @DM223::DMRR = 0;
+  @COMUNICATION::C = 0;
+  @COMUNICATION::D = 0;
+  @COMUNICATION::S = 0;
+  @COMUNICATION::Q = 0;
+}
+
+// ---------------------------------------------------
+// start receiving on given socket into given buffer.
+// ---------------------------------------------------
+void startReceive ( dword socket, char buffer[] )
+{
+  long result;
+  result = TcpReceive( socket, buffer, elcount(buffer) );
+  if (result == -1)
+  {
+    result = IpGetLastSocketError(socket);
+    if (result != 997) // not asynchronous
+    {
+      // failure
+      writeLineEx( 1, 3, "S: TcpReceive error %d", result);
+    }
+  }
+  else if (result != 0) // synchronous sending failed
+  {
+    // failure
+    writeLineEx( 1, 3, "S: TcpReceive error %d", result);
+  }
+}
+
+

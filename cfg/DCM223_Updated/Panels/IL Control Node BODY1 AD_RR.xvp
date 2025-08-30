@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="IL Control Node BODY1 AD_RR" Children="Controls">
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl511" ControlName="StaticTextControl511" Children="Controls">
+      <Property Name="Name">StaticTextControl511</Property>
+      <Property Name="Size">157,17</Property>
+      <Property Name="Location">5,5</Property>
+      <Property Name="BackColor">255,255,255</Property>
+      <Property Name="TextAlign">TopLeft</Property>
+      <Property Name="BorderStyle">None</Property>
+      <Property Name="Text">IL Controls for node AD_RR:</Property>
+      <Property Name="ForeColor">0,0,0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl16" ControlName="PanelButtonControl16" Children="Controls">
+      <Property Name="Name">PanelButtonControl16</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,22</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl CyclicTiming BODY1 AD_RR.xvp</Property>
+      <Property Name="Text">Cyclic Timing</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl17" ControlName="PanelButtonControl17" Children="Controls">
+      <Property Name="Name">PanelButtonControl17</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,43</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl EventTiming BODY1 AD_RR.xvp</Property>
+      <Property Name="Text">Event Timing</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl18" ControlName="PanelButtonControl18" Children="Controls">
+      <Property Name="Name">PanelButtonControl18</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,64</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl E2E BODY1 AD_RR.xvp</Property>
+      <Property Name="Text">E2E Protection</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl19" ControlName="PanelButtonControl19" Children="Controls">
+      <Property Name="Name">PanelButtonControl19</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,85</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl SecOC BODY1 AD_RR.xvp</Property>
+      <Property Name="Text">SecOC</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.PanelButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="PanelButtonControl20" ControlName="PanelButtonControl20" Children="Controls">
+      <Property Name="Name">PanelButtonControl20</Property>
+      <Property Name="Size">120,21</Property>
+      <Property Name="Location">5,106</Property>
+      <Property Name="ClosePanels">False</Property>
+      <Property Name="PanelList">1;1;ILCtrl UB BODY1 AD_RR.xvp</Property>
+      <Property Name="Text">Update Bits</Property>
+    </Object>
+    <Property Name="Panel">Panel</Property>
+    <Property Name="Size">167,132</Property>
+    <Property Name="BackColor">255,255,255</Property>
+  </Object>
+</Panel>

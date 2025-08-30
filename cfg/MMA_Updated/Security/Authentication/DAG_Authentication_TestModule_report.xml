@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<testmodule starttime="2025-08-28 15:39:27" timestamp=" 940.097000" verdicts="2_basic" measurementid="fd68662b-48da-4cee-acc9-b272e5a91464">
-  <testcase starttime="2025-08-28 15:39:27" timestamp=" 940.097000">
-    <teststep timestamp=" 940.097000" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
-    <teststep timestamp=" 940.097000" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFR_MMA</teststep>
-    <teststep timestamp=" 941.917083" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
-    <verdict time="2025-08-28 15:39:27" timestamp=" 940.097000" endtime="2025-08-28 15:39:29" endtimestamp=" 941.917083" result="pass" />
+<testmodule starttime="2025-08-29 11:53:10" timestamp="  38.819628" verdicts="2_basic" measurementid="5889f840-a009-49d8-82f2-0fbb8a0530b4">
+  <testcase starttime="2025-08-29 11:53:10" timestamp="  38.819628">
+    <teststep timestamp="  38.819628" level="0" type="user" ident="" result="na">Authentication for single target</teststep>
+    <teststep timestamp="  38.819628" level="0" type="user" ident="Start" result="na">Start Authentication, target: DMFL_MMA</teststep>
+    <teststep timestamp="  40.598693" level="0" type="user" ident="Result" result="pass">Authentication has succeeded, </teststep>
+    <verdict time="2025-08-29 11:53:10" timestamp="  38.819628" endtime="2025-08-29 11:53:12" endtimestamp="  40.598693" result="pass" />
     <title>LocalAuthentication</title>
   </testcase>
-  <verdict time="2025-08-28 15:39:27" timestamp=" 940.097000" endtime="2025-08-28 15:39:29" endtimestamp=" 941.917083" result="pass" />
+  <verdict time="2025-08-29 11:53:10" timestamp="  38.819628" endtime="2025-08-29 11:53:12" endtimestamp="  40.598693" result="pass" />
   <title>DAG_Diagnostics_Authentication</title>
   <testlogfiles>
-    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-28_15-23-47_571_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
+    <testlogfile file="..\..\..\..\DCM KHIL TESTING\smrf\MMA\R4\Logging\DM_MMA_R4_2025-08-29_11-52-31_578_DM_FL_Shortstroke_Issue.blf" logbegin="Active at test start" logend="Active at test end" />
   </testlogfiles>
   <engineer>
     <xinfo>
       <name>Windows Login Name</name>
-      <description>IRONTECH</description>
+      <description>emaria.hurtado</description>
     </xinfo>
   </engineer>
   <testsetup>
     <xinfo>
       <name>Version</name>
-      <description>CANoe.CAN /pex 15.6.6 (SP6)</description>
+      <description>CANoe.CAN.LIN /pro 15.3.89 (SP3)</description>
     </xinfo>
     <xinfo>
       <name>Configuration</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\BODY1_15.cfg</description>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\BODY1_15.cfg</description>
     </xinfo>
     <xinfo>
       <name>Database BODY1 on BODY1</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\Databases\STAR_35_BODY1_CAN_2022_29a_AR43.arxml (2022-07-22 07:49:26)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFL_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
+      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMFL_MMA.cdd (06.08.06, 2023-09-29 09:11:26+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMFR_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
+      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMFR_MMA.cdd (06.08.06, 2023-09-29 10:26:15+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRL_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
+      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMRL_MMA.cdd (06.08.06, 2023-09-29 10:28:44+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Diagnostic Description of DMRR_MMA</name>
-      <description>R08, en-US, C:\CanOeProxy\cfg\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
+      <description>R08, en-US, C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\CDD\DMRR_MMA.cdd (06.08.06, 2023-09-29 10:31:25+02:00)</description>
     </xinfo>
     <xinfo>
       <name>Test Module Name</name>
@@ -53,7 +53,7 @@
     </xinfo>
     <xinfo>
       <name>Test Module File</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\Authentication\DAG_Authentication_TestModule.xml</description>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\Security\Authentication\DAG_Authentication_TestModule.xml</description>
     </xinfo>
     <xinfo>
       <name>Last modification of Test Module File</name>
@@ -61,31 +61,31 @@
     </xinfo>
     <xinfo>
       <name>Test Module Library (CAPL)</name>
-      <description>C:\CanOeProxy\cfg\MMA_Updated\Security\Authentication\LocalAuthentication_TestModule.can</description>
+      <description>C:\Users\emaria.hurtado\OneDrive - Antolin\Desktop\Paneles Canoe\MMA_Updated (1)\MMA_Updated\Security\Authentication\LocalAuthentication_TestModule.can</description>
     </xinfo>
     <xinfo>
       <name>Windows Computer Name</name>
-      <description>OP60HMI1</description>
+      <description>ING0585L</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module AsrPDUIL</name>
-      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.67 (Sep 17 2021 15:12:55) , c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrPDUIL.dll</description>
+      <description>CANoe AutoSAR PDU Interaction Layer NL (General OEM) Version 1.85.104 (Aug  7 2023 09:15:21) , c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrPDUIL.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module AsrNM33</name>
-      <description>AsrNM (Version 3.3.72 Windows 32-Bit), c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrNM33.dll</description>
+      <description>AsrNM (Version 8.1 Windows 32-Bit), c:\ProgramData\Vector\AddOn Packages\Vector AddOn\vModules\CANoe_14_0\Exec32\AsrNM33.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module SecMgrCANoeClient</name>
-      <description>Security Manager CANoe Node Layer Client (Version 2.12.13.0), C:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_11.0.81\Windows-x86\SecMgrCANoeClient.dll</description>
+      <description>Security Manager CANoe Node Layer Client (Version 2.13.15.0), c:\ProgramData\Vector\Security Manager\General\Binaries\SecMgrCANoeClient\CANoe_11.0.81\Windows-x86\SecMgrCANoeClient.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module DAG_ZenzefiNodeLayer</name>
-      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.12.13.0), C:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
+      <description>Security Manager ZenZefi Node Layer (DAG) (Version 2.12.13.0), c:\ProgramData\Vector\Security Manager\DAG\Binaries\ZenzefiNodeLayer\CANoe_11.0.81\Windows-x86\ZenzefiNodeLayer.dll</description>
     </xinfo>
     <xinfo>
       <name>Nodelayer Module J1939TestServiceLibraryNL</name>
-      <description>J1939 Test Service Library for CANoe, Version 15.6.6.0, C:\Program Files\Vector CANoe 15\Exec32\J1939TestServiceLibraryNL.dll</description>
+      <description>J1939 Test Service Library for CANoe, Version 15.3.89.0, C:\Program Files\Vector CANoe 15\Exec32\J1939TestServiceLibraryNL.dll</description>
     </xinfo>
   </testsetup>
   <hardware name="CAN Channel Interfaces" category="CategoryCANIF">
@@ -101,11 +101,11 @@
       </xinfo>
       <xinfo key="serialnumber">
         <name>Serial number</name>
-        <description>66479</description>
+        <description>52665</description>
       </xinfo>
       <xinfo key="driverdllversion">
         <name>Driver DLL version</name>
-        <description>25.20.14</description>
+        <description>24.40.12</description>
       </xinfo>
       <xinfo key="driverversion">
         <name>Driver version</name>
@@ -115,4 +115,4 @@
     </xinfoset>
   </hardware>
 </testmodule>
-<!--footprint="642c276082dfea5fb7db859e27e26a42" version="1"-->
+<!--footprint="f3f45950cba43653841e75e28fb39c29" version="1"-->

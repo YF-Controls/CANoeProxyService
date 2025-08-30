@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeInfo>
+  <EnvironmentHash>9637824248694029723</EnvironmentHash>
+  <ExportTableHash>5919216204927692130</ExportTableHash>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <Files>
+    <File Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="PostCrash.vtt" Time="Monday, August 21, 2023 11:45:13 AM" DependentOn="i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\PostCrash\PostCrash.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:45:13.6545022+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Norm_and_Denorm.vtt" Time="Monday, August 21, 2023 11:27:53 AM" DependentOn="i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:27:53.6882611+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="PostCrash.vxtx" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="PostCrash.vtt, i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\PostCrash.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.0428834+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="PostCrash.vtt" Time="Monday, August 21, 2023 11:45:13 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\PostCrash\PostCrash.vtt" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:45:13.6545022+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="PostCrash.vxtx.can" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="PostCrash.vtt, i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\PostCrash.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.1698418+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="PostCrash.vtt" Time="Monday, August 21, 2023 11:45:13 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\PostCrash\PostCrash.vtt" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:45:13.6545022+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Norm_and_Denorm.vxtx" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="Norm_and_Denorm.vtt, i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Norm_and_Denorm.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.1998392+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Norm_and_Denorm.vtt" Time="Monday, August 21, 2023 11:27:53 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:27:53.6882611+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Norm_and_Denorm.vxtx.can" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="Norm_and_Denorm.vtt, i0rssb2g3sk2=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Norm_and_Denorm.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.2707979+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Norm_and_Denorm.vtt" Time="Monday, August 21, 2023 11:27:53 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:27:53.6882611+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="i0rssb2g3sk2=VP.vvarprop" Time="Monday, August 21, 2023 11:52:56 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\i0rssb2g3sk2=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:52:56.9684643+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="PostCrash.vxtx.cbf" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="PostCrash.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\PostCrash.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.5752926+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="PostCrash.vxtx.can" Time="Monday, August 21, 2023 11:53:46 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\PostCrash.vxtx.can" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:53:46.1698418+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="Norm_and_Denorm.vxtx.cbf" Time="Monday, August 21, 2023 11:53:46 AM" DependentOn="Norm_and_Denorm.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Norm_and_Denorm.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:53:46.7631813+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="Norm_and_Denorm.vxtx.can" Time="Monday, August 21, 2023 11:53:46 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\Norm_and_Denorm.vxtx.can" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:53:46.2707979+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Monday, August 21, 2023 11:51:41 AM" DependentOn="ncb9fas7ff9n-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:51:41.9273539+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ncb9fas7ff9n-MTSV" Time="Monday, August 21, 2023 11:51:41 AM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ncb9fas7ff9n-MTSV" /&gt;</File>
+          <LastWriteTime>2023-08-21T11:51:41.9273539+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ncb9fas7ff9n-MTSV" Time="Monday, August 21, 2023 11:51:41 AM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ncb9fas7ff9n-MTSV" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2023-08-21T11:51:41.9273539+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+  </Files>
+</MakeInfo>

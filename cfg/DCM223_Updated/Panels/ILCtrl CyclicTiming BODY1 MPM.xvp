@@ -1,0 +1,1723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="ILCtrl CyclicTiming BODY1 MPM" Children="Controls">
+    <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6173" ControlName="GroupBoxControl6173" Children="Controls">
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6174" ControlName="GroupBoxControl6174" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6175" ControlName="GroupBoxControl6175" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7064" ControlName="StaticTextControl7064" Children="Controls">
+            <Property Name="Name">StaticTextControl7064</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3482" ControlName="CheckBoxControl3482" Children="Controls">
+            <Property Name="Name">CheckBoxControl3482</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7065" ControlName="StaticTextControl7065" Children="Controls">
+            <Property Name="Name">StaticTextControl7065</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3483" ControlName="CheckBoxControl3483" Children="Controls">
+            <Property Name="Name">CheckBoxControl3483</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3319" ControlName="RadioButtonControl3319" Children="Controls">
+            <Property Name="Name">RadioButtonControl3319</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3320" ControlName="RadioButtonControl3320" Children="Controls">
+            <Property Name="Name">RadioButtonControl3320</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6175</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6176" ControlName="GroupBoxControl6176" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6177" ControlName="GroupBoxControl6177" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7066" ControlName="StaticTextControl7066" Children="Controls">
+              <Property Name="Name">StaticTextControl7066</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3484" ControlName="CheckBoxControl3484" Children="Controls">
+              <Property Name="Name">CheckBoxControl3484</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7067" ControlName="StaticTextControl7067" Children="Controls">
+              <Property Name="Name">StaticTextControl7067</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3658" ControlName="TextBoxControl3658" Children="Controls">
+              <Property Name="Name">TextBoxControl3658</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6177</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6178" ControlName="GroupBoxControl6178" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7068" ControlName="StaticTextControl7068" Children="Controls">
+              <Property Name="Name">StaticTextControl7068</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3485" ControlName="CheckBoxControl3485" Children="Controls">
+              <Property Name="Name">CheckBoxControl3485</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7069" ControlName="StaticTextControl7069" Children="Controls">
+              <Property Name="Name">StaticTextControl7069</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3659" ControlName="TextBoxControl3659" Children="Controls">
+              <Property Name="Name">TextBoxControl3659</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Develop_Rs_MPM_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6178</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">192,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6176</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6174</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,17</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU Develop_Rs_MPM_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6179" ControlName="GroupBoxControl6179" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6180" ControlName="GroupBoxControl6180" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7070" ControlName="StaticTextControl7070" Children="Controls">
+            <Property Name="Name">StaticTextControl7070</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3486" ControlName="CheckBoxControl3486" Children="Controls">
+            <Property Name="Name">CheckBoxControl3486</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7071" ControlName="StaticTextControl7071" Children="Controls">
+            <Property Name="Name">StaticTextControl7071</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3487" ControlName="CheckBoxControl3487" Children="Controls">
+            <Property Name="Name">CheckBoxControl3487</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3321" ControlName="RadioButtonControl3321" Children="Controls">
+            <Property Name="Name">RadioButtonControl3321</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3322" ControlName="RadioButtonControl3322" Children="Controls">
+            <Property Name="Name">RadioButtonControl3322</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6180</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6181" ControlName="GroupBoxControl6181" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6182" ControlName="GroupBoxControl6182" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7072" ControlName="StaticTextControl7072" Children="Controls">
+              <Property Name="Name">StaticTextControl7072</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3488" ControlName="CheckBoxControl3488" Children="Controls">
+              <Property Name="Name">CheckBoxControl3488</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7073" ControlName="StaticTextControl7073" Children="Controls">
+              <Property Name="Name">StaticTextControl7073</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3660" ControlName="TextBoxControl3660" Children="Controls">
+              <Property Name="Name">TextBoxControl3660</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7074" ControlName="StaticTextControl7074" Children="Controls">
+              <Property Name="Name">StaticTextControl7074</Property>
+              <Property Name="Size">45,17</Property>
+              <Property Name="Location">145,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">(1000)</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6182</Property>
+            <Property Name="Size">195,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6183" ControlName="GroupBoxControl6183" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7075" ControlName="StaticTextControl7075" Children="Controls">
+              <Property Name="Name">StaticTextControl7075</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3489" ControlName="CheckBoxControl3489" Children="Controls">
+              <Property Name="Name">CheckBoxControl3489</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7076" ControlName="StaticTextControl7076" Children="Controls">
+              <Property Name="Name">StaticTextControl7076</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3661" ControlName="TextBoxControl3661" Children="Controls">
+              <Property Name="Name">TextBoxControl3661</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::ECU_Stat_MPM_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6183</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">205,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6181</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6179</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,197</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU ECU_Stat_MPM_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6184" ControlName="GroupBoxControl6184" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6185" ControlName="GroupBoxControl6185" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7077" ControlName="StaticTextControl7077" Children="Controls">
+            <Property Name="Name">StaticTextControl7077</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3490" ControlName="CheckBoxControl3490" Children="Controls">
+            <Property Name="Name">CheckBoxControl3490</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7078" ControlName="StaticTextControl7078" Children="Controls">
+            <Property Name="Name">StaticTextControl7078</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3491" ControlName="CheckBoxControl3491" Children="Controls">
+            <Property Name="Name">CheckBoxControl3491</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3323" ControlName="RadioButtonControl3323" Children="Controls">
+            <Property Name="Name">RadioButtonControl3323</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3324" ControlName="RadioButtonControl3324" Children="Controls">
+            <Property Name="Name">RadioButtonControl3324</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6185</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6186" ControlName="GroupBoxControl6186" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6187" ControlName="GroupBoxControl6187" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7079" ControlName="StaticTextControl7079" Children="Controls">
+              <Property Name="Name">StaticTextControl7079</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3492" ControlName="CheckBoxControl3492" Children="Controls">
+              <Property Name="Name">CheckBoxControl3492</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7080" ControlName="StaticTextControl7080" Children="Controls">
+              <Property Name="Name">StaticTextControl7080</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3662" ControlName="TextBoxControl3662" Children="Controls">
+              <Property Name="Name">TextBoxControl3662</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6187</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6188" ControlName="GroupBoxControl6188" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7081" ControlName="StaticTextControl7081" Children="Controls">
+              <Property Name="Name">StaticTextControl7081</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3493" ControlName="CheckBoxControl3493" Children="Controls">
+              <Property Name="Name">CheckBoxControl3493</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7082" ControlName="StaticTextControl7082" Children="Controls">
+              <Property Name="Name">StaticTextControl7082</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3663" ControlName="TextBoxControl3663" Children="Controls">
+              <Property Name="Name">TextBoxControl3663</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::Meas_MPM_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6188</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">192,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6186</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6184</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,377</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU Meas_MPM_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6189" ControlName="GroupBoxControl6189" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6190" ControlName="GroupBoxControl6190" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7083" ControlName="StaticTextControl7083" Children="Controls">
+            <Property Name="Name">StaticTextControl7083</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3494" ControlName="CheckBoxControl3494" Children="Controls">
+            <Property Name="Name">CheckBoxControl3494</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7084" ControlName="StaticTextControl7084" Children="Controls">
+            <Property Name="Name">StaticTextControl7084</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3495" ControlName="CheckBoxControl3495" Children="Controls">
+            <Property Name="Name">CheckBoxControl3495</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3325" ControlName="RadioButtonControl3325" Children="Controls">
+            <Property Name="Name">RadioButtonControl3325</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3326" ControlName="RadioButtonControl3326" Children="Controls">
+            <Property Name="Name">RadioButtonControl3326</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6190</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6191" ControlName="GroupBoxControl6191" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6192" ControlName="GroupBoxControl6192" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7085" ControlName="StaticTextControl7085" Children="Controls">
+              <Property Name="Name">StaticTextControl7085</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3496" ControlName="CheckBoxControl3496" Children="Controls">
+              <Property Name="Name">CheckBoxControl3496</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7086" ControlName="StaticTextControl7086" Children="Controls">
+              <Property Name="Name">StaticTextControl7086</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3664" ControlName="TextBoxControl3664" Children="Controls">
+              <Property Name="Name">TextBoxControl3664</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6192</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6193" ControlName="GroupBoxControl6193" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7087" ControlName="StaticTextControl7087" Children="Controls">
+              <Property Name="Name">StaticTextControl7087</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3497" ControlName="CheckBoxControl3497" Children="Controls">
+              <Property Name="Name">CheckBoxControl3497</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7088" ControlName="StaticTextControl7088" Children="Controls">
+              <Property Name="Name">StaticTextControl7088</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3665" ControlName="TextBoxControl3665" Children="Controls">
+              <Property Name="Name">TextBoxControl3665</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_ROE_MPM_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6193</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">192,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6191</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6189</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,557</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU MPM_BODY1_Container_ST3_ROE_MPM_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6194" ControlName="GroupBoxControl6194" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6195" ControlName="GroupBoxControl6195" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7089" ControlName="StaticTextControl7089" Children="Controls">
+            <Property Name="Name">StaticTextControl7089</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3498" ControlName="CheckBoxControl3498" Children="Controls">
+            <Property Name="Name">CheckBoxControl3498</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7090" ControlName="StaticTextControl7090" Children="Controls">
+            <Property Name="Name">StaticTextControl7090</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3499" ControlName="CheckBoxControl3499" Children="Controls">
+            <Property Name="Name">CheckBoxControl3499</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3327" ControlName="RadioButtonControl3327" Children="Controls">
+            <Property Name="Name">RadioButtonControl3327</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3328" ControlName="RadioButtonControl3328" Children="Controls">
+            <Property Name="Name">RadioButtonControl3328</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6195</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6196" ControlName="GroupBoxControl6196" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6197" ControlName="GroupBoxControl6197" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7091" ControlName="StaticTextControl7091" Children="Controls">
+              <Property Name="Name">StaticTextControl7091</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3500" ControlName="CheckBoxControl3500" Children="Controls">
+              <Property Name="Name">CheckBoxControl3500</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7092" ControlName="StaticTextControl7092" Children="Controls">
+              <Property Name="Name">StaticTextControl7092</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3666" ControlName="TextBoxControl3666" Children="Controls">
+              <Property Name="Name">TextBoxControl3666</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7093" ControlName="StaticTextControl7093" Children="Controls">
+              <Property Name="Name">StaticTextControl7093</Property>
+              <Property Name="Size">45,17</Property>
+              <Property Name="Location">145,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">(100)</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6197</Property>
+            <Property Name="Size">195,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6198" ControlName="GroupBoxControl6198" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7094" ControlName="StaticTextControl7094" Children="Controls">
+              <Property Name="Name">StaticTextControl7094</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3501" ControlName="CheckBoxControl3501" Children="Controls">
+              <Property Name="Name">CheckBoxControl3501</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7095" ControlName="StaticTextControl7095" Children="Controls">
+              <Property Name="Name">StaticTextControl7095</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3667" ControlName="TextBoxControl3667" Children="Controls">
+              <Property Name="Name">TextBoxControl3667</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7096" ControlName="StaticTextControl7096" Children="Controls">
+              <Property Name="Name">StaticTextControl7096</Property>
+              <Property Name="Size">45,17</Property>
+              <Property Name="Location">145,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">(1000)</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6198</Property>
+            <Property Name="Size">195,60</Property>
+            <Property Name="Location">205,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6196</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6194</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,737</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU MPM_BODY1_Container_ST3_SPV_Alm_Rq_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6199" ControlName="GroupBoxControl6199" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6200" ControlName="GroupBoxControl6200" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7097" ControlName="StaticTextControl7097" Children="Controls">
+            <Property Name="Name">StaticTextControl7097</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3502" ControlName="CheckBoxControl3502" Children="Controls">
+            <Property Name="Name">CheckBoxControl3502</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7098" ControlName="StaticTextControl7098" Children="Controls">
+            <Property Name="Name">StaticTextControl7098</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3503" ControlName="CheckBoxControl3503" Children="Controls">
+            <Property Name="Name">CheckBoxControl3503</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3329" ControlName="RadioButtonControl3329" Children="Controls">
+            <Property Name="Name">RadioButtonControl3329</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3330" ControlName="RadioButtonControl3330" Children="Controls">
+            <Property Name="Name">RadioButtonControl3330</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6200</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6201" ControlName="GroupBoxControl6201" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6202" ControlName="GroupBoxControl6202" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7099" ControlName="StaticTextControl7099" Children="Controls">
+              <Property Name="Name">StaticTextControl7099</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3504" ControlName="CheckBoxControl3504" Children="Controls">
+              <Property Name="Name">CheckBoxControl3504</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7100" ControlName="StaticTextControl7100" Children="Controls">
+              <Property Name="Name">StaticTextControl7100</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3668" ControlName="TextBoxControl3668" Children="Controls">
+              <Property Name="Name">TextBoxControl3668</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7101" ControlName="StaticTextControl7101" Children="Controls">
+              <Property Name="Name">StaticTextControl7101</Property>
+              <Property Name="Size">45,17</Property>
+              <Property Name="Location">145,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">(1000)</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6202</Property>
+            <Property Name="Size">195,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6203" ControlName="GroupBoxControl6203" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7102" ControlName="StaticTextControl7102" Children="Controls">
+              <Property Name="Name">StaticTextControl7102</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3505" ControlName="CheckBoxControl3505" Children="Controls">
+              <Property Name="Name">CheckBoxControl3505</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7103" ControlName="StaticTextControl7103" Children="Controls">
+              <Property Name="Name">StaticTextControl7103</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3669" ControlName="TextBoxControl3669" Children="Controls">
+              <Property Name="Name">TextBoxControl3669</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6203</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">205,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6201</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6199</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,917</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU MPM_BODY1_Container_ST3_SPV_Disp_Rq_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6204" ControlName="GroupBoxControl6204" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6205" ControlName="GroupBoxControl6205" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7104" ControlName="StaticTextControl7104" Children="Controls">
+            <Property Name="Name">StaticTextControl7104</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3506" ControlName="CheckBoxControl3506" Children="Controls">
+            <Property Name="Name">CheckBoxControl3506</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7105" ControlName="StaticTextControl7105" Children="Controls">
+            <Property Name="Name">StaticTextControl7105</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3507" ControlName="CheckBoxControl3507" Children="Controls">
+            <Property Name="Name">CheckBoxControl3507</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3331" ControlName="RadioButtonControl3331" Children="Controls">
+            <Property Name="Name">RadioButtonControl3331</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3332" ControlName="RadioButtonControl3332" Children="Controls">
+            <Property Name="Name">RadioButtonControl3332</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6205</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6206" ControlName="GroupBoxControl6206" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6207" ControlName="GroupBoxControl6207" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7106" ControlName="StaticTextControl7106" Children="Controls">
+              <Property Name="Name">StaticTextControl7106</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3508" ControlName="CheckBoxControl3508" Children="Controls">
+              <Property Name="Name">CheckBoxControl3508</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7107" ControlName="StaticTextControl7107" Children="Controls">
+              <Property Name="Name">StaticTextControl7107</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3670" ControlName="TextBoxControl3670" Children="Controls">
+              <Property Name="Name">TextBoxControl3670</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7108" ControlName="StaticTextControl7108" Children="Controls">
+              <Property Name="Name">StaticTextControl7108</Property>
+              <Property Name="Size">45,17</Property>
+              <Property Name="Location">145,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">(1000)</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6207</Property>
+            <Property Name="Size">195,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6208" ControlName="GroupBoxControl6208" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7109" ControlName="StaticTextControl7109" Children="Controls">
+              <Property Name="Name">StaticTextControl7109</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3509" ControlName="CheckBoxControl3509" Children="Controls">
+              <Property Name="Name">CheckBoxControl3509</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7110" ControlName="StaticTextControl7110" Children="Controls">
+              <Property Name="Name">StaticTextControl7110</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3671" ControlName="TextBoxControl3671" Children="Controls">
+              <Property Name="Name">TextBoxControl3671</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::MPM_BODY1_Container_ST3_SPV_Rq_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6208</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">205,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6206</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6204</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,1097</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU MPM_BODY1_Container_ST3_SPV_Rq_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6209" ControlName="GroupBoxControl6209" Children="Controls">
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6210" ControlName="GroupBoxControl6210" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7111" ControlName="StaticTextControl7111" Children="Controls">
+            <Property Name="Name">StaticTextControl7111</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Enable TX of PDU:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3510" ControlName="CheckBoxControl3510" Children="Controls">
+            <Property Name="Name">CheckBoxControl3510</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,17</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text"></Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;FIEnableTXofPDU;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7112" ControlName="StaticTextControl7112" Children="Controls">
+            <Property Name="Name">StaticTextControl7112</Property>
+            <Property Name="Size">105,17</Property>
+            <Property Name="Location">5,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="TextAlign">TopLeft</Property>
+            <Property Name="BorderStyle">None</Property>
+            <Property Name="Text">Signal Condition:</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3511" ControlName="CheckBoxControl3511" Children="Controls">
+            <Property Name="Name">CheckBoxControl3511</Property>
+            <Property Name="Size">90,17</Property>
+            <Property Name="Location">110,44</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">Override:</Property>
+            <Property Name="CheckValue">1</Property>
+            <Property Name="UncheckValue">0</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;DisturbTimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3333" ControlName="RadioButtonControl3333" Children="Controls">
+            <Property Name="Name">RadioButtonControl3333</Property>
+            <Property Name="Size">51,17</Property>
+            <Property Name="Location">200,44</Property>
+            <Property Name="Text">True</Property>
+            <Property Name="SwitchValue">1</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.RadioButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="RadioButtonControl3334" ControlName="RadioButtonControl3334" Children="Controls">
+            <Property Name="Name">RadioButtonControl3334</Property>
+            <Property Name="Size">56,17</Property>
+            <Property Name="Location">251,44</Property>
+            <Property Name="Text">False</Property>
+            <Property Name="SwitchValue">0</Property>
+            <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;FITimingMode;1;;;-1</Property>
+            <Property Name="ReadOnlyControl">False</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6210</Property>
+          <Property Name="Size">425,66</Property>
+          <Property Name="Location">5,17</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Timing Mode</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6211" ControlName="GroupBoxControl6211" Children="Controls">
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6212" ControlName="GroupBoxControl6212" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7113" ControlName="StaticTextControl7113" Children="Controls">
+              <Property Name="Name">StaticTextControl7113</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3512" ControlName="CheckBoxControl3512" Children="Controls">
+              <Property Name="Name">CheckBoxControl3512</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;DisturbTrueCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7114" ControlName="StaticTextControl7114" Children="Controls">
+              <Property Name="Name">StaticTextControl7114</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3672" ControlName="TextBoxControl3672" Children="Controls">
+              <Property Name="Name">TextBoxControl3672</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;FITrueCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6212</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">5,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"True"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Object Type="Vector.CANalyzer.Panels.Design.GroupBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="GroupBoxControl6213" ControlName="GroupBoxControl6213" Children="Controls">
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7115" ControlName="StaticTextControl7115" Children="Controls">
+              <Property Name="Name">StaticTextControl7115</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Cyclic Timing:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.CheckBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="CheckBoxControl3513" ControlName="CheckBoxControl3513" Children="Controls">
+              <Property Name="Name">CheckBoxControl3513</Property>
+              <Property Name="Size">72,17</Property>
+              <Property Name="Location">105,17</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="Text">Override</Property>
+              <Property Name="CheckValue">1</Property>
+              <Property Name="UncheckValue">0</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;DisturbFalseCyclicTiming;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="StaticTextControl7116" ControlName="StaticTextControl7116" Children="Controls">
+              <Property Name="Name">StaticTextControl7116</Property>
+              <Property Name="Size">100,17</Property>
+              <Property Name="Location">5,34</Property>
+              <Property Name="BackColor">255,255,255</Property>
+              <Property Name="TextAlign">TopLeft</Property>
+              <Property Name="BorderStyle">None</Property>
+              <Property Name="Text">Period:</Property>
+              <Property Name="ForeColor">0,0,0</Property>
+            </Object>
+            <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=7.1.94.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl3673" ControlName="TextBoxControl3673" Children="Controls">
+              <Property Name="Name">TextBoxControl3673</Property>
+              <Property Name="Size">40,21</Property>
+              <Property Name="Location">105,34</Property>
+              <Property Name="TextForeColor">0,0,0</Property>
+              <Property Name="BoxForeColor">0,0,0</Property>
+              <Property Name="DescriptionText" />
+              <Property Name="ValueDecimalPlaces">0</Property>
+              <Property Name="BoxTextAlign">Left</Property>
+              <Property Name="BoxBorderStyle">FixedSingle</Property>
+              <Property Name="ValueDisplay">Decimal</Property>
+              <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+              <Property Name="DisplayLabel">Left</Property>
+              <Property Name="TextBackColor">255,255,255</Property>
+              <Property Name="BoxBackColor">255,255,255</Property>
+              <Property Name="SymbolConfiguration">4;16;IL_CAN1::NODES::N_MPM::PDUS::XCP_Rs_MPM_ST3::TIMINGS;;;FIFalseCyclicPeriod;1;;;-1</Property>
+              <Property Name="ReadOnlyControl">False</Property>
+            </Object>
+            <Property Name="Name">GroupBoxControl6213</Property>
+            <Property Name="Size">182,60</Property>
+            <Property Name="Location">192,17</Property>
+            <Property Name="UseWindowsStyle">False</Property>
+            <Property Name="BackColor">255,255,255</Property>
+            <Property Name="Text">"False"</Property>
+            <Property Name="ForeColor">0,0,0</Property>
+          </Object>
+          <Property Name="Name">GroupBoxControl6211</Property>
+          <Property Name="Size">425,82</Property>
+          <Property Name="Location">5,88</Property>
+          <Property Name="UseWindowsStyle">False</Property>
+          <Property Name="BackColor">255,255,255</Property>
+          <Property Name="Text">Cyclic Timing</Property>
+          <Property Name="ForeColor">0,0,0</Property>
+        </Object>
+        <Property Name="Name">GroupBoxControl6209</Property>
+        <Property Name="Size">435,175</Property>
+        <Property Name="Location">5,1277</Property>
+        <Property Name="UseWindowsStyle">False</Property>
+        <Property Name="BackColor">255,255,255</Property>
+        <Property Name="Text">PDU XCP_Rs_MPM_ST3</Property>
+        <Property Name="ForeColor">0,0,0</Property>
+      </Object>
+      <Property Name="Name">GroupBoxControl6173</Property>
+      <Property Name="Size">445,1457</Property>
+      <Property Name="Location">5,5</Property>
+      <Property Name="UseWindowsStyle">False</Property>
+      <Property Name="BackColor">255,255,255</Property>
+      <Property Name="Text">TX PDUs of MPM</Property>
+      <Property Name="ForeColor">0,0,0</Property>
+    </Object>
+    <Property Name="Panel">Panel</Property>
+    <Property Name="Size">455,1467</Property>
+    <Property Name="BackColor">255,255,255</Property>
+  </Object>
+</Panel>

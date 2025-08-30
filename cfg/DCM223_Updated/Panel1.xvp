@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="Panel1">
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl4" Children="Controls" ControlName="Combo Box 4">
+      <Property Name="Name">ComboBoxControl4</Property>
+      <Property Name="Size">529, 21</Property>
+      <Property Name="Location">49, 117</Property>
+      <Property Name="DropDownWidth">404</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="DescriptionText">DrRLtch_RR_Stat_ST3:</Property>
+      <Property Name="DescriptionSize">125, 21</Property>
+      <Property Name="SymbolConfiguration">5;2;BODY1;BC_F;BC_F_BODY1_GW_Container_ST3_CLkS_Dr_State_ST3;DrRLtch_RR_Stat_ST3;1;BODY1;;-1;;;</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl3" Children="Controls" ControlName="Combo Box 3">
+      <Property Name="Name">ComboBoxControl3</Property>
+      <Property Name="Size">529, 21</Property>
+      <Property Name="Location">49, 90</Property>
+      <Property Name="DropDownWidth">406</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="DescriptionText">DrRLtch_RL_Stat_ST3:</Property>
+      <Property Name="DescriptionSize">123, 21</Property>
+      <Property Name="SymbolConfiguration">5;2;BODY1;BC_F;BC_F_BODY1_GW_Container_ST3_CLkS_Dr_State_ST3;DrRLtch_RL_Stat_ST3;1;BODY1;;-1;;;</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl2" Children="Controls" ControlName="Combo Box 2">
+      <Property Name="Name">ComboBoxControl2</Property>
+      <Property Name="Size">530, 21</Property>
+      <Property Name="Location">48, 63</Property>
+      <Property Name="DropDownWidth">406</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="DescriptionText">DrRLtch_FR_Stat_ST3:</Property>
+      <Property Name="DescriptionSize">124, 21</Property>
+      <Property Name="SymbolConfiguration">5;2;BODY1;BC_F;BC_F_BODY1_GW_Container_ST3_CLkS_Dr_State_ST3;DrRLtch_FR_Stat_ST3;1;BODY1;;-1;;;</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ComboBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=11.0.81.0, Culture=neutral, PublicKeyToken=null" Name="ComboBoxControl1" Children="Controls" ControlName="Combo Box">
+      <Property Name="Name">ComboBoxControl1</Property>
+      <Property Name="Size">530, 21</Property>
+      <Property Name="Location">48, 36</Property>
+      <Property Name="DropDownWidth">408</Property>
+      <Property Name="BackColor">Window</Property>
+      <Property Name="ForeColor">WindowText</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="DescriptionText">DrRLtch_FL_Stat_ST3:</Property>
+      <Property Name="DescriptionSize">122, 21</Property>
+      <Property Name="SymbolConfiguration">5;2;BODY1;BC_F;BC_F_BODY1_GW_Container_ST3_CLkS_Dr_State_ST3;DrRLtch_FL_Stat_ST3;1;BODY1;;-1;;;</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">758, 344</Property>
+    <Property Name="BackColor">White</Property>
+  </Object>
+</Panel>

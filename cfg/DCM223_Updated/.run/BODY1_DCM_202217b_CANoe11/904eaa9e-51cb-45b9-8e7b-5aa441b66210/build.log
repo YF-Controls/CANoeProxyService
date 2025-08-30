@@ -1,0 +1,149 @@
+﻿11:53:45 AM # Build of test unit 'WindowLifter' started...
+11:53:45 AM - Build Step #0: BuildPreparation (ArtefactID: -1)
+11:53:45 AM - ------------------------------------------------
+11:53:45 AM - ============================== Build Step #0 finished ==============================
+11:53:45 AM - Build Step #1: PreBuildEvent (ArtefactID: -1)
+11:53:45 AM - ---------------------------------------------
+11:53:45 AM - ============================== Build Step #1 finished ==============================
+11:53:45 AM - Build Step #2: BuildTestSequenceDiagramDependencyTree (ArtefactID: -1)
+11:53:45 AM - ----------------------------------------------------------------------
+11:53:45 AM - Nothing to do (no Test Sequence Diagram Files)
+11:53:45 AM - ============================== Build Step #2 finished ==============================
+11:53:45 AM - Build Step #3: TraceArtefactIds (ArtefactID: -1)
+11:53:45 AM - ------------------------------------------------
+11:53:45 AM - Artefact IDs:
+11:53:45 AM -   0 D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\PostCrash\PostCrash.vtt
+11:53:45 AM -   1 D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt
+11:53:45 AM - ============================== Build Step #3 finished ==============================
+11:53:45 AM - Build Step #4: FuzzTestDetection (ArtefactID: -1)
+11:53:45 AM - -------------------------------------------------
+11:53:45 AM - ============================== Build Step #4 finished ==============================
+11:53:45 AM - Build Step #5: ValidateTestUnit (ArtefactID: -1)
+11:53:45 AM - ------------------------------------------------
+11:53:45 AM # Checking test unit consistency
+11:53:45 AM - ============================== Build Step #5 finished ==============================
+11:53:45 AM - Build Step #6: BuildParameterTypeLibs (ArtefactID: -1)
+11:53:45 AM - ------------------------------------------------------
+11:53:45 AM - Nothing to do (no C# documents and no .NET assemblies)
+11:53:45 AM - ============================== Build Step #6 finished ==============================
+11:53:45 AM - Build Step #7: BuildCaplTypeLibs (ArtefactID: -1)
+11:53:45 AM - -------------------------------------------------
+11:53:45 AM - Nothing to do (no C# documents and no .NET assemblies)
+11:53:45 AM - ============================== Build Step #7 finished ==============================
+11:53:45 AM - Build Step #8: BuildSysVarTypeLibs (ArtefactID: -1)
+11:53:45 AM - ---------------------------------------------------
+11:53:45 AM - Nothing to do (no C# documents and no .NET assemblies)
+11:53:45 AM - ============================== Build Step #8 finished ==============================
+11:53:45 AM - Build Step #9: BuildCoTypeLib (ArtefactID: -1)
+11:53:45 AM - ----------------------------------------------
+11:53:45 AM - Nothing to do (no C# documents and no .NET assemblies or no CO-Lib)
+11:53:45 AM - ============================== Build Step #9 finished ==============================
+11:53:45 AM - Build Step #10: ValidateTteFile (ArtefactID: 0)
+11:53:45 AM - -----------------------------------------------
+11:53:45 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\PostCrash\PostCrash.vtt' is up to date (regarding to export table hash)
+11:53:45 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\PostCrash\PostCrash.vtt' is outdated because changed system environment beats unchanged export table hash
+11:53:45 AM # Compiling file 'PostCrash.vtt' in test unit 'WindowLifter'
+11:53:45 AM # Compilation succeeded (11:53:45 AM) -- 0 errors, 0 warnings
+11:53:45 AM - ============================== Build Step #10 finished ==============================
+11:53:45 AM - Build Step #11: ValidateTteFile (ArtefactID: 1)
+11:53:45 AM - -----------------------------------------------
+11:53:45 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt' is up to date (regarding to export table hash)
+11:53:45 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt' is outdated because changed system environment beats unchanged export table hash
+11:53:45 AM # Compiling file 'Norm_and_Denorm.vtt' in test unit 'WindowLifter'
+11:53:45 AM # Compilation succeeded (11:53:45 AM) -- 0 errors, 0 warnings
+11:53:45 AM - ============================== Build Step #11 finished ==============================
+11:53:45 AM - Build Step #12: ConditionalBuildAbort (ArtefactID: -1)
+11:53:45 AM - ------------------------------------------------------
+11:53:45 AM - All Validation succeeded - continue build.
+11:53:45 AM - ============================== Build Step #12 finished ==============================
+11:53:45 AM - Build Step #13: CollectNavigationInfo (ArtefactID: 0)
+11:53:45 AM - -----------------------------------------------------
+11:53:45 AM - ============================== Build Step #13 finished ==============================
+11:53:45 AM - Build Step #16: CollectNavigationInfo (ArtefactID: 1)
+11:53:45 AM - -----------------------------------------------------
+11:53:45 AM - ============================== Build Step #16 finished ==============================
+11:53:45 AM - Build Step #14: CompileVtt2Vxtx (ArtefactID: 0)
+11:53:45 AM - -----------------------------------------------
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx.can' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx' is up to date (regarding to export table hash)
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx' is outdated because changed system environment beats unchanged export table hash
+11:53:46 AM - ============================== Build Step #14 finished ==============================
+11:53:46 AM - Build Step #17: CompileVtt2Vxtx (ArtefactID: 1)
+11:53:46 AM - -----------------------------------------------
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx.can' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx' is up to date (regarding to export table hash)
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx' is outdated because changed system environment beats unchanged export table hash
+11:53:46 AM - ============================== Build Step #17 finished ==============================
+11:53:46 AM - Build Step #15: CompileGeneratedCapl (ArtefactID: 0)
+11:53:46 AM - ----------------------------------------------------
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx.cbf' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - BuildStepUtilities.CompileCaplFile: 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx.can' --> 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\PostCrash.vxtx.cbf'
+11:53:46 AM - Export table file 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\i0rssb2g3sk2~3-0.' not copied to 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__ExpTbl_\PostCrash.vtt.export.xml' because export tables have not changed
+11:53:46 AM - Copied file 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\PostCrash\PostCrash.vtt' to 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\PostCrash.vtt'
+11:53:46 AM - ============================== Build Step #15 finished ==============================
+11:53:46 AM - Build Step #18: CompileGeneratedCapl (ArtefactID: 1)
+11:53:46 AM - ----------------------------------------------------
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx.cbf' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - BuildStepUtilities.CompileCaplFile: 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx.can' --> 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__TsoBuildFiles_\Norm_and_Denorm.vxtx.cbf'
+11:53:46 AM - Export table file 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\i0rssb2g3sk2~3-1.' not copied to 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\__ExpTbl_\Norm_and_Denorm.vtt.export.xml' because export tables have not changed
+11:53:46 AM - Copied file 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\WindowLifter\Window_Lifter\Norm_and_Denorm.vtt' to 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\Norm_and_Denorm.vtt'
+11:53:46 AM - ============================== Build Step #18 finished ==============================
+11:53:46 AM - Build Step #19: MoveCSharpXmlDocumentation (ArtefactID: -1)
+11:53:46 AM - -----------------------------------------------------------
+11:53:46 AM - MoveCSharpXmlDocumentation: Skipped because option is deactivated
+11:53:46 AM - ============================== Build Step #19 finished ==============================
+11:53:46 AM - Build Step #20: ValidateTteFile (ArtefactID: 0)
+11:53:46 AM - -----------------------------------------------
+11:53:46 AM - ============================== Build Step #20 finished ==============================
+11:53:46 AM - Build Step #21: ValidateTteFile (ArtefactID: 1)
+11:53:46 AM - -----------------------------------------------
+11:53:46 AM - ============================== Build Step #21 finished ==============================
+11:53:46 AM - Build Step #22: ValidateIdUsage (ArtefactID: -1)
+11:53:46 AM - ------------------------------------------------
+11:53:46 AM - ============================== Build Step #22 finished ==============================
+11:53:46 AM - Build Step #23: ExportTraceabilityMatrix (ArtefactID: -1)
+11:53:46 AM - ---------------------------------------------------------
+11:53:46 AM - ExportTraceabilityMatrix: Skipped because option is deactivated
+11:53:46 AM - ============================== Build Step #23 finished ==============================
+11:53:46 AM - Build Step #24: IncludeSources (ArtefactID: -1)
+11:53:46 AM - -----------------------------------------------
+11:53:46 AM - IncludeSources: Skipped because option is deactivated
+11:53:46 AM - ============================== Build Step #24 finished ==============================
+11:53:46 AM - Build Step #25: WriteSystemEnvironment (ArtefactID: -1)
+11:53:46 AM - -------------------------------------------------------
+11:53:46 AM - Copy merged Test System Variable file...
+11:53:46 AM - Copy <ncb9fas7ff9n-MTSV> to D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\TestSysVars.vsysvar
+11:53:46 AM - 'D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\TestSysVars.vsysvar' is outdated
+11:53:46 AM - Reason: System Environment has changed
+11:53:46 AM - Add variant property file...
+11:53:46 AM - No variant properties - nothing to do
+11:53:46 AM - ============================== Build Step #25 finished ==============================
+11:53:46 AM - Build Step #26: WriteTUProperties (ArtefactID: -1)
+11:53:46 AM - --------------------------------------------------
+11:53:46 AM - ============================== Build Step #26 finished ==============================
+11:53:46 AM - Build Step #27: WriteTetEntries (ArtefactID: -1)
+11:53:46 AM - ------------------------------------------------
+11:53:46 AM - ============================== Build Step #27 finished ==============================
+11:53:46 AM - Build Step #28: FuzzTestNLRemove (ArtefactID: -1)
+11:53:46 AM - -------------------------------------------------
+11:53:46 AM - ============================== Build Step #28 finished ==============================
+11:53:46 AM - Build Step #29: WriteManifest (ArtefactID: -1)
+11:53:46 AM - ----------------------------------------------
+11:53:46 AM - Writing manifest D:\DCM KHIL TESTING\vTESTstudio\WindowLifter\STAR3\WL_VTestStudio\obj_vTESTstudio_Project\bin_i0rssb2g3sk2\WindowLifter.vtumanifest
+11:53:46 AM - ============================== Build Step #29 finished ==============================
+11:53:46 AM - Build Step #34: RemoveOrphanedBuildArtfacts (ArtefactID: -1)
+11:53:46 AM - ------------------------------------------------------------
+11:53:46 AM - Removing orphaned build artefacts from the vtuexe's main folder...
+11:53:46 AM - Nothing to do.
+11:53:46 AM - ============================== Build Step #34 finished ==============================
+11:53:46 AM - Build Step #30: WriteMetainfo (ArtefactID: -1)
+11:53:46 AM - ----------------------------------------------
+11:53:46 AM - BUILD TIME excluding ZIP/UNZIP (hours:minutes:seconds:milliseconds): 00:00:01:313

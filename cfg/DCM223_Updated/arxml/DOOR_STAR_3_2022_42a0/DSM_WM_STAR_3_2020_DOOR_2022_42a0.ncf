@@ -1,0 +1,376 @@
+/* CHECKSUM={B42B2BFEAE27B6E1A96EA6B700409EA67364D154} */ 
+/* ************************************************************************** */
+/*                                                                            */
+/*                              Mercedes-Benz AG                              */
+/*                            All rights reserved                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:        Node Capability file                                  */
+/*  Node:               DSM_WM                                                */
+/*                                                                            */
+/*  Interface:          Door Switch Module Window and Mirror                  */
+/*  Interface Version:  12                                                    */
+/*  Interface Status:   RELEASED                                              */
+/*                                                                            */
+/*  Creation Date:      2022-10-21                                            */
+/*                                                                            */
+/*  XDIS-Database       MBC-Database                                          */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+node_capability_file;
+LIN_language_version = "2.1";
+node DSM_WM {
+	general {
+		LIN_protocol_version = "2.1";
+		supplier = 0x0066;
+		function = 0x0001;
+		variant = 0x01;
+		bitrate = 19.200 kbps;
+		sends_wake_up_signal = "no";
+	}
+
+	diagnostic {
+		NAD = 15;
+		diagnostic_class = 2;
+		P2_min = 50 ms;
+		ST_min = 0 ms;
+		N_As_timeout = 1000 ms;
+		N_Cr_timeout = 1000 ms;
+		 support_sid { 0xB0, 0xB2, 0xB6, 0xB7 };
+	}
+
+	frames {
+		publish DSM_WM_Stat_LIN_ST3 {
+			length = 8;
+			signals {
+				PW_Adj_FL_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 0;
+					c03_NPsd_Man_AutOpnCls_Imp;
+				}
+				PW_Adj_FR_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 3;
+					c03_NPsd_Man_AutOpnCls_Imp;
+				}
+				CSL_Sw_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 6;
+					c02_Ndef_False_True_ST3;
+				}
+				PW_Adj_RL_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 8;
+					c03_NPsd_Man_AutOpnCls_Imp;
+				}
+				PW_Adj_RR_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 11;
+					c03_NPsd_Man_AutOpnCls_Imp;
+				}
+				MirrAdj_Sw_Fld_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 14;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Up_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 16;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Dn_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 18;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Lt_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 20;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Rt_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 22;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Sel_FL_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 24;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				MirrAdj_Sw_Sel_FR_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 26;
+					c02_NTchd_Tchd_Psd_SNA;
+				}
+				RB_R_Sw_Psd_F_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 28;
+					c02_NPsd_Psd_NDef;
+				}
+				RB_R_Sw_Psd_R_ST3{
+					init_value = 0; 
+					size = 2; 
+					offset = 30;
+					c02_NPsd_Opn_Cls_Imp;
+				}
+				TSSR_RB_R_Sw_Psd_ST3{
+					init_value = 0; 
+					size = 3; 
+					offset = 32;
+					c03_NPsd_Man_AutOpnCls_Imp;
+				}
+				WinAll_Sw_Psd_ST3{
+					init_value = 1; 
+					size = 2; 
+					offset = 35;
+					c02_Fls_Tru;
+				}
+				MirrAdj_Sw_Up_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 40;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Rt_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 42;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Lt_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 44;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Dn_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 46;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Sel_FL_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 48;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Sel_FR_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 50;
+					c02_CpctyErr_Type;
+				}
+				MirrAdj_Sw_Fld_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 52;
+					c02_CpctyErr_Type;
+				}
+				Cpcty_IntCom_Err_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 54;
+					c02_Cpcty_IntCom_Err;
+				}
+				MirrAdj_Ctrl_Psd_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 58;
+					c02_NPsd_Psd_ST3;
+				}
+				DSM_WM_Tgl_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 60;
+				}
+				RsErr_DSM_WM_ST3{
+					init_value = 0; 
+					size = 1; 
+					offset = 61;
+				}
+				WakeupStat_DSM_WM_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 62;
+					c02_WakeUp_Stat;
+				}
+			}
+		}
+		subscribe Door_Stat_LIN_ST3 {
+			length = 8;
+			signals {
+				ISw_Stat_ST3{
+					init_value = 7; 
+					size = 3; 
+					offset = 0;
+					c03_ISw_Stat;
+				}
+				SupVolt_OutOfRng_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 3;
+					c02_Ndef_False_True_ST3;
+				}
+				CSL_SwLED_Rq_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 8;
+					c02_Ndef_False_True_ST3;
+				}
+				MirrAdj_LED_Sel_FL_Rq_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 10;
+					c02_Ndef_False_True_ST3;
+				}
+				MirrAdj_LED_Sel_FR_Rq_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 12;
+					c02_Ndef_False_True_ST3;
+				}
+				VehSL_LivingStat_ST3{
+					init_value = 15; 
+					size = 4; 
+					offset = 20;
+					c04_FWLB_LivingStat;
+				}
+				WinAll_SwLED_Rq_ST3{
+					init_value = 3; 
+					size = 2; 
+					offset = 28;
+					c02_Fls_Tru;
+				}
+				SwIllLvl_ST3{
+					init_value = 255; 
+					size = 8; 
+					offset = 48;
+					c08_perc_0_100_0k4;
+				}
+				FctIllLvl_ST3{
+					init_value = 255; 
+					size = 8; 
+					offset = 56;
+					c08_perc_0_100_0k4;
+				}
+			}
+		}
+	}
+
+	encoding {
+		c02_CpctyErr_Type {
+			logical_value, 0, "SHRT_CIRC_BAT";
+			logical_value, 1, "SHRT_CIRC_GND";
+			logical_value, 2, "OPN_LOAD";
+			logical_value, 3, "NO_ERR";
+		}
+		c02_Cpcty_IntCom_Err {
+			logical_value, 0, "ERR_NVM_MAIN";
+			logical_value, 1, "ERR_NVM_TOUCH";
+			logical_value, 2, "ERR_SPI_COM";
+			logical_value, 3, "NO_ERR";
+		}
+		c02_Fls_Tru {
+			logical_value, 1, "FALSE";
+			logical_value, 2, "TRUE";
+			logical_value, 3, "SNA";
+		}
+		c02_NPsd_Opn_Cls_Imp {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "OPEN";
+			logical_value, 2, "CLOSE";
+			logical_value, 3, "IMPL";
+		}
+		c02_NPsd_Psd_NDef {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "PSD";
+			logical_value, 2, "NDEF2";
+			logical_value, 3, "SNA";
+		}
+		c02_NPsd_Psd_ST3 {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "PSD";
+			logical_value, 3, "SNA";
+		}
+		c02_NTchd_Tchd_Psd_SNA {
+			logical_value, 0, "NOT_TOUCH";
+			logical_value, 1, "TOUCH";
+			logical_value, 2, "PSD";
+			logical_value, 3, "SNA";
+		}
+		c02_Ndef_False_True_ST3 {
+			logical_value, 1, "FALSE";
+			logical_value, 2, "TRUE";
+			logical_value, 3, "SNA";
+		}
+		c02_WakeUp_Stat {
+			logical_value, 0, "NO_WUP";
+			logical_value, 1, "ACTIVE_WUP";
+			logical_value, 2, "NDEF2";
+			logical_value, 3, "SNA";
+		}
+		c03_ISw_Stat {
+			logical_value, 0, "IGN_LOCK";
+			logical_value, 1, "IGN_OFF";
+			logical_value, 2, "IGN_ACC";
+			logical_value, 4, "IGN_ON";
+			logical_value, 5, "IGN_START";
+			logical_value, 7, "SNA";
+		}
+		c03_NPsd_Man_AutOpnCls_Imp {
+			logical_value, 0, "NPSD";
+			logical_value, 1, "MANOPN";
+			logical_value, 2, "MANCLS";
+			logical_value, 5, "AUTOOPN";
+			logical_value, 6, "AUTOCLS";
+			logical_value, 7, "IMPL";
+		}
+		c04_FWLB_LivingStat {
+			logical_value, 0, "VSL_PARKING";
+			logical_value, 1, "VSL_WELCOME";
+			logical_value, 2, "VSL_LIVING";
+			logical_value, 3, "VSL_BYE";
+			logical_value, 4, "VSL_SILENT_PARKING";
+			logical_value, 5, "VSL_SILENT_WELCOME";
+			logical_value, 6, "VSL_SILENT_LIVING";
+			logical_value, 7, "VSL_SILENT_BYE";
+			logical_value, 8, "VSL_DRIVING";
+			logical_value, 9, "VSL_CHECK_IN";
+			logical_value, 10, "VSL_CHECK_OUT";
+			logical_value, 11, "VSL_PRE_WELCOME";
+			logical_value, 12, "VSL_PRE_DRIVING";
+			logical_value, 13, "VSL_DIAGNOSTICS";
+			logical_value, 15, "SNA";
+		}
+		c08_perc_0_100_0k4 {
+			physical_value, 0, 250, 0.4, 0, "%";
+			logical_value, 255, "SNA";
+		}
+	}
+	status_management {
+		response_error = RsErr_DSM_WM_ST3;
+	}
+
+	free_text {
+null
+	}
+
+}
