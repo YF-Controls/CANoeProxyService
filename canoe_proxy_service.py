@@ -7,6 +7,8 @@ import win32event
 import servicemanager
 import sys
 import ctypes
+import socket
+import os
 # User modules
 from canoe_proxy_tcp_server import CANoeProxyTcpServer
 
@@ -17,9 +19,9 @@ class CANoeProxyService(win32serviceutil.ServiceFramework):
   """Windows Service to handle Can Oe apps and communication
   """
   
-  _svc_name_ = "Can Oe Handler Service"
-  _svc_display_name_ = "Can Oe Handler Service"
-  _svc_description_ = "Windows service to handle Can Oe apps and communication"
+  _svc_name_ = "CANoe Proxy Service"
+  _svc_display_name_ = "CANoe Proxy Service"
+  _svc_description_ = "Service for managing CANoe configurations and commands"
   _svc_deps = []  # Dependencias opcionales
   
   def __init__(self, args):
@@ -28,6 +30,8 @@ class CANoeProxyService(win32serviceutil.ServiceFramework):
     # Service code
     win32serviceutil.ServiceFramework.__init__(self, args)
     self.hWaitStop = win32event.CreateEvent(None, 0, 0, None)
+    #socket.setdefaulttimeout(60.0) # Used to connect with WSM
+    # Socket is commented because timed out with tcp server.
     
     # User code
     # Admin
@@ -47,6 +51,7 @@ class CANoeProxyService(win32serviceutil.ServiceFramework):
     try:
       self.server.server_socket.close()
       servicemanager.LogInfoMsg('Server socket closed successfully!')
+      
     except Exception as e:
       servicemanager.LogErrorMsg(f'Error closing server socket: {e}')
 
@@ -96,12 +101,17 @@ class CANoeProxyService(win32serviceutil.ServiceFramework):
       elif arg.startswith('config='):
         self.config_path = arg.split('=', 1)[1]
     
-    # Valor por defecto si no se especifica
+    # Check path
     if not self.config_path:
-      self.config_path = r"C:\config.json"
-      servicemanager.LogInfoMsg(f"No configuration file specified, using default: {self.config_path}")
+      self.config_path = r'c:\CANoeProxyService\config.json'
+      servicemanager.LogWarningMsg(f'No configuration file specified, load default: {self.config_path}')
+    
+    if not os.path.isfile(self.config_path):
+      servicemanager.LogErrorMsg(f'Configuration file does not exist: {self.config_path}')
+      
     else:
-      servicemanager.LogInfoMsg(f"Configuration file specified: {self.config_path}")
+      servicemanager.LogInfoMsg(f"Configuration file specified: {self.config_path}")  
+    
   
 
   
@@ -114,12 +124,12 @@ if __name__ == '__main__':
   '''
   Open a command prompt as administrator and run:
   
-  python can_oe_service.py install --config "C:\<folder-path>\config.json"
-  python can_oe_service.py start
-  python can_oe_service.py status
+  python canoe_proxy_service.py install"
+  python canoe_proxy_service.py start
+  python canoe_proxy_service.py status
   
   To stop the service:
-  python can_oe_service.py remove
+  python canoe_proxy_service.py remove
   '''
   
   win32serviceutil.HandleCommandLine(CANoeProxyService)

@@ -105,26 +105,37 @@ class CANoeProxyTcpServer:
           # Check status
           if count < 1:
             response = f'7000,{self.config.canOe.exe} closed'
-          
-          elif count > 1:
+            client_socket.send(response.encode('utf-8'))
+            self.log_info(f'Client[{client_id}] response: {response}')
+            continue
+        
+          if count > 1:
             response = f'8000,Too many open {self.config.canOe.exe} instances'
+            client_socket.send(response.encode('utf-8'))
+            self.log_info(f'Client[{client_id}] response: {response}')
+            continue
           
+          # Read cfg path
+          cfg_path = some_cfg_loaded(self.config.canOe.exe)
+            
+          if cfg_path is None:
+            response = f'7001,No cfg file loaded' 
+            client_socket.send(response.encode('utf-8'))
+            self.log_info(f'Client[{client_id}] response: {response}')
+            continue
+          
+          # Read cfg id
+          cfg_id = self.config.canOe.get_cfg_id_by_path(cfg_path)
+            
+          if cfg_id is None:
+            cfg_id = '???'
+            
+          if is_measurement_running(self.config.canOe.exe):
+            response = f'0000,{cfg_id} {cfg_path} measurement running'
+            
           else:
-            cfg_path = some_cfg_loaded(self.config.canOe.exe)
-            cfg_id = self.config.canOe.get_cfg_id_by_path(cfg_path)
-            
-            if cfg_id is None:
-              cfg_id = '???'
-            
-            if cfg_path is None:
-              response = f'7001,No cfg file loaded' 
-            
-            elif is_measurement_running(self.config.canOe.exe):
-              response = f'0000,{cfg_id} {cfg_path} measurement running'
-            
-            else:
-              response = f'7002,{cfg_id} {cfg_path} waiting to start measurement'
-
+            response = f'7002,{cfg_id} {cfg_path} waiting to start measurement'
+          
           # Send response
           client_socket.send(response.encode('utf-8'))
           self.log_info(f'Client[{client_id}] response: {response}')

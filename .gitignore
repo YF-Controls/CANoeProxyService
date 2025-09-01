@@ -10,6 +10,8 @@
 # ignore folders
 **/A01_Soft/
 **/A02_Lic/
-"DCM KHIL TESTING/"
-**/Log/
-**/Logging/
+/DCM KHIL TESTING/
+/cfg/DCM223_Updated/
+/cfg/MMA_Updated/
+
+

@@ -63,14 +63,14 @@ Abra la `consola de comandos` como administrador.
 Ejecute el siguiente código:
 
 ```Python
-python canoe_proxy_service.py install --config "C:\CanOeProxy\config.json"
+python canoe_proxy_service.py install
 ```
 
-```Python
-python canoe_proxy_service.py start
-python canoe_proxy_service.py status
+De forma manual continuaremos con la configuración:
 
-```
+Seguir manual en `doc/A06_ConfigService`
+
+
 
 ### 2.2. Uninstall service
 
@@ -81,6 +81,17 @@ Ejecute el siguiente código:
 ```Python
 python canoe_proxy_service.py remove
 ```
+
+En caso de que no se pueda eliminar el servicio con python, abra la  `consola de comandos`como administrador.
+
+Ejecute el siguiente código:
+
+```Cmd
+sc delete "Nombre del servicio tal como está en la UI de Servicios"
+```
+
+> Si el nombre del comando lleva espacios se ha de poner entre comillas
+
 
 ### 2.3. Configurar el servicio en Windows Services
 
@@ -136,10 +147,10 @@ Lista de tipos de la `DCU` para `223`:
 
 | dcu_type | descripción |
 |:---------|:------------|
-| `DMD_223` | Puerta delantera izquierda (conductor) |
-| `DMP_223` | Puerta delantera derecha (pasajero) |
-| `DMRL_223` | Puerta trasera izquierda (pasajero) |
-| `DMRR_223` | Puerta trasera derecha (pasajero) |
+| `DMD223` | Puerta delantera izquierda (conductor) |
+| `DMP223` | Puerta delantera derecha (pasajero) |
+| `DMRL223` | Puerta trasera izquierda (pasajero) |
+| `DMRR223` | Puerta trasera derecha (pasajero) |
 
 ### 3.1. Comando: `Read_info`
 
@@ -345,3 +356,6 @@ Contraseña: ide
 "%(asctime)s [%(levelname)-8s] [%(name)s , %(funcName)s , %(lineno)d] %(message)s"
 ```
 
+### Github
+
+Para actualizar el repositorio desde `Github` hay que hace un `pull`.
